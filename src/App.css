@@ -1,0 +1,156 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: Gotham Rounded;
+}
+
+body {
+  background-color: black;
+  background-image: -webkit-radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    -webkit-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent
+          30px),
+    -webkit-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent
+          40px),
+    -webkit-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)
+          2px, transparent 30px);
+  background-image: -moz-radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    -moz-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    -moz-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    -moz-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
+          30px);
+  background-image: -ms-radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    -ms-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    -ms-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    -ms-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
+          30px);
+  background-image: -o-radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    -o-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    -o-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    -o-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
+          30px);
+  background-image: radial-gradient(
+      white,
+      rgba(255, 255, 255, 0.2) 2px,
+      transparent 40px
+    ),
+    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
+    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
+    radial-gradient(
+      rgba(255, 255, 255, 0.4),
+      rgba(255, 255, 255, 0.1) 2px,
+      transparent 30px
+    );
+  background-position: 0 0px, 40px 60px, 130px 270px, 70px 100px;
+  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+}
+
+html {
+  height: 80%;
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+
+.quiz-title {
+  margin: 20px;
+  font-size: xx-large;
+  text-align: center;
+  color: red;
+}
+
+.quiz-container {
+  max-width: 500px;
+  min-height: 200px;
+  background-color: beige;
+  margin: 20px auto;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 0 10px 2px;
+}
+
+.question-count {
+  font-size: large;
+  color: brown;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.question {
+  font-size: 24px;
+  text-align: center;
+  color: black;
+  padding-top: 15px;
+}
+
+.btn {
+  background-color: hsl(200, 100%, 50%);
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: black;
+  outline: none;
+  font-size: 20px;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: whitesmoke;
+}
+
+.btn.correct {
+  background-color: greenyellow;
+}
+
+.btn.wrong {
+  background-color: red;
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(1, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: wheat;
+}
+
+.result-attribute {
+  font-size: xx-large;
+  color: brown;
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding-bottom: 10px;
+}
+
+.result {
+  padding: 10px;
+  display: inline-block;
+}
+
+.blur-element {
+  filter: blur(1px) grayscale(20%);
+}
