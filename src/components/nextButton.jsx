@@ -2,7 +2,11 @@ import React from "react";
 
 const NextButton = props => {
   return (
-    <button className="next-btn btn" onClick={props.setnextQuestion}>
+    <button
+      className="next-btn btn"
+      onClick={props.setnextQuestion}
+      style={{ float: "bottom" }}
+    >
       {console.log("Render NextButton JS called")}
       Next
     </button>

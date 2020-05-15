@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Tangerine");
 *,
 *::before,
 *::after {
@@ -6,59 +7,7 @@
 }
 
 body {
-  background-color: black;
-  background-image: -webkit-radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    -webkit-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent
-          30px),
-    -webkit-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent
-          40px),
-    -webkit-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1)
-          2px, transparent 30px);
-  background-image: -moz-radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    -moz-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
-    -moz-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    -moz-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
-          30px);
-  background-image: -ms-radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    -ms-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
-    -ms-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    -ms-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
-          30px);
-  background-image: -o-radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    -o-radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
-    -o-radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    -o-radial-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.1) 2px, transparent
-          30px);
-  background-image: radial-gradient(
-      white,
-      rgba(255, 255, 255, 0.2) 2px,
-      transparent 40px
-    ),
-    radial-gradient(white, rgba(255, 255, 255, 0.15) 1px, transparent 30px),
-    radial-gradient(white, rgba(255, 255, 255, 0.1) 2px, transparent 40px),
-    radial-gradient(
-      rgba(255, 255, 255, 0.4),
-      rgba(255, 255, 255, 0.1) 2px,
-      transparent 30px
-    );
-  background-position: 0 0px, 40px 60px, 130px 270px, 70px 100px;
-  background-size: 550px 550px, 350px 350px, 250px 250px, 150px 150px;
+  background-image: url(./assets/movingBackground.gif);
 }
 
 html {
@@ -71,14 +20,14 @@ html {
 
 .quiz-title {
   margin: 20px;
-  font-size: xx-large;
+  font-size: 50px;
   text-align: center;
   color: red;
 }
 
 .quiz-container {
-  max-width: 500px;
-  min-height: 200px;
+  max-width: 700px;
+  min-height: 400px;
   background-color: beige;
   margin: 20px auto;
   border-radius: 10px;
@@ -87,7 +36,7 @@ html {
 }
 
 .question-count {
-  font-size: large;
+  font-size: 30px;
   color: brown;
   border-bottom: 1px solid #ccc;
   margin: 0;
@@ -105,10 +54,10 @@ html {
   background-color: hsl(200, 100%, 50%);
   border: 1px solid black;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 18px 10px;
   color: black;
   outline: none;
-  font-size: 20px;
+  font-size: 50px;
 }
 
 .btn:hover {
@@ -126,7 +75,7 @@ html {
 
 .btn-grid {
   display: grid;
-  grid-template-columns: repeat(1, auto);
+  grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
 }
@@ -139,10 +88,10 @@ html {
 }
 
 .result-attribute {
-  font-size: xx-large;
+  font-size: 75px;
   color: brown;
   margin: 0;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Tangerine", serif;
   padding-bottom: 10px;
 }
 
@@ -153,4 +102,16 @@ html {
 
 .blur-element {
   filter: blur(1px) grayscale(20%);
+}
+
+.player-wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 2%;
 }
