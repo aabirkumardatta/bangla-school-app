@@ -4,8 +4,27 @@ import React, { Component } from "react";
 import goodJobGif from "../assets/goodJobGif.gif";
 import smileyGoodJob from "../assets/smileyGoodJob.gif";
 import cupLiftGif from "../assets/cupLiftGif.gif";
+import resultBgm from "../assets/resultBgm.mp3";
+import { Howl, Howler } from "howler";
 class Result extends Component {
+  constructor() {
+    super();
+    this.state = {
+      resultBgm: new Howl({ src: [resultBgm], html5: true, loop: true })
+    };
+  }
+
+  componentDidMount() {
+    this.state.resultBgm.play();
+  }
+
+  handlePlayAgain() {
+    this.state.resultBgm.stop();
+    window.location.reload();
+  }
+
   render() {
+    Howler.volume(2.0);
     return (
       <div className="result">
         {console.log("Result Line 1")}
@@ -40,7 +59,7 @@ class Result extends Component {
         <div>
           <button
             style={{ marginTop: "20px", marginLeft: "250px" }}
-            onClick={() => window.location.reload()}
+            onClick={() => this.handlePlayAgain()}
             className="next-btn btn"
           >
             {console.log("Render NextButton JS called")}

@@ -2,6 +2,9 @@ import React, { Component } from "react";
 import Quiz from "./quiz";
 import Result from "./result";
 import { Howl, Howler } from "howler";
+import correctAnswer from "../assets/correctAnswer.mp3";
+import wrongAnswer from "../assets/wrongAnswer.mp3";
+import quizBgm from "../assets/quizBgm.mp3";
 
 class Main extends Component {
   constructor(props) {
@@ -17,11 +20,14 @@ class Main extends Component {
       showResult: false,
       totalScore: 0,
       questionAudio: "",
-      heading: this.props.heading
+      heading: this.props.heading,
+      quizBgm: new Howl({ src: [quizBgm], html5: true, loop: true })
     };
   }
 
   componentDidMount() {
+    this.state.quizBgm.volume(0.1);
+    this.state.quizBgm.play();
     const shuffledQuestions = this.props.quizQuestions.sort(
       () => Math.random() - 0.5
     );
@@ -46,10 +52,16 @@ class Main extends Component {
 
   setOptionStyle = selectedElement => {
     if (selectedElement.value === "true") {
+      const correctAnswerSound = new Howl({ src: [correctAnswer] });
+      correctAnswerSound.volume(4.0);
+      correctAnswerSound.play();
       const totalScore = this.state.totalScore + 1;
       this.setState({ totalScore });
       selectedElement.classList.add("correct");
     } else {
+      const wrongAnswerSound = new Howl({ src: [wrongAnswer] });
+      wrongAnswerSound.volume(4.0);
+      wrongAnswerSound.play();
       Array.from(selectedElement.parentElement.children).forEach(child => {
         child.value === "false"
           ? child.classList.add("wrong")
@@ -70,6 +82,7 @@ class Main extends Component {
 
   playQuestionSound = () => {
     const sound = new Howl({ src: [this.state.questionAudio] });
+    sound.volume(4.0);
     sound.play();
   };
 
@@ -91,11 +104,11 @@ class Main extends Component {
   };
 
   setResults = () => {
+    this.state.quizBgm.stop();
     this.setState({ result: true, heading: null });
   };
 
   renderQuiz = () => {
-    Howler.volume(2.0);
     return (
       <Quiz
         answer={this.state.answer}
