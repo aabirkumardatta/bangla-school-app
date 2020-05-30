@@ -27,7 +27,10 @@ class Quiz extends Component {
           <Question content={this.props.question} />
         )}
         <AnswerOption optionList={this.props} />
-        <NextButton setnextQuestion={this.props.setnextQuestion} />
+        <NextButton
+          setnextQuestion={this.props.setnextQuestion}
+          nextButtonDisabled={this.props.nextButtonDisabled}
+        />
       </div>
     );
   }

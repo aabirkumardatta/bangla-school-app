@@ -12,8 +12,8 @@ class VideoPlayer extends Component {
             autoPlay={true}
             playing={true}
             url={this.props.linkToVideo}
-            width="90%"
-            height="90%"
+            width="86%"
+            height="86%"
             className="react-player"
             loop={true}
           />

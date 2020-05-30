@@ -3,56 +3,62 @@ import "./App.css";
 import Main from "./components/main";
 // import quizQuestions from "./quizQuestions/quizQuestions";
 import sworoBornoAudioQuiz from "./quizQuestions/sworoBornoAudioQuiz";
-import linkToVideo from "./assets/sworbornoIntroVideo.mp4";
+import byanjonborno_1 from "./quizQuestions/byanjonborno_1";
+import linkToVideo from "./assets/aa.mp4";
 import VideoPlayer from "./components/videoPlayer";
-import { Howl, Howler } from "howler";
-import introBgm from "./assets/introBgm.mp3";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      heading: "স্বরবর্ণ খেলা",
+      heading: "",
       introVideo: true,
-      introBgm: new Howl({ src: [introBgm], html5: true, loop: true })
+      quizQuestions: null
     };
   }
 
-  handleBeginQuiz = () => {
-    this.state.introBgm.stop();
-    this.setState({ introVideo: false });
-  };
-
-  handlePlayIntroMusic = () => {
-    this.state.introBgm.play();
-  };
-
   render() {
-    Howler.volume(2.0);
     return (
       <React.Fragment>
         {this.state.introVideo ? (
           <div>
             <button
               className="next-btn btn"
-              style={{ float: "left", marginTop: "20%", marginLeft: "1%" }}
-              onClick={this.handlePlayIntroMusic}
+              style={{ float: "right", marginTop: "10%", marginRight: "1.1%" }}
+              onClick={() => {
+                this.setState({
+                  heading: "স্বরবর্ণ খেলা",
+                  quizQuestions: sworoBornoAudioQuiz,
+                  introVideo: false
+                });
+              }}
             >
               {" "}
-              ♫♫
+              Sworoborno Quiz
             </button>
             <button
               className="next-btn btn"
-              style={{ float: "right", marginTop: "20%", marginRight: "1%" }}
-              onClick={this.handleBeginQuiz}
+              style={{
+                float: "right",
+                marginTop: "20%",
+                marginLeft: "82%",
+                marginRight: "1%"
+              }}
+              onClick={() => {
+                this.setState({
+                  heading: "ব্যঞ্জনবর্ণ খেলা",
+                  quizQuestions: byanjonborno_1,
+                  introVideo: false
+                });
+              }}
             >
-              Begin Quiz
+              Byanjonborno Quiz
             </button>
             <VideoPlayer linkToVideo={linkToVideo} />
           </div>
         ) : (
           <Main
-            quizQuestions={sworoBornoAudioQuiz}
+            quizQuestions={this.state.quizQuestions}
             isAudioQuiz={true}
             heading={this.state.heading}
           />

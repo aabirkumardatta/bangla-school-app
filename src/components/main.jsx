@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Quiz from "./quiz";
 import Result from "./result";
-import { Howl, Howler } from "howler";
+import { Howl } from "howler";
 import correctAnswer from "../assets/correctAnswer.mp3";
 import wrongAnswer from "../assets/wrongAnswer.mp3";
 import quizBgm from "../assets/quizBgm.mp3";
@@ -9,6 +9,7 @@ import quizBgm from "../assets/quizBgm.mp3";
 class Main extends Component {
   constructor(props) {
     super(props);
+    this.nextButtonDisabled = true;
 
     this.state = {
       counter: 0,
@@ -26,7 +27,7 @@ class Main extends Component {
   }
 
   componentDidMount() {
-    this.state.quizBgm.volume(0.1);
+    this.state.quizBgm.volume(0.01);
     this.state.quizBgm.play();
     const shuffledQuestions = this.props.quizQuestions.sort(
       () => Math.random() - 0.5
@@ -40,6 +41,7 @@ class Main extends Component {
   }
 
   handleAnswerSelected = event => {
+    this.nextButtonDisabled = false;
     const optionSelectedByUser = event.target;
     Array.from(optionSelectedByUser.parentElement.children).forEach(child => {
       child.disabled = true;
@@ -82,7 +84,7 @@ class Main extends Component {
 
   playQuestionSound = () => {
     const sound = new Howl({ src: [this.state.questionAudio] });
-    sound.volume(4.0);
+    sound.volume(10.0);
     sound.play();
   };
 
@@ -121,7 +123,10 @@ class Main extends Component {
         playQuestionSound={this.playQuestionSound}
         totalScore={this.state.totalScore}
         isAudioQuiz={this.props.isAudioQuiz}
-      ></Quiz>
+        nextButtonDisabled={this.nextButtonDisabled}
+      >
+        {(this.nextButtonDisabled = true)}
+      </Quiz>
     );
   };
 
@@ -133,10 +138,6 @@ class Main extends Component {
       ></Result>
     );
   };
-
-  componentWillUnmount() {
-    console.log("Unmount called");
-  }
 
   render() {
     return (
