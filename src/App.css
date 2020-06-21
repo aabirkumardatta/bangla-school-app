@@ -26,7 +26,7 @@ html {
 }
 
 .quiz-container {
-  max-width: 700px;
+  max-width: 900px;
   min-height: 400px;
   background-color: beige;
   margin: 20px auto;
@@ -65,6 +65,11 @@ html {
   background-color: whitesmoke;
 }
 
+.btn.blur {
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
+}
+
 .btn.correct {
   background-color: greenyellow;
 }
@@ -78,6 +83,13 @@ html {
   grid-template-columns: repeat(2, auto);
   gap: 10px;
   margin: 20px 0;
+}
+
+.btn-grid-byanjonbornoHome {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 2px;
+  margin: 2px 0;
 }
 
 .next-btn {

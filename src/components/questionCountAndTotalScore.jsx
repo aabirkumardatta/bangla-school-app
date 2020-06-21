@@ -8,6 +8,28 @@ const QuestionCountAndTotalScore = props => {
       <div className="question-count">
         {console.log("Question Count and Total Score JS called")}
         Question <span>{props.counter}</span> of <span>{props.total}</span>
+        <button
+          className="next-btn btn"
+          onClick={props.muteMusic}
+          style={{
+            paddingBottom: "10px",
+            marginLeft: "40px",
+            height: "45.4px"
+          }}
+        >
+          Mute Music
+        </button>
+        <button
+          className="next-btn btn"
+          onClick={props.unmuteMusic}
+          style={{
+            paddingBottom: "10px",
+            marginLeft: "40px",
+            height: "45.4px"
+          }}
+        >
+          Unmute Music
+        </button>
         <div style={{ float: "right" }}>
           Total Score: <span>{props.totalScore}</span>
         </div>

@@ -20,13 +20,18 @@ class Quiz extends Component {
           counter={this.props.questionId}
           total={this.props.questionTotal}
           totalScore={this.props.totalScore}
+          muteMusic={this.props.muteMusic}
+          unmuteMusic={this.props.unmuteMusic}
         />
         {this.props.isAudioQuiz ? (
           <PlayButton playQuestionSound={this.props.playQuestionSound} />
         ) : (
           <Question content={this.props.question} />
         )}
-        <AnswerOption optionList={this.props} />
+        <AnswerOption
+          optionList={this.props}
+          optionsDisabled={this.props.optionsDisabled}
+        />
         <NextButton
           setnextQuestion={this.props.setnextQuestion}
           nextButtonDisabled={this.props.nextButtonDisabled}

@@ -3,9 +3,9 @@ import "./App.css";
 import Main from "./components/main";
 // import quizQuestions from "./quizQuestions/quizQuestions";
 import sworoBornoAudioQuiz from "./quizQuestions/sworoBornoAudioQuiz";
-import byanjonborno_1 from "./quizQuestions/byanjonborno_1";
 import linkToVideo from "./assets/aa.mp4";
 import VideoPlayer from "./components/videoPlayer";
+import ByanjonbornoHome from "./components/byanjonborno_home";
 
 class App extends Component {
   constructor(props) {
@@ -13,7 +13,8 @@ class App extends Component {
     this.state = {
       heading: "",
       introVideo: true,
-      quizQuestions: null
+      quizQuestions: null,
+      displayByanjonbornoHomePage: false
     };
   }
 
@@ -46,8 +47,7 @@ class App extends Component {
               }}
               onClick={() => {
                 this.setState({
-                  heading: "ব্যঞ্জনবর্ণ খেলা",
-                  quizQuestions: byanjonborno_1,
+                  displayByanjonbornoHomePage: true,
                   introVideo: false
                 });
               }}
@@ -56,6 +56,8 @@ class App extends Component {
             </button>
             <VideoPlayer linkToVideo={linkToVideo} />
           </div>
+        ) : this.state.displayByanjonbornoHomePage === true ? (
+          <ByanjonbornoHome />
         ) : (
           <Main
             quizQuestions={this.state.quizQuestions}

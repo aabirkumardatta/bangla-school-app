@@ -9,7 +9,6 @@ import quizBgm from "../assets/quizBgm.mp3";
 class Main extends Component {
   constructor(props) {
     super(props);
-    this.nextButtonDisabled = true;
 
     this.state = {
       counter: 0,
@@ -22,6 +21,8 @@ class Main extends Component {
       totalScore: 0,
       questionAudio: "",
       heading: this.props.heading,
+      nextButtonDisabled: true,
+      optionsDisabled: true,
       quizBgm: new Howl({ src: [quizBgm], html5: true, loop: true })
     };
   }
@@ -41,14 +42,12 @@ class Main extends Component {
   }
 
   handleAnswerSelected = event => {
-    this.nextButtonDisabled = false;
+    this.setState({ nextButtonDisabled: false });
     const optionSelectedByUser = event.target;
     Array.from(optionSelectedByUser.parentElement.children).forEach(child => {
       child.disabled = true;
     });
     this.setOptionStyle(optionSelectedByUser);
-    // const quizContainerElement = document.getElementById("what");
-    // quizContainerElement.classList.add("blur-element");
     this.setUserAnswer(optionSelectedByUser.value);
   };
 
@@ -82,13 +81,19 @@ class Main extends Component {
     }));
   };
 
-  playQuestionSound = () => {
+  playQuestionSound = event => {
+    this.setState({ optionsDisabled: false });
+    Array.from(event.target.nextElementSibling.children).forEach(child => {
+      child.classList.remove("blur");
+    });
     const sound = new Howl({ src: [this.state.questionAudio] });
     sound.volume(10.0);
     sound.play();
   };
 
   setnextQuestion = () => {
+    this.setState({ nextButtonDisabled: true });
+    this.setState({ optionsDisabled: true });
     if (this.state.questionId < this.props.quizQuestions.length) {
       const counter = this.state.counter + 1;
       const questionId = this.state.questionId + 1;
@@ -110,6 +115,14 @@ class Main extends Component {
     this.setState({ result: true, heading: null });
   };
 
+  muteMusic = () => {
+    this.state.quizBgm.mute(true);
+  };
+
+  unmuteMusic = () => {
+    this.state.quizBgm.mute(false);
+  };
+
   renderQuiz = () => {
     return (
       <Quiz
@@ -123,10 +136,11 @@ class Main extends Component {
         playQuestionSound={this.playQuestionSound}
         totalScore={this.state.totalScore}
         isAudioQuiz={this.props.isAudioQuiz}
-        nextButtonDisabled={this.nextButtonDisabled}
-      >
-        {(this.nextButtonDisabled = true)}
-      </Quiz>
+        nextButtonDisabled={this.state.nextButtonDisabled}
+        optionsDisabled={this.state.optionsDisabled}
+        muteMusic={this.muteMusic}
+        unmuteMusic={this.unmuteMusic}
+      ></Quiz>
     );
   };
 
