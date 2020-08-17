@@ -9,9 +9,7 @@ const NextButton = props => {
       onClick={props.setnextQuestion}
       disabled={props.nextButtonDisabled}
       style={{ float: "bottom" }}
-    >
-      {console.log("Render NextButton JS called")}
-    </input>
+    ></input>
   );
 };
 

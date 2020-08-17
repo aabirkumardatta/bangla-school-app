@@ -6,7 +6,6 @@ const QuestionCountAndTotalScore = props => {
   return (
     <React.Fragment>
       <div className="question-count">
-        {console.log("Question Count and Total Score JS called")}
         Question <span>{props.counter}</span> of <span>{props.total}</span>
         <button
           className="next-btn btn"

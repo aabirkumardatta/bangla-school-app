@@ -15,7 +15,6 @@ class Quiz extends Component {
   render() {
     return (
       <div id="what" key={this.props.questionId}>
-        {console.log("Render Quiz JS called")}
         <QuestionCountAndTotalScore
           counter={this.props.questionId}
           total={this.props.questionTotal}

@@ -3,7 +3,6 @@ import byanjonborno_1 from "../quizQuestions/byanjonborno_1";
 import byanjonborno_2 from "../quizQuestions/byanjonborno_2";
 import byanjonborno_3 from "../quizQuestions/byanjonborno_3";
 import byanjonborno_4 from "../quizQuestions/byanjonborno_4";
-import byanjonborno_5 from "../quizQuestions/byanjonborno_5";
 import Main from "./main";
 
 class ByanjonbornoHome extends Component {
@@ -21,17 +20,18 @@ class ByanjonbornoHome extends Component {
       <React.Fragment>
         {this.state.displayByanjonbornoHomePage === true ? (
           <div>
-            <div className="quiz-container" style={{ marginTop: "10%" }}>
+            <div className="quiz-container" style={{ marginTop: "5%" }}>
               <span>
                 <h1 className="quiz-title">Byanjonborno Home</h1>
               </span>
-              <div className="btn-grid-byanjonbornoHome">
+              <div className="btn-grid">
                 <button
                   className="btn"
                   style={{
                     width: "270px",
-                    marginTop: "100px",
-                    marginLeft: "10px"
+                    height: "100px",
+                    marginTop: "5px",
+                    marginLeft: "80px"
                   }}
                   onClick={() => {
                     this.setState({
@@ -48,8 +48,9 @@ class ByanjonbornoHome extends Component {
                   className="btn"
                   style={{
                     width: "270px",
-                    marginTop: "100px",
-                    marginLeft: "10px"
+                    height: "100px",
+                    marginTop: "5px",
+                    marginLeft: "80px"
                   }}
                   onClick={() => {
                     this.setState({
@@ -66,8 +67,8 @@ class ByanjonbornoHome extends Component {
                   className="btn"
                   style={{
                     width: "270px",
-                    marginTop: "100px",
-                    marginLeft: "10px"
+                    marginTop: "10px",
+                    marginLeft: "80px"
                   }}
                   onClick={() => {
                     this.setState({
@@ -77,7 +78,7 @@ class ByanjonbornoHome extends Component {
                     });
                   }}
                 >
-                  প - ম
+                  প - ল
                 </button>
 
                 <button
@@ -85,7 +86,7 @@ class ByanjonbornoHome extends Component {
                   style={{
                     width: "270px",
                     marginTop: "10px",
-                    marginLeft: "10px"
+                    marginLeft: "80px"
                   }}
                   onClick={() => {
                     this.setState({
@@ -95,25 +96,7 @@ class ByanjonbornoHome extends Component {
                     });
                   }}
                 >
-                  য - হ
-                </button>
-
-                <button
-                  className="btn"
-                  style={{
-                    width: "270px",
-                    marginTop: "10px",
-                    marginLeft: "10px"
-                  }}
-                  onClick={() => {
-                    this.setState({
-                      heading: "ব্যঞ্জনবর্ণ খেলা",
-                      quizQuestions: byanjonborno_5,
-                      displayByanjonbornoHomePage: false
-                    });
-                  }}
-                >
-                  ড় - ँ
+                  শ - ‍ঁ
                 </button>
               </div>
             </div>

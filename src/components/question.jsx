@@ -3,12 +3,7 @@
 import React from "react";
 
 const Question = props => {
-  return (
-    <div className="question">
-      {console.log("question JS called")}
-      {props.content}
-    </div>
-  );
+  return <div className="question">{props.content}</div>;
 };
 
 export default Question;

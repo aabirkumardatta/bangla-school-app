@@ -5,17 +5,15 @@ class VideoPlayer extends Component {
   render() {
     return (
       <div key={this.props.linkToVideo}>
-        {console.log("I am in")}
         {
           <ReactPlayer
-            muted
             autoPlay={true}
             playing={true}
             url={this.props.linkToVideo}
-            width="86%"
-            height="86%"
+            width="51%"
+            height="82%"
             className="react-player"
-            loop={true}
+            loop={false}
           />
         }
       </div>

@@ -1,19 +1,25 @@
-import ant_jaw from "../assets/byanjonborno_4/ant_jaw.mp3";
-import bawshun_raw from "../assets/byanjonborno_4/bawshun_raw.mp3";
-import law from "../assets/byanjonborno_4/law.mp3";
 import talib_shaw from "../assets/byanjonborno_4/talib_shaw.mp3";
 import petkata_shaw from "../assets/byanjonborno_4/petkata_shaw.mp3";
 import dant_shaw from "../assets/byanjonborno_4/dant_shaw.mp3";
 import haw from "../assets/byanjonborno_4/haw.mp3";
+import dawshun_raw from "../assets/byanjonborno_5/dawshun_raw.mp3";
+import dhawshun_raw from "../assets/byanjonborno_5/dhawshun_raw.mp3";
+import khondotaw from "../assets/byanjonborno_5/khondotaw.mp3";
+import onushor from "../assets/byanjonborno_5/onushor.mp3";
+import bishorgo from "../assets/byanjonborno_5/bishorgo.mp3";
+import chandrabindu from "../assets/byanjonborno_5/chandrabindu.mp3";
 
 const letterAudioMap = [
-  { audio: ant_jaw, label: "য" },
-  { audio: bawshun_raw, label: "র" },
-  { audio: law, label: "ল" },
   { audio: talib_shaw, label: "শ" },
   { audio: petkata_shaw, label: "ষ" },
   { audio: dant_shaw, label: "স" },
   { audio: haw, label: "হ" },
+  { audio: dawshun_raw, label: "ড়" },
+  { audio: dhawshun_raw, label: "ঢ়" },
+  { audio: khondotaw, label: "ৎ" },
+  { audio: onushor, label: "ং" },
+  { audio: bishorgo, label: "ঃ" },
+  { audio: chandrabindu, label: "‍ঁ" },
   { audio: null, label: "ক" },
   { audio: null, label: "খ" },
   { audio: null, label: "গ" },
@@ -39,6 +45,9 @@ const letterAudioMap = [
   { audio: null, label: "ব" },
   { audio: null, label: "ভ" },
   { audio: null, label: "ম" },
+  { audio: null, label: "য" },
+  { audio: null, label: "র" },
+  { audio: null, label: "ল" },
   { audio: null, label: "অ" },
   { audio: null, label: "আ" },
   { audio: null, label: "ই" },
@@ -59,7 +68,11 @@ var byanjonborno_4 = [
     answers: [
       {
         type: "false",
-        content: letterAudioMap[7].label
+        content: letterAudioMap[20].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[25].label
       },
       {
         type: "true",
@@ -67,11 +80,7 @@ var byanjonborno_4 = [
       },
       {
         type: "false",
-        content: letterAudioMap[27].label
-      },
-      {
-        type: "false",
-        content: letterAudioMap[14].label
+        content: letterAudioMap[18].label
       }
     ]
   },
@@ -81,15 +90,15 @@ var byanjonborno_4 = [
     answers: [
       {
         type: "false",
-        content: letterAudioMap[29].label
+        content: letterAudioMap[0].label
       },
       {
         type: "false",
-        content: letterAudioMap[12].label
+        content: letterAudioMap[30].label
       },
       {
         type: "false",
-        content: letterAudioMap[32].label
+        content: letterAudioMap[20].label
       },
       {
         type: "true",
@@ -102,20 +111,20 @@ var byanjonborno_4 = [
     questionAudio: letterAudioMap[2].audio,
     answers: [
       {
-        type: "true",
-        content: letterAudioMap[2].label
-      },
-      {
         type: "false",
-        content: letterAudioMap[13].label
+        content: letterAudioMap[0].label
       },
       {
         type: "false",
         content: letterAudioMap[1].label
       },
       {
+        type: "true",
+        content: letterAudioMap[2].label
+      },
+      {
         type: "false",
-        content: letterAudioMap[29].label
+        content: letterAudioMap[27].label
       }
     ]
   },
@@ -125,11 +134,7 @@ var byanjonborno_4 = [
     answers: [
       {
         type: "false",
-        content: letterAudioMap[17].label
-      },
-      {
-        type: "false",
-        content: letterAudioMap[22].label
+        content: letterAudioMap[38].label
       },
       {
         type: "true",
@@ -137,7 +142,11 @@ var byanjonborno_4 = [
       },
       {
         type: "false",
-        content: letterAudioMap[15].label
+        content: letterAudioMap[31].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[20].label
       }
     ]
   },
@@ -147,19 +156,19 @@ var byanjonborno_4 = [
     answers: [
       {
         type: "false",
-        content: letterAudioMap[3].label
+        content: letterAudioMap[22].label
       },
       {
         type: "false",
-        content: letterAudioMap[27].label
-      },
-      {
-        type: "false",
-        content: letterAudioMap[17].label
+        content: letterAudioMap[36].label
       },
       {
         type: "true",
         content: letterAudioMap[4].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[38].label
       }
     ]
   },
@@ -168,20 +177,20 @@ var byanjonborno_4 = [
     questionAudio: letterAudioMap[5].audio,
     answers: [
       {
-        type: "false",
-        content: letterAudioMap[3].label
-      },
-      {
         type: "true",
-        content: letterAudioMap[4].label
-      },
-      {
-        type: "false",
         content: letterAudioMap[5].label
       },
       {
         type: "false",
-        content: letterAudioMap[24].label
+        content: letterAudioMap[4].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[36].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[23].label
       }
     ]
   },
@@ -191,7 +200,11 @@ var byanjonborno_4 = [
     answers: [
       {
         type: "false",
-        content: letterAudioMap[32].label
+        content: letterAudioMap[25].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[38].label
       },
       {
         type: "true",
@@ -199,11 +212,73 @@ var byanjonborno_4 = [
       },
       {
         type: "false",
-        content: letterAudioMap[28].label
+        content: letterAudioMap[11].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[7].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[47].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[7].label
       },
       {
         type: "false",
-        content: letterAudioMap[17].label
+        content: letterAudioMap[14].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[19].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[8].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[48].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[6].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[8].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[9].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[15].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[9].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[8].label
       }
     ]
   }

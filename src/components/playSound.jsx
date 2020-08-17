@@ -7,7 +7,6 @@ const PlayButton = props => {
       className="next-btn btn"
       onClick={props.playQuestionSound}
     >
-      {console.log("Render NextButton JS called")}
       Click for the letter sound
     </button>
   );

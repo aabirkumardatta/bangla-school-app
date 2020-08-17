@@ -1,0 +1,485 @@
+[
+  {
+    questionAudio: letterAudioMap[0].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[2].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[0].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[11].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[1].audio,
+    answers: [
+      {
+        type: "true",
+        content: letterAudioMap[1].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[3].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[0].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[2].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[8].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[3].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[2].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[3].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[2].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[3].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[6].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[4].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[8].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[9].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[4].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[5].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[4].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[5].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[0].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[6].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[11].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[2].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[6].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[11].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[0].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[6].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[3].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[11].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[7].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[3].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[0].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[1].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[8].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[2].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[11].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[0].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[8].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[9].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[5].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[9].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[1].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[10].audio,
+    answers: [
+      {
+        type: "true",
+        content: letterAudioMap[10].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[7].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[2].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[4].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[12].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[13].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[14].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[16].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[13].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[17].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[18].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[13].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[19].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[14].audio,
+    answers: [
+      {
+        type: "true",
+        content: letterAudioMap[14].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[18].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[21].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[15].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[16].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[17].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[13].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[15].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[16].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[16].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[21].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[17].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[17].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[18].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[17].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[19].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[18].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[19].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[18].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[16].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[19].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[18].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[16].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[19].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[20].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[15].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[20].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[17].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[18].label
+      }
+    ]
+  },
+
+  {
+    questionAudio: letterAudioMap[21].audio,
+    answers: [
+      {
+        type: "false",
+        content: letterAudioMap[18].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[21].label
+      },
+      {
+        type: "true",
+        content: letterAudioMap[12].label
+      },
+      {
+        type: "false",
+        content: letterAudioMap[13].label
+      }
+    ]
+  }
+];

@@ -92,8 +92,6 @@ class Main extends Component {
   };
 
   setnextQuestion = () => {
-    this.setState({ nextButtonDisabled: true });
-    this.setState({ optionsDisabled: true });
     if (this.state.questionId < this.props.quizQuestions.length) {
       const counter = this.state.counter + 1;
       const questionId = this.state.questionId + 1;
@@ -125,22 +123,24 @@ class Main extends Component {
 
   renderQuiz = () => {
     return (
-      <Quiz
-        answer={this.state.answer}
-        answerOptions={this.state.answerOptions}
-        questionId={this.state.questionId}
-        question={this.state.question}
-        questionTotal={this.props.quizQuestions.length}
-        onAnswerSelected={this.handleAnswerSelected}
-        setnextQuestion={this.setnextQuestion}
-        playQuestionSound={this.playQuestionSound}
-        totalScore={this.state.totalScore}
-        isAudioQuiz={this.props.isAudioQuiz}
-        nextButtonDisabled={this.state.nextButtonDisabled}
-        optionsDisabled={this.state.optionsDisabled}
-        muteMusic={this.muteMusic}
-        unmuteMusic={this.unmuteMusic}
-      ></Quiz>
+      <div className="quiz-container">
+        <Quiz
+          answer={this.state.answer}
+          answerOptions={this.state.answerOptions}
+          questionId={this.state.questionId}
+          question={this.state.question}
+          questionTotal={this.props.quizQuestions.length}
+          onAnswerSelected={this.handleAnswerSelected}
+          setnextQuestion={this.setnextQuestion}
+          playQuestionSound={this.playQuestionSound}
+          totalScore={this.state.totalScore}
+          isAudioQuiz={this.props.isAudioQuiz}
+          nextButtonDisabled={this.state.nextButtonDisabled}
+          optionsDisabled={this.state.optionsDisabled}
+          muteMusic={this.muteMusic}
+          unmuteMusic={this.unmuteMusic}
+        ></Quiz>
+      </div>
     );
   };
 
@@ -149,6 +149,7 @@ class Main extends Component {
       <Result
         quizResult={this.state.totalScore}
         questionTotal={this.props.quizQuestions.length}
+        quizQuestions={this.props.quizQuestions}
       ></Result>
     );
   };
@@ -156,11 +157,8 @@ class Main extends Component {
   render() {
     return (
       <div>
-        {console.log("Render App JS called")}
         <h1 className="quiz-title">{this.state.heading}</h1>
-        <div className="quiz-container">
-          {this.state.result ? this.renderResult() : this.renderQuiz()}
-        </div>
+        <div>{this.state.result ? this.renderResult() : this.renderQuiz()}</div>
       </div>
     );
   }
