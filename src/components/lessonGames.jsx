@@ -1,10 +1,23 @@
 import React, { Component } from "react";
-import lessonsButtonImage from "../assets/lessonsButtonImage.png";
-import gamesButtonImage from "../assets/gamesButtonImage.png";
+import banglaButtonImage from "../assets/banglaButtonImage.png";
+import englishButtonImage from "../assets/englishButtonImage.png";
+import lessonsButtonEnglishImage from "../assets/lessonsButtonEnglishImage.png";
+import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
+import gamesButtonEnglishImage from "../assets/gamesButtonEnglishImage.png";
+import gamesButtonBengaliImage from "../assets/gamesButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
 import { Link } from "react-router-dom";
 
 class LessonGames extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      languageOptionButton: banglaButtonImage,
+      lessonButton: lessonsButtonEnglishImage,
+      gamesButton: gamesButtonEnglishImage
+    };
+  }
+
   componentDidMount() {
     Array.from(document.body.classList).forEach(eachClass => {
       document.body.classList.remove(eachClass);
@@ -12,16 +25,40 @@ class LessonGames extends Component {
     document.body.classList.add("lessongamesbgimage");
   }
 
+  handleLanguageOptionButtonClick = () => {
+    if (this.state.languageOptionButton === banglaButtonImage) {
+      this.setState({
+        languageOptionButton: englishButtonImage,
+        lessonButton: lessonsButtonBengaliImage,
+        gamesButton: gamesButtonBengaliImage
+      });
+    } else {
+      this.setState({
+        languageOptionButton: banglaButtonImage,
+        lessonButton: lessonsButtonEnglishImage,
+        gamesButton: gamesButtonEnglishImage
+      });
+    }
+  };
+
   render() {
     return (
       <div>
         <div>
-          <Link to="/lessonshomepage">
+          <div>
             <img
-              src={lessonsButtonImage}
+              src={this.state.languageOptionButton}
+              onClick={this.handleLanguageOptionButtonClick}
+              alt="could not be loaded"
+              className="languageOptionButton"
+            ></img>
+          </div>
+          <Link to="lessongames/lessonshomepage">
+            <img
+              src={this.state.lessonButton}
               alt="could not be loaded"
               style={{
-                marginTop: "13%",
+                marginTop: "5%",
                 marginLeft: "38%",
                 width: "30%",
                 height: "30%"
@@ -31,7 +68,7 @@ class LessonGames extends Component {
 
           <Link to="/gameshomepage">
             <img
-              src={gamesButtonImage}
+              src={this.state.gamesButton}
               alt="could not be loaded"
               style={{
                 marginTop: "1%",

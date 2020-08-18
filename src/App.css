@@ -24,6 +24,12 @@
   background-size: cover;
 }
 
+.plaingreenbackgroundbgimage {
+  background: url(./assets/BackgroundImages/plainGreenBackground.jpg) no-repeat
+    center fixed;
+  background-size: cover;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -154,7 +160,13 @@
   margin-left: 35%;
 }
 
-.home-button:hover {
+.languageOptionButton {
+  margin-top: 0.2%;
+  margin-left: 2%;
+  width: 8%;
+  height: 8%;
+}
+
+.languageOptionButton:hover {
   cursor: pointer;
-  background-color: whitesmoke;
 }
