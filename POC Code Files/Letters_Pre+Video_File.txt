@@ -1,0 +1,89 @@
+import React, { Component } from "react";
+import "./App.css";
+import VideoPlayer from "./components/videoPlayer";
+import intro_video_green from "./assets/intro_video_green.mp4";
+import kaw_video from "./assets/byanjonborno_1/kaw_video.mp4";
+import khaw_video from "./assets/byanjonborno_1/khaw_video.mp4";
+import gaw_video from "./assets/byanjonborno_1/gaw_video.mp4";
+import ghaw_video from "./assets/byanjonborno_1/ghaw_video.mp4";
+import uyow_video from "./assets/byanjonborno_1/uyow_video.mp4";
+import bgimage from "./assets/BackgroundImages/mojaru-2-1.jpg";
+import ImageMapper from "react-image-mapper";
+
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      // heading: "",
+      // introVideo: true,
+      // quizQuestions: null,
+      // displayByanjonbornoHomePage: false
+      linkToVideo: intro_video_green
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        <VideoPlayer linkToVideo={this.state.linkToVideo} />
+        <div style={{ marginTop: "7%", marginLeft: "87%" }}>
+          <button
+            className="btn-video-tiles"
+            style={{ padding: "9px" }}
+            onClick={() => {
+              this.setState({ linkToVideo: kaw_video });
+            }}
+          >
+            ক
+          </button>
+        </div>
+        <div style={{ marginTop: "2%", marginLeft: "87%" }}>
+          <button
+            className="btn-video-tiles"
+            style={{ padding: "9px" }}
+            onClick={() => {
+              this.setState({ linkToVideo: khaw_video });
+            }}
+          >
+            খ
+          </button>
+        </div>
+        <div style={{ marginTop: "2%", marginLeft: "87%" }}>
+          <button
+            className="btn-video-tiles"
+            style={{ padding: "9px" }}
+            onClick={() => {
+              this.setState({ linkToVideo: gaw_video });
+            }}
+          >
+            গ
+          </button>
+        </div>
+        <div style={{ marginTop: "2%", marginLeft: "87%" }}>
+          <button
+            className="btn-video-tiles"
+            style={{ padding: "9px" }}
+            onClick={() => {
+              this.setState({ linkToVideo: ghaw_video });
+            }}
+          >
+            ঘ
+          </button>
+        </div>
+        <div style={{ marginTop: "2%", marginLeft: "87%" }}>
+          <button
+            className="btn-video-tiles"
+            style={{ padding: "9px" }}
+            onClick={() => {
+              this.setState({ linkToVideo: uyow_video });
+            }}
+          >
+            ঙ
+          </button>
+        </div>
+      </div>
+    );
+  }
+}
+
+export default App;

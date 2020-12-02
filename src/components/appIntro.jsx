@@ -11,16 +11,21 @@ class AppHomePage extends Component {
   }
   render() {
     return (
-      <div>
+      <div
+        style={{
+          position: "fixed",
+          bottom: "14vh",
+          right: "14vh"
+        }}
+      >
         <Link to="/lessongames">
           <img
             src={nextButtonImage}
             alt="could not be loaded"
             style={{
-              marginTop: "39%",
-              marginLeft: "92%",
-              width: "120px",
-              height: "110px"
+              position: "fixed",
+              width: "12vh",
+              height: "12vh"
             }}
           ></img>
         </Link>

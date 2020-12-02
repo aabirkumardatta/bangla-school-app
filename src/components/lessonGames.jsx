@@ -44,53 +44,65 @@ class LessonGames extends Component {
   render() {
     return (
       <div>
-        <div>
-          <div>
-            <img
-              src={this.state.languageOptionButton}
-              onClick={this.handleLanguageOptionButtonClick}
-              alt="could not be loaded"
-              className="languageOptionButton"
-            ></img>
-          </div>
-          <Link to="lessongames/lessonshomepage">
-            <img
-              src={this.state.lessonButton}
-              alt="could not be loaded"
-              style={{
-                marginTop: "5%",
-                marginLeft: "38%",
-                width: "30%",
-                height: "30%"
-              }}
-            ></img>
-          </Link>
-
-          <Link to="/gameshomepage">
-            <img
-              src={this.state.gamesButton}
-              alt="could not be loaded"
-              style={{
-                marginTop: "1%",
-                marginLeft: "38%",
-                width: "30%",
-                height: "30%"
-              }}
-            ></img>
-          </Link>
+        <div style={{ marginLeft: "-1%" }}>
+          <img
+            style={{
+              width: "12vh",
+              height: "12vh"
+            }}
+            src={this.state.languageOptionButton}
+            onClick={this.handleLanguageOptionButtonClick}
+            alt="could not be loaded"
+            className="languageOptionButton"
+          ></img>
         </div>
-        <div className="btn-grid">
-          <Link to="/">
-            <img
-              src={previousButtonImage}
-              alt="could not be loaded"
-              style={{
-                marginLeft: "3%",
-                width: "120px",
-                height: "109px"
-              }}
-            ></img>
-          </Link>
+        <div style={{ marginLeft: "35%" }}>
+          <div style={{ marginTop: "1%" }}>
+            <Link to="/lessonshomepage">
+              <img
+                src={this.state.lessonButton}
+                alt="could not be loaded"
+                style={{
+                  width: "60vh",
+                  height: "20vh"
+                }}
+              ></img>
+            </Link>
+          </div>
+
+          <div style={{ marginTop: "1%" }}>
+            <Link to="/gameshomepage">
+              <img
+                src={this.state.gamesButton}
+                alt="could not be loaded"
+                style={{
+                  width: "60vh",
+                  height: "20vh"
+                }}
+              ></img>
+            </Link>
+          </div>
+        </div>
+        <div
+          style={{
+            position: "fixed",
+            bottom: "14vh",
+            marginLeft: "1%"
+          }}
+        >
+          <span>
+            <Link to="/">
+              <img
+                src={previousButtonImage}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "12vh",
+                  height: "12vh"
+                }}
+              ></img>
+            </Link>
+          </span>
         </div>
       </div>
     );

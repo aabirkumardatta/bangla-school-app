@@ -28,6 +28,11 @@ class Main extends Component {
   }
 
   componentDidMount() {
+    Array.from(document.body.classList).forEach(eachClass => {
+      document.body.classList.remove(eachClass);
+    });
+    document.body.classList.add("plaingreenbackgroundbgimage");
+
     this.state.quizBgm.volume(0.01);
     this.state.quizBgm.play();
     const shuffledQuestions = this.props.quizQuestions.sort(
@@ -39,6 +44,10 @@ class Main extends Component {
       answerOptions: shuffledQuestions[0].answers,
       questionAudio: shuffledQuestions[0].questionAudio
     });
+  }
+
+  componentWillUnmount() {
+    this.state.quizBgm.unload();
   }
 
   handleAnswerSelected = event => {
@@ -93,16 +102,17 @@ class Main extends Component {
 
   setnextQuestion = () => {
     if (this.state.questionId < this.props.quizQuestions.length) {
-      const counter = this.state.counter + 1;
-      const questionId = this.state.questionId + 1;
-      this.setState({
-        counter: counter,
-        questionId: questionId,
-        questionAudio: this.props.quizQuestions[counter].questionAudio,
-        question: this.props.quizQuestions[counter].question,
-        answerOptions: this.props.quizQuestions[counter].answers,
-        answer: ""
-      });
+      this.setResults();
+      // const counter = this.state.counter + 1;
+      // const questionId = this.state.questionId + 1;
+      // this.setState({
+      //   counter: counter,
+      //   questionId: questionId,
+      //   questionAudio: this.props.quizQuestions[counter].questionAudio,
+      //   question: this.props.quizQuestions[counter].question,
+      //   answerOptions: this.props.quizQuestions[counter].answers,
+      //   answer: ""
+      // });
     } else {
       this.setResults();
     }

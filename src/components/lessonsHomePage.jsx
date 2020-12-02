@@ -34,11 +34,13 @@ class LessonsHomePage extends Component {
     Array.from(document.body.classList).forEach(eachClass => {
       document.body.classList.remove(eachClass);
     });
-    document.body.classList.add("plaingreenbackgroundbgimage");
+    document.body.classList.add("lessonsenglishbgimage");
   }
 
   handleLanguageOptionButtonClick = () => {
     if (this.state.languageOptionButton === banglaButtonImage) {
+      document.body.classList.remove("lessonsenglishbgimage");
+      document.body.classList.add("lessonsbengalibgimage");
       this.setState({
         languageOptionButton: englishButtonImage,
         lessonButton: lessonsButtonBengaliImage,
@@ -49,6 +51,8 @@ class LessonsHomePage extends Component {
         writingButton: writingButtonBengaliImage
       });
     } else {
+      document.body.classList.remove("lessonsbengalibgimage");
+      document.body.classList.add("lessonsenglishbgimage");
       this.setState({
         languageOptionButton: banglaButtonImage,
         lessonButton: lessonsButtonEnglishImage,
@@ -64,8 +68,12 @@ class LessonsHomePage extends Component {
   render() {
     return (
       <div>
-        <div>
+        <div style={{ marginLeft: "-1%" }}>
           <img
+            style={{
+              width: "12vh",
+              height: "12vh"
+            }}
             src={this.state.languageOptionButton}
             onClick={this.handleLanguageOptionButtonClick}
             alt="could not be loaded"
@@ -74,96 +82,96 @@ class LessonsHomePage extends Component {
         </div>
 
         <div>
-          <img
-            src={this.state.lessonButton}
-            alt="could not be loaded"
-            style={{
-              marginTop: "-7%",
-              marginLeft: "30%",
-              width: "30%",
-              height: "30%"
-            }}
-          ></img>
-        </div>
-        <div className="btn-grid">
-          <Link to="/">
-            <img
-              src={this.state.readingButton}
-              alt="could not be loaded"
-              style={{
-                marginTop: "-2%",
-                marginLeft: "50%",
-                width: "300px",
-                height: "150px"
-              }}
-            ></img>
-          </Link>
+          <div style={{ marginTop: "6%", marginLeft: "30%" }}>
+            <span>
+              <Link to="/readinghomepage">
+                <img
+                  src={this.state.readingButton}
+                  alt="could not be loaded"
+                  style={{
+                    width: "35vh",
+                    height: "20vh"
+                  }}
+                ></img>
+              </Link>
+            </span>
+            <span>
+              <Link to="/">
+                <img
+                  src={this.state.writingButton}
+                  alt="could not be loaded"
+                  style={{
+                    marginLeft: "13%",
+                    width: "35vh",
+                    height: "25vh"
+                  }}
+                ></img>
+              </Link>
+            </span>
+          </div>
 
-          <Link to="/">
-            <img
-              src={this.state.writingButton}
-              alt="could not be loaded"
-              style={{
-                marginTop: "-10%",
-                marginLeft: "5%",
-                width: "300px",
-                height: "200px"
-              }}
-            ></img>
-          </Link>
+          <div style={{ marginTop: "-1%", marginLeft: "14%" }}>
+            <span>
+              <Link to="/">
+                <img
+                  src={this.state.grammarButton}
+                  alt="could not be loaded"
+                  style={{
+                    width: "45vh",
+                    height: "45vh"
+                  }}
+                ></img>
+              </Link>
+            </span>
+            <span>
+              <Link to="/">
+                <img
+                  src={this.state.vocabularyButton}
+                  alt="could not be loaded"
+                  style={{
+                    marginLeft: "25%",
+                    width: "45vh",
+                    height: "45vh"
+                  }}
+                ></img>
+              </Link>
+            </span>
+          </div>
 
-          <Link to="/">
-            <img
-              src={this.state.grammarButton}
-              alt="could not be loaded"
-              style={{
-                marginLeft: "25%",
-                width: "300px",
-                height: "250px"
-              }}
-            ></img>
-          </Link>
-
-          <Link to="/">
-            <img
-              src={this.state.vocabularyButton}
-              alt="could not be loaded"
-              style={{
-                marginTop: "-10%",
-                marginLeft: "35%",
-                width: "300px",
-                height: "300px"
-              }}
-            ></img>
-          </Link>
+          <div style={{ marginTop: "-15%" }}>
+            <Link to="/">
+              <img
+                src={this.state.pronunciationButton}
+                alt="could not be loaded"
+                style={{
+                  marginLeft: "38%",
+                  width: "40vh",
+                  height: "30vh"
+                }}
+              ></img>
+            </Link>
+          </div>
         </div>
-        <div>
-          <Link to="/">
-            <img
-              src={this.state.pronunciationButton}
-              alt="could not be loaded"
-              style={{
-                marginTop: "-14%",
-                marginLeft: "40%",
-                width: "300px",
-                height: "250px"
-              }}
-            ></img>
-          </Link>
-        </div>
-        <div>
-          <Link to="/lessongames">
-            <img
-              src={previousButtonImage}
-              alt="could not be loaded"
-              style={{
-                marginTop: "-5%",
-                marginLeft: "2%",
-                width: "120px",
-                height: "110px"
-              }}
-            ></img>
-          </Link>
+        <div
+          style={{
+            position: "fixed",
+            bottom: "14vh",
+            marginLeft: "1%"
+          }}
+        >
+          <span>
+            <Link to="/lessongames">
+              <img
+                src={previousButtonImage}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "12vh",
+                  height: "12vh"
+                }}
+              ></img>
+            </Link>
+          </span>
         </div>
       </div>
     );

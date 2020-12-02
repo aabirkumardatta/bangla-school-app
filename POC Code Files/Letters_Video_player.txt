@@ -1,0 +1,26 @@
+import React, { Component } from "react";
+import ReactPlayer from "react-player";
+import "./videoPlayer.css";
+
+class VideoPlayer extends Component {
+  render() {
+    return (
+      <div key={this.props.linkToVideo}>
+        {console.log("I am in")}
+        {
+          <ReactPlayer
+            autoPlay={true}
+            playing={true}
+            url={this.props.linkToVideo}
+            width="51%"
+            height="82%"
+            className="react-player"
+            loop={false}
+          />
+        }
+      </div>
+    );
+  }
+}
+
+export default VideoPlayer;
