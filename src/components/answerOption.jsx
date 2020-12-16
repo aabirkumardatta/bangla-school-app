@@ -4,10 +4,10 @@ import React from "react";
 
 const AnswerOption = props => {
   return (
-    <div className="btn-grid">
+    <div className="quiz-button-grid">
       {props.optionList.answerOptions.map(option => (
         <button
-          className="btn blur"
+          className="quiz-button blur"
           disabled={props.optionList.optionsDisabled}
           key={option.content}
           onClick={props.optionList.onAnswerSelected}

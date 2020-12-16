@@ -5,6 +5,8 @@ import { Howl } from "howler";
 import correctAnswer from "../assets/correctAnswer.mp3";
 import wrongAnswer from "../assets/wrongAnswer.mp3";
 import quizBgm from "../assets/quizBgm.mp3";
+import homebuttonImage from "../assets/homeButtonImage.png";
+import { Link } from "react-router-dom";
 
 class Main extends Component {
   constructor(props) {
@@ -101,18 +103,18 @@ class Main extends Component {
   };
 
   setnextQuestion = () => {
+    this.setState({ optionsDisabled: true, nextButtonDisabled: true });
     if (this.state.questionId < this.props.quizQuestions.length) {
-      this.setResults();
-      // const counter = this.state.counter + 1;
-      // const questionId = this.state.questionId + 1;
-      // this.setState({
-      //   counter: counter,
-      //   questionId: questionId,
-      //   questionAudio: this.props.quizQuestions[counter].questionAudio,
-      //   question: this.props.quizQuestions[counter].question,
-      //   answerOptions: this.props.quizQuestions[counter].answers,
-      //   answer: ""
-      // });
+      const counter = this.state.counter + 1;
+      const questionId = this.state.questionId + 1;
+      this.setState({
+        counter: counter,
+        questionId: questionId,
+        questionAudio: this.props.quizQuestions[counter].questionAudio,
+        question: this.props.quizQuestions[counter].question,
+        answerOptions: this.props.quizQuestions[counter].answers,
+        answer: ""
+      });
     } else {
       this.setResults();
     }
@@ -133,42 +135,67 @@ class Main extends Component {
 
   renderQuiz = () => {
     return (
-      <div className="quiz-container">
-        <Quiz
-          answer={this.state.answer}
-          answerOptions={this.state.answerOptions}
-          questionId={this.state.questionId}
-          question={this.state.question}
-          questionTotal={this.props.quizQuestions.length}
-          onAnswerSelected={this.handleAnswerSelected}
-          setnextQuestion={this.setnextQuestion}
-          playQuestionSound={this.playQuestionSound}
-          totalScore={this.state.totalScore}
-          isAudioQuiz={this.props.isAudioQuiz}
-          nextButtonDisabled={this.state.nextButtonDisabled}
-          optionsDisabled={this.state.optionsDisabled}
-          muteMusic={this.muteMusic}
-          unmuteMusic={this.unmuteMusic}
-        ></Quiz>
+      <div>
+        <h1 className="quiz-title">{this.state.heading}</h1>
+        <div className="quiz-container">
+          <Quiz
+            answer={this.state.answer}
+            answerOptions={this.state.answerOptions}
+            questionId={this.state.questionId}
+            question={this.state.question}
+            questionTotal={this.props.quizQuestions.length}
+            onAnswerSelected={this.handleAnswerSelected}
+            setnextQuestion={this.setnextQuestion}
+            playQuestionSound={this.playQuestionSound}
+            totalScore={this.state.totalScore}
+            isAudioQuiz={this.props.isAudioQuiz}
+            nextButtonDisabled={this.state.nextButtonDisabled}
+            optionsDisabled={this.state.optionsDisabled}
+            muteMusic={this.muteMusic}
+            unmuteMusic={this.unmuteMusic}
+          ></Quiz>
+        </div>
       </div>
     );
   };
 
   renderResult = () => {
     return (
-      <Result
-        quizResult={this.state.totalScore}
-        questionTotal={this.props.quizQuestions.length}
-        quizQuestions={this.props.quizQuestions}
-      ></Result>
+      <div>
+        <h1 className="result-title">{this.props.heading}</h1>
+        <Result
+          quizResult={this.state.totalScore}
+          questionTotal={this.props.quizQuestions.length}
+          quizQuestions={this.props.quizQuestions}
+        ></Result>
+      </div>
     );
   };
 
   render() {
     return (
-      <div>
-        <h1 className="quiz-title">{this.state.heading}</h1>
-        <div>{this.state.result ? this.renderResult() : this.renderQuiz()}</div>
+      <div style={{ overflow: "hidden" }}>
+        <div
+          style={{
+            position: "fixed",
+            top: "0.5vh",
+            marginLeft: "1%"
+          }}
+        >
+          <Link to="/letterhomepage">
+            <img
+              src={homebuttonImage}
+              alt="could not be loaded"
+              style={{
+                position: "fixed",
+                width: "12vh",
+                height: "12vh"
+              }}
+            ></img>
+          </Link>
+        </div>
+        {/* <div>{this.state.result ? this.renderResult() : this.renderQuiz()}</div> */}
+        <div>{this.renderResult()}</div>
       </div>
     );
   }

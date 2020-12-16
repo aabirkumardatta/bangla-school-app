@@ -2,14 +2,14 @@ import React from "react";
 
 const NextButton = props => {
   return (
-    <input
-      type="submit"
-      value="Proceed after answering"
+    <button
       className="next-btn btn"
       onClick={props.setnextQuestion}
       disabled={props.nextButtonDisabled}
-      style={{ float: "bottom" }}
-    ></input>
+      style={{ marginLeft: "2%", float: "bottom" }}
+    >
+      Proceed after answering
+    </button>
   );
 };
 

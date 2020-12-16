@@ -7,31 +7,19 @@ const QuestionCountAndTotalScore = props => {
     <React.Fragment>
       <div className="question-count">
         Question <span>{props.counter}</span> of <span>{props.total}</span>
-        <button
-          className="next-btn btn"
-          onClick={props.muteMusic}
-          style={{
-            paddingBottom: "10px",
-            marginLeft: "40px",
-            height: "45.4px"
-          }}
-        >
-          Mute Music
+        <button className="mute-btn" onClick={props.muteMusic}>
+          <span role="img" aria-label="muteEmoji">
+            🔇
+          </span>
         </button>
-        <button
-          className="next-btn btn"
-          onClick={props.unmuteMusic}
-          style={{
-            paddingBottom: "10px",
-            marginLeft: "40px",
-            height: "45.4px"
-          }}
-        >
-          Unmute Music
+        <button className="mute-btn" onClick={props.unmuteMusic}>
+          <span role="img" aria-label="unmuteEmoji">
+            🔊
+          </span>
         </button>
-        <div style={{ float: "right" }}>
+        <span style={{ float: "right" }}>
           Total Score: <span>{props.totalScore}</span>
-        </div>
+        </span>
       </div>
     </React.Fragment>
   );

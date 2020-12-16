@@ -1,22 +1,11 @@
 //a presentational component to display the result
 
 import React, { Component } from "react";
-import goodJobCup from "../assets/goodJobGif.gif";
-import smileyGreatJob from "../assets/smileyGoodJob.gif";
-import cupLiftGif from "../assets/cupLiftGif.gif";
-import anAttemptWasMade from "../assets/anAttemptWasMade.gif";
-import cryingEmojiGif from "../assets/cryingEmojiGif.jpeg";
-import keepCalmAndTryAgain from "../assets/keepCalmAndTryAgain.jpg";
-import tryAgainFlashyGif from "../assets/tryAgainFlashyGif.gif";
-import goodSmiley from "../assets/goodSmiley.gif";
-import goodJobCracker from "../assets/goodJobCracker.gif";
 import goodJobClap from "../assets/goodJobClap.gif";
-import superStar from "../assets/superStar.png";
-import greatJobWritten from "../assets/greatJobWritten.gif";
+import smileyGreatJob from "../assets/smileyGoodJob.gif";
+import bestCupGif from "../assets/bestCupGif.gif";
 import resultBgm from "../assets/resultBgm.mp3";
-import homebuttonImage from "../assets/homeButtonImage.png";
 import { Howl, Howler } from "howler";
-import { Link } from "react-router-dom";
 
 class Result extends Component {
   constructor() {
@@ -37,24 +26,15 @@ class Result extends Component {
 
     if (resultPercentage <= 50) {
       this.setState({
-        image1: cryingEmojiGif,
-        image2: tryAgainFlashyGif,
-        image3: anAttemptWasMade,
-        image4: keepCalmAndTryAgain
+        image: goodJobClap
       });
     } else if (resultPercentage > 50 && resultPercentage <= 80) {
       this.setState({
-        image1: goodSmiley,
-        image2: goodJobCup,
-        image3: goodJobCracker,
-        image4: goodJobClap
+        image: smileyGreatJob
       });
     } else {
       this.setState({
-        image1: smileyGreatJob,
-        image2: cupLiftGif,
-        image3: greatJobWritten,
-        image4: superStar
+        image: bestCupGif
       });
     }
   }
@@ -65,55 +45,29 @@ class Result extends Component {
 
   showResultPage = () => {
     return (
-      <div className="quiz-container" style={{ marginTop: "2.5%" }}>
-        <div className="result">
-          <div className="result-attribute">
-            Your final score: {this.props.quizResult}
+      <div className="quiz-container" style={{ marginTop: "-0.4%" }}>
+        <div>
+          <div
+            style={{
+              marginTop: "-1%",
+              marginBottom: "2%",
+              marginLeft: "10%"
+            }}
+          >
             <img
-              src={this.state.image1}
+              src={this.state.image}
               alt="could not be loaded"
               style={{
-                float: "right",
-                width: "470px",
-                height: "150px",
-                marginLeft: "5px",
-                paddingLeft: "8px"
+                width: "90%",
+                height: "42vh"
               }}
             ></img>
           </div>
           <div className="result-attribute">
+            Your final score: {this.props.quizResult}
+          </div>
+          <div className="result-attribute">
             Total questions: {this.props.questionTotal}
-          </div>
-          <div>
-            <img
-              src={this.state.image2}
-              alt="could not be loaded"
-              style={{ width: "260px", height: "250px" }}
-            ></img>
-            <img
-              src={this.state.image3}
-              alt="could not be loaded"
-              style={{ width: "260px", height: "250px", marginLeft: "20px" }}
-            ></img>
-            <img
-              src={this.state.image4}
-              alt="could not be loaded"
-              style={{ width: "260px", height: "250px", marginLeft: "20px" }}
-            ></img>
-          </div>
-          <div>
-            <Link to="/letterhomepage">
-              <img
-                src={homebuttonImage}
-                alt="could not be loaded"
-                style={{
-                  marginTop: "4%",
-                  marginLeft: "45%",
-                  width: "120px",
-                  height: "110px"
-                }}
-              ></img>
-            </Link>
           </div>
         </div>
       </div>
