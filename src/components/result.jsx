@@ -12,10 +12,7 @@ class Result extends Component {
     super();
     this.state = {
       resultBgm: new Howl({ src: [resultBgm], html5: true, loop: true }),
-      image1: "",
-      image2: "",
-      image3: "",
-      image4: ""
+      image: ""
     };
   }
 
@@ -51,15 +48,15 @@ class Result extends Component {
             style={{
               marginTop: "-1%",
               marginBottom: "2%",
-              marginLeft: "10%"
+              marginLeft: "35%"
             }}
           >
             <img
               src={this.state.image}
               alt="could not be loaded"
               style={{
-                width: "90%",
-                height: "42vh"
+                width: "55%",
+                minHeight: "55%"
               }}
             ></img>
           </div>

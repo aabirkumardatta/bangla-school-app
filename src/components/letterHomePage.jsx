@@ -139,7 +139,7 @@ class LetterHomePage extends Component {
               </Link>
             </span>
             <span>
-              <Link to="/byanonetofive">
+              <Link to="/byanjononetofive">
                 <img
                   src={byanjonbornoLessonOneImageButton}
                   alt="could not be loaded"
@@ -198,7 +198,7 @@ class LetterHomePage extends Component {
               </Link>
             </span>
             <span>
-              <Link to="/1">
+              <Link to="/byanjoneleventofifteen">
                 <img
                   src={byanjonbornoLessonTwoImageButton}
                   alt="could not be loaded"
@@ -256,7 +256,7 @@ class LetterHomePage extends Component {
               ></img>
             </span>
             <span>
-              <Link to="/1">
+              <Link to="/byanjontwetonetotwetfour">
                 <img
                   src={byanjonbornoLessonThreeImageButton}
                   alt="could not be loaded"
@@ -314,7 +314,7 @@ class LetterHomePage extends Component {
               ></img>
             </span>
             <span>
-              <Link to="/1">
+              <Link to="/byanjontwetninetothrtthree">
                 <img
                   src={byanjonbornoLessonFourImageButton}
                   alt="could not be loaded"

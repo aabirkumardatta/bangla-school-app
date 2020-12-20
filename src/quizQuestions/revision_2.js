@@ -84,7 +84,7 @@ var revision_2 = [
       },
       {
         type: "false",
-        content: letterAudioMap[11].label
+        content: letterAudioMap[3].label
       }
     ]
   },
@@ -204,7 +204,7 @@ var revision_2 = [
     answers: [
       {
         type: "false",
-        content: letterAudioMap[11].label
+        content: letterAudioMap[1].label
       },
       {
         type: "false",
@@ -217,28 +217,6 @@ var revision_2 = [
       {
         type: "false",
         content: letterAudioMap[7].label
-      }
-    ]
-  },
-
-  {
-    questionAudio: letterAudioMap[11].audio,
-    answers: [
-      {
-        type: "false",
-        content: letterAudioMap[0].label
-      },
-      {
-        type: "false",
-        content: letterAudioMap[6].label
-      },
-      {
-        type: "false",
-        content: letterAudioMap[3].label
-      },
-      {
-        type: "true",
-        content: letterAudioMap[11].label
       }
     ]
   },
@@ -274,7 +252,7 @@ var revision_2 = [
       },
       {
         type: "false",
-        content: letterAudioMap[11].label
+        content: letterAudioMap[5].label
       },
       {
         type: "false",

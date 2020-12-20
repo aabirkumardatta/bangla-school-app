@@ -145,7 +145,8 @@ html {
   margin: 2%;
   font-size: 5vh;
   text-align: center;
-  color: blue;
+  color: rgba(39, 144, 170);
+  font-family: kalpurush;
 }
 
 .quiz-container {
@@ -168,7 +169,7 @@ html {
 
 .question-count {
   font-size: 3vh;
-  color: blue;
+  color: rgba(39, 144, 170);
   border-bottom: 1px solid #ccc;
   margin: 0;
   padding-bottom: 10px;
@@ -201,6 +202,7 @@ html {
   font-size: 5vh;
   height: 100%;
   width: 100%;
+  font-family: kalpurush;
 }
 
 .quiz-button.blur {
@@ -220,7 +222,7 @@ html {
   font-size: 12vh;
   text-align: center;
   font-weight: bold;
-  color: blue;
+  color: rgba(39, 144, 170);
   margin: 0;
   font-family: "Tangerine", serif;
   padding-bottom: 10px;
@@ -230,7 +232,8 @@ html {
   margin-top: 0.1%;
   font-size: 5vh;
   text-align: center;
-  color: blue;
+  color: rgba(39, 144, 170);
+  font-family: kalpurush;
 }
 
 .result {

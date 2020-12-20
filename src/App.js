@@ -1,8 +1,6 @@
 import React, { Component } from "react";
 import "./App.css";
 import { Route } from "react-router-dom";
-import ByanjonbornoLessonOneToFive from "./components/byanjonbornoLessonOneToFive";
-import ByanjonbornoLessonSixToTen from "./components/byanjonbornoLessonSixToTen";
 import AppHomePage from "./components/appIntro";
 import LessonGames from "./components/lessonGames";
 import LessonsHomePage from "./components/lessonsHomePage";
@@ -19,8 +17,19 @@ import revision_2 from "./quizQuestions/revision_2";
 import revision_3 from "./quizQuestions/revision_3";
 import revision_4 from "./quizQuestions/revision_4";
 import RevisionQuizHomePage from "./components/revisionQuizHomePage";
-import SworobornoLessonOneToFive from "./components/sworobornoLessonOneToFive";
-import SworobornoLessonSixToEleven from "./components/sworobornoLessonSixToEleven";
+import FourButtonVideoLesson from "./components/fourButtonVideoLesson";
+import FiveButtonVideoLesson from "./components/fiveButtonVideoLesson";
+import SixButtonVideoLesson from "./components/sixButtonVideoLesson";
+import sworoLettersOneToFive from "./assets/LetterLessonAssets/sworoLettersOneToFive";
+import sworoLettersSixToEleven from "./assets/LetterLessonAssets/sworoLettersSixToEleven";
+import byanjonLettersOneToFive from "./assets/LetterLessonAssets/byanjonLettersOneToFive";
+import byanjonLettersSixToTen from "./assets/LetterLessonAssets/byanjonLettersSixToTen";
+import byanjonLettersElevenToFifteen from "./assets/LetterLessonAssets/byanjonLettersElevenToFifteen";
+import byanjonLettersSixteenToTwenty from "./assets/LetterLessonAssets/byanjonLettersSixteenToTwenty";
+import byanjonLettersTwetOneToTwetFour from "./assets/LetterLessonAssets/byanjonLettersTwetOneToTwetFour";
+import byanjonLettersTwetFiveToTwetEight from "./assets/LetterLessonAssets/byanjonLettersTwetFiveToTwetEight";
+import byanjonLettersTwetNineToThrtThree from "./assets/LetterLessonAssets/byanjonLettersTwetNineToThrtThree";
+import byanjonLettersThrtFourToThrtEight from "./assets/LetterLessonAssets/byanjonLettersThrtFourToThrtEight";
 
 class App extends Component {
   render() {
@@ -32,19 +41,9 @@ class App extends Component {
         <Route path="/readinghomepage" exact component={ReadingHomePage} />
         <Route path="/letterhomepage" exact component={LetterHomePage} />
         <Route
-          path="/byanonetofive"
-          exact
-          component={ByanjonbornoLessonOneToFive}
-        />
-        <Route
-          path="/byansixtoten"
-          exact
-          component={ByanjonbornoLessonSixToTen}
-        />
-        <Route
           path="/shawrobawrnoquiz"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={sworoBornoAudioQuiz}
               isAudioQuiz={true}
@@ -55,7 +54,7 @@ class App extends Component {
         <Route
           path="/byanjonbawrnoquiz1"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={byanjonborno_1}
               isAudioQuiz={true}
@@ -66,7 +65,7 @@ class App extends Component {
         <Route
           path="/byanjonbawrnoquiz2"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={byanjonborno_2}
               isAudioQuiz={true}
@@ -77,7 +76,7 @@ class App extends Component {
         <Route
           path="/byanjonbawrnoquiz3"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={byanjonborno_3}
               isAudioQuiz={true}
@@ -88,7 +87,7 @@ class App extends Component {
         <Route
           path="/byanjonbawrnoquiz4"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={byanjonborno_4}
               isAudioQuiz={true}
@@ -110,7 +109,7 @@ class App extends Component {
         <Route
           path="/revisionquiz1"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={revision_1}
               isAudioQuiz={true}
@@ -132,7 +131,7 @@ class App extends Component {
         <Route
           path="/revisionquiz2"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={revision_2}
               isAudioQuiz={true}
@@ -154,7 +153,7 @@ class App extends Component {
         <Route
           path="/revisionquiz3"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={revision_3}
               isAudioQuiz={true}
@@ -176,7 +175,7 @@ class App extends Component {
         <Route
           path="/revisionquiz4"
           exact
-          render={props => (
+          render={() => (
             <Main
               quizQuestions={revision_4}
               isAudioQuiz={true}
@@ -187,12 +186,92 @@ class App extends Component {
         <Route
           path="/sworoonetofive"
           exact
-          component={SworobornoLessonOneToFive}
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={sworoLettersOneToFive}
+            ></FiveButtonVideoLesson>
+          )}
         />
         <Route
           path="/sworosixtoeleven"
           exact
-          component={SworobornoLessonSixToEleven}
+          render={() => (
+            <SixButtonVideoLesson
+              letterSet={sworoLettersSixToEleven}
+            ></SixButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjononetofive"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={byanjonLettersOneToFive}
+            ></FiveButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonsixtoten"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={byanjonLettersSixToTen}
+            ></FiveButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjoneleventofifteen"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={byanjonLettersElevenToFifteen}
+            ></FiveButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonsixteentotwenty"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={byanjonLettersSixteenToTwenty}
+            ></FiveButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjontwetonetotwetfour"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersTwetOneToTwetFour}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjontwetfivetotweteight"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersTwetFiveToTwetEight}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjontwetninetothrtthree"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={byanjonLettersTwetNineToThrtThree}
+            ></FiveButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonthrtfourtothrteight"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={byanjonLettersThrtFourToThrtEight}
+            ></FiveButtonVideoLesson>
+          )}
         />
       </div>
     );

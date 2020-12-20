@@ -194,8 +194,8 @@ class Main extends Component {
             ></img>
           </Link>
         </div>
-        {/* <div>{this.state.result ? this.renderResult() : this.renderQuiz()}</div> */}
-        <div>{this.renderResult()}</div>
+        <div>{this.state.result ? this.renderResult() : this.renderQuiz()}</div>
+        {/* <div>{this.renderResult()}</div> */}
       </div>
     );
   }
