@@ -132,7 +132,7 @@ class SixButtonVideoLesson extends Component {
             marginLeft: "1%"
           }}
         >
-          <Link to={this.props.letterSet[6].pageLink}>
+          <Link to={this.props.letterSet[6].link}>
             <img
               src={previousButtonImage}
               alt="could not be loaded"
