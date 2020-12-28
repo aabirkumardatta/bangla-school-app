@@ -127,7 +127,7 @@ class LetterHomePage extends Component {
             }}
           >
             <span>
-              <Link to="/sworoonetofive">
+              <Link to="/sworoonetosix">
                 <img
                   src={sworobornoLessonImageButton}
                   alt="could not be loaded"

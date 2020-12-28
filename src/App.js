@@ -20,8 +20,8 @@ import RevisionQuizHomePage from "./components/revisionQuizHomePage";
 import FourButtonVideoLesson from "./components/fourButtonVideoLesson";
 import FiveButtonVideoLesson from "./components/fiveButtonVideoLesson";
 import SixButtonVideoLesson from "./components/sixButtonVideoLesson";
-import sworoLettersOneToFive from "./assets/LetterLessonAssets/sworoLettersOneToFive";
-import sworoLettersSixToEleven from "./assets/LetterLessonAssets/sworoLettersSixToEleven";
+import sworoLettersOneToSix from "./assets/LetterLessonAssets/sworoLettersOneToSix";
+import sworoLettersSevenToEleven from "./assets/LetterLessonAssets/sworoLettersSevenToEleven";
 import byanjonLettersOneToFive from "./assets/LetterLessonAssets/byanjonLettersOneToFive";
 import byanjonLettersSixToTen from "./assets/LetterLessonAssets/byanjonLettersSixToTen";
 import byanjonLettersElevenToFifteen from "./assets/LetterLessonAssets/byanjonLettersElevenToFifteen";
@@ -30,6 +30,25 @@ import byanjonLettersTwetOneToTwetFour from "./assets/LetterLessonAssets/byanjon
 import byanjonLettersTwetFiveToTwetEight from "./assets/LetterLessonAssets/byanjonLettersTwetFiveToTwetEight";
 import byanjonLettersTwetNineToThrtThree from "./assets/LetterLessonAssets/byanjonLettersTwetNineToThrtThree";
 import byanjonLettersThrtFourToThrtEight from "./assets/LetterLessonAssets/byanjonLettersThrtFourToThrtEight";
+import VocabHomePage from "./components/vocabHomePage";
+import colorShapesButtonEnglishImage from "./assets/VocabAssets/colorShapesButtonEnglishImage.png";
+import colorShapesButtonBengaliImage from "./assets/VocabAssets/colorShapesButtonBengaliImage.png";
+import thingsCommonButtonEnglishImage from "./assets/VocabAssets/thingsCommonButtonEnglishImage.png";
+import thingsCommonButtonBengaliImage from "./assets/VocabAssets/thingsCommonButtonBengaliImage.png";
+import familyButtonEnglishImage from "./assets/VocabAssets/familyButtonEnglishImage.png";
+import familyButtonBengaliImage from "./assets/VocabAssets/familyButtonBengaliImage.png";
+import bodyPartsButtonEnglishImage from "./assets/VocabAssets/bodyPartsButtonEnglishImage.png";
+import bodyPartsButtonBengaliImage from "./assets/VocabAssets/bodyPartsButtonBengaliImage.png";
+import daysWeekButtonEnglishImage from "./assets/VocabAssets/daysWeekButtonEnglishImage.png";
+import daysWeekButtonBengaliImage from "./assets/VocabAssets/daysWeekButtonBengaliImage.png";
+import natureButtonEnglishImage from "./assets/VocabAssets/natureButtonEnglishImage.png";
+import natureButtonBengaliImage from "./assets/VocabAssets/natureButtonBengaliImage.png";
+import oppositesButtonEnglishImage from "./assets/VocabAssets/oppositesButtonEnglishImage.png";
+import oppositesButtonBengaliImage from "./assets/VocabAssets/oppositesButtonBengaliImage.png";
+import foodButtonEnglishImage from "./assets/VocabAssets/foodButtonEnglishImage.png";
+import foodButtonBengaliImage from "./assets/VocabAssets/foodButtonBengaliImage.png";
+import timeButtonEnglishImage from "./assets/VocabAssets/timeButtonEnglishImage.png";
+import timeButtonBengaliImage from "./assets/VocabAssets/timeButtonBengaliImage.png";
 
 class App extends Component {
   render() {
@@ -184,21 +203,21 @@ class App extends Component {
           )}
         />
         <Route
-          path="/sworoonetofive"
-          exact
-          render={() => (
-            <FiveButtonVideoLesson
-              letterSet={sworoLettersOneToFive}
-            ></FiveButtonVideoLesson>
-          )}
-        />
-        <Route
-          path="/sworosixtoeleven"
+          path="/sworoonetosix"
           exact
           render={() => (
             <SixButtonVideoLesson
-              letterSet={sworoLettersSixToEleven}
+              letterSet={sworoLettersOneToSix}
             ></SixButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/sworoseventoeleven"
+          exact
+          render={() => (
+            <FiveButtonVideoLesson
+              letterSet={sworoLettersSevenToEleven}
+            ></FiveButtonVideoLesson>
           )}
         />
         <Route
@@ -271,6 +290,126 @@ class App extends Component {
             <FiveButtonVideoLesson
               letterSet={byanjonLettersThrtFourToThrtEight}
             ></FiveButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/vocabhomepage"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={thingsCommonButtonEnglishImage}
+              imageOneBengali={thingsCommonButtonBengaliImage}
+              imageOneWidth="40%"
+              quizButtonOneMarginTop="-1%"
+              quizButtonOneMarginLeft="48%"
+              imageTwoEnglish={colorShapesButtonEnglishImage}
+              imageTwoBengali={colorShapesButtonBengaliImage}
+              imageTwoWidth="40%"
+              imageTwoMarginTop="3%"
+              imageTwoMarginLeft="25%"
+              quizButtonTwoMarginTop="-3%"
+              quizButtonTwoMarginLeft="48%"
+              previousButtonVisibility=""
+              previousButtonLinkValue="/lessonshomepage"
+              moreButtonVisibility=""
+              moreButtonLinkValue="/vocabhomepagefamilybody"
+            ></VocabHomePage>
+          )}
+        />
+        <Route
+          path="/vocabhomepagefamilybody"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={familyButtonEnglishImage}
+              imageOneBengali={familyButtonBengaliImage}
+              imageOneWidth="40%"
+              quizButtonOneMarginTop="-5%"
+              quizButtonOneMarginLeft="45%"
+              imageTwoEnglish={bodyPartsButtonEnglishImage}
+              imageTwoBengali={bodyPartsButtonBengaliImage}
+              imageTwoWidth="35%"
+              imageTwoMarginTop="1%"
+              imageTwoMarginLeft="28%"
+              quizButtonTwoMarginTop="-15%"
+              quizButtonTwoMarginLeft="45%"
+              previousButtonVisibility=""
+              previousButtonLinkValue="/vocabhomepage"
+              moreButtonVisibility=""
+              moreButtonLinkValue="/vocabhomepagedaysnature"
+            ></VocabHomePage>
+          )}
+        />
+        <Route
+          path="/vocabhomepagedaysnature"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={daysWeekButtonEnglishImage}
+              imageOneBengali={daysWeekButtonBengaliImage}
+              imageOneWidth="40%"
+              quizButtonOneMarginTop="-1%"
+              quizButtonOneMarginLeft="46%"
+              imageTwoEnglish={natureButtonEnglishImage}
+              imageTwoBengali={natureButtonBengaliImage}
+              imageTwoWidth="35%"
+              imageTwoMarginTop=""
+              imageTwoMarginLeft="25%"
+              quizButtonTwoMarginTop="-3%"
+              quizButtonTwoMarginLeft="46%"
+              previousButtonVisibility=""
+              previousButtonLinkValue="/vocabhomepagefamilybody"
+              moreButtonVisibility=""
+              moreButtonLinkValue="/vocabhomepageoppositesfood"
+            ></VocabHomePage>
+          )}
+        />
+        <Route
+          path="/vocabhomepageoppositesfood"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={oppositesButtonEnglishImage}
+              imageOneBengali={oppositesButtonBengaliImage}
+              imageOneWidth="35%"
+              quizButtonOneMarginTop="-1.5%"
+              quizButtonOneMarginLeft="46%"
+              imageTwoEnglish={foodButtonEnglishImage}
+              imageTwoBengali={foodButtonBengaliImage}
+              imageTwoWidth="35%"
+              imageTwoMarginTop=""
+              imageTwoMarginLeft="25%"
+              quizButtonTwoMarginTop="1%"
+              quizButtonTwoMarginLeft="46%"
+              previousButtonVisibility=""
+              previousButtonLinkValue="/vocabhomepagedaysnature"
+              moreButtonVisibility=""
+              moreButtonLinkValue="/vocabhomepagetime"
+            ></VocabHomePage>
+          )}
+        />
+        <Route
+          path="/vocabhomepagetime"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={timeButtonEnglishImage}
+              imageOneBengali={timeButtonBengaliImage}
+              imageOneWidth="35%"
+              quizButtonOneMarginTop="1%"
+              quizButtonOneMarginLeft="46%"
+              imageTwoEnglish={null}
+              imageTwoBengali={null}
+              imageTwoWidth=""
+              imageTwoMarginTop=""
+              imageTwoMarginLeft=""
+              quizButtonTwoMarginTop=""
+              quizButtonTwoMarginLeft=""
+              previousButtonVisibility=""
+              previousButtonLinkValue="/vocabhomepageoppositesfood"
+              moreButtonVisibility="hidden"
+              moreButtonLinkValue=""
+            ></VocabHomePage>
           )}
         />
       </div>

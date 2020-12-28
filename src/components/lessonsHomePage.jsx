@@ -124,7 +124,7 @@ class LessonsHomePage extends Component {
               </Link>
             </span>
             <span>
-              <Link to="/">
+              <Link to="/vocabhomepage">
                 <img
                   src={this.state.vocabularyButton}
                   alt="could not be loaded"

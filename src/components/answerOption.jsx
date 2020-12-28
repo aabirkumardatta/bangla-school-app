@@ -7,7 +7,7 @@ const AnswerOption = props => {
     <div className="quiz-button-grid">
       {props.optionList.answerOptions.map(option => (
         <button
-          className="quiz-button blur"
+          className="quiz-button"
           disabled={props.optionList.optionsDisabled}
           key={option.content}
           onClick={props.optionList.onAnswerSelected}

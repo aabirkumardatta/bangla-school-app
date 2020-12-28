@@ -145,7 +145,7 @@ html {
   margin: 2%;
   font-size: 5vh;
   text-align: center;
-  color: rgba(39, 144, 200);
+  color: rgba(3, 118, 201);
   font-family: kalpurush;
   font-weight: bolder;
 }
@@ -170,7 +170,7 @@ html {
 
 .question-count {
   font-size: 3vh;
-  color: rgba(39, 144, 200);
+  color: rgba(3, 118, 201);
   border-bottom: 1px solid #ccc;
   margin: 0;
   padding-bottom: 10px;
@@ -200,6 +200,34 @@ html {
   width: 30%;
 }
 
+.flashit {
+  color: black;
+  -webkit-animation: flash linear 1s infinite;
+  animation: flash linear 1s infinite;
+}
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes flash {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 .quiz-button {
   font-size: 5vh;
   height: 100%;
@@ -224,7 +252,7 @@ html {
   font-size: 12vh;
   text-align: center;
   font-weight: bold;
-  color: rgba(39, 144, 200);
+  color: rgba(3, 118, 201);
   margin: 0;
   font-family: "Tangerine", serif;
   padding-bottom: 10px;
@@ -234,7 +262,7 @@ html {
   margin-top: 0.1%;
   font-size: 5vh;
   text-align: center;
-  color: rgba(39, 144, 200);
+  color: rgba(3, 118, 201);
   font-family: kalpurush;
   font-weight: bolder;
 }
@@ -293,5 +321,4 @@ html {
 .btn-video-tiles:hover,
 .mute-btn:hover {
   cursor: pointer;
-  background-color: whitesmoke;
 }

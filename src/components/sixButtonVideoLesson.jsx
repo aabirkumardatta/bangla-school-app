@@ -3,7 +3,7 @@ import VideoPlayer from "./videoPlayer";
 import { Link } from "react-router-dom";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import intro_video_green from "../assets/intro_video_green.mp4";
-import previousButtonImage from "../assets/previousButtonImage.png";
+import nextButtonImage from "../assets/nextButtonImage.png";
 
 class SixButtonVideoLesson extends Component {
   constructor(props) {
@@ -129,12 +129,12 @@ class SixButtonVideoLesson extends Component {
           style={{
             position: "fixed",
             bottom: "14vh",
-            marginLeft: "1%"
+            right: "14vh"
           }}
         >
           <Link to={this.props.letterSet[6].link}>
             <img
-              src={previousButtonImage}
+              src={nextButtonImage}
               alt="could not be loaded"
               style={{
                 position: "fixed",

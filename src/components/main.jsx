@@ -46,13 +46,23 @@ class Main extends Component {
       answerOptions: shuffledQuestions[0].answers,
       questionAudio: shuffledQuestions[0].questionAudio
     });
+    document.getElementById("playQuestionButton").classList.add("flashit");
   }
 
   componentWillUnmount() {
     this.state.quizBgm.unload();
   }
 
+  playQuestionSound = () => {
+    document.getElementById("playQuestionButton").classList.remove("flashit");
+    this.setState({ optionsDisabled: false });
+    const sound = new Howl({ src: [this.state.questionAudio] });
+    sound.volume(10.0);
+    sound.play();
+  };
+
   handleAnswerSelected = event => {
+    document.getElementById("nextQuestionButton").classList.add("flashit");
     this.setState({ nextButtonDisabled: false });
     const optionSelectedByUser = event.target;
     Array.from(optionSelectedByUser.parentElement.children).forEach(child => {
@@ -92,18 +102,9 @@ class Main extends Component {
     }));
   };
 
-  playQuestionSound = event => {
-    this.setState({ optionsDisabled: false });
-    Array.from(event.target.nextElementSibling.children).forEach(child => {
-      child.classList.remove("blur");
-    });
-    const sound = new Howl({ src: [this.state.questionAudio] });
-    sound.volume(10.0);
-    sound.play();
-  };
-
   setnextQuestion = () => {
-    this.setState({ optionsDisabled: true, nextButtonDisabled: true });
+    document.getElementById("nextQuestionButton").classList.remove("flashit");
+    this.setState({ nextButtonDisabled: true });
     if (this.state.questionId < this.props.quizQuestions.length) {
       const counter = this.state.counter + 1;
       const questionId = this.state.questionId + 1;
@@ -115,6 +116,13 @@ class Main extends Component {
         answerOptions: this.props.quizQuestions[counter].answers,
         answer: ""
       });
+      setTimeout(() => {
+        const sound = new Howl({
+          src: [this.props.quizQuestions[counter].questionAudio]
+        });
+        sound.volume(10.0);
+        sound.play();
+      }, 500);
     } else {
       this.setResults();
     }
