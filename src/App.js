@@ -17,9 +17,11 @@ import revision_2 from "./quizQuestions/revision_2";
 import revision_3 from "./quizQuestions/revision_3";
 import revision_4 from "./quizQuestions/revision_4";
 import RevisionQuizHomePage from "./components/revisionQuizHomePage";
-import FourButtonVideoLesson from "./components/fourButtonVideoLesson";
-import FiveButtonVideoLesson from "./components/fiveButtonVideoLesson";
 import SixButtonVideoLesson from "./components/sixButtonVideoLesson";
+import FiveButtonVideoLesson from "./components/fiveButtonVideoLesson";
+import FourButtonVideoLesson from "./components/fourButtonVideoLesson";
+import ThreeButtonVideoLesson from "./components/threeButtonVideoLesson";
+import TwoButtonVideoLesson from "./components/twoButtonVideoLesson";
 import sworoLettersOneToSix from "./assets/LetterLessonAssets/sworoLettersOneToSix";
 import sworoLettersSevenToEleven from "./assets/LetterLessonAssets/sworoLettersSevenToEleven";
 import byanjonLettersOneToFive from "./assets/LetterLessonAssets/byanjonLettersOneToFive";
@@ -29,7 +31,7 @@ import byanjonLettersSixteenToTwenty from "./assets/LetterLessonAssets/byanjonLe
 import byanjonLettersTwetOneToTwetFour from "./assets/LetterLessonAssets/byanjonLettersTwetOneToTwetFour";
 import byanjonLettersTwetFiveToTwetEight from "./assets/LetterLessonAssets/byanjonLettersTwetFiveToTwetEight";
 import byanjonLettersTwetNineToThrtThree from "./assets/LetterLessonAssets/byanjonLettersTwetNineToThrtThree";
-import byanjonLettersThrtFourToThrtEight from "./assets/LetterLessonAssets/byanjonLettersThrtFourToThrtEight";
+import byanjonLettersThrtFourToThrtNine from "./assets/LetterLessonAssets/byanjonLettersThrtFourToThrtNine";
 import VocabHomePage from "./components/vocabHomePage";
 import colorShapesButtonEnglishImage from "./assets/VocabAssets/colorShapesButtonEnglishImage.png";
 import colorShapesButtonBengaliImage from "./assets/VocabAssets/colorShapesButtonBengaliImage.png";
@@ -49,7 +51,29 @@ import foodButtonEnglishImage from "./assets/VocabAssets/foodButtonEnglishImage.
 import foodButtonBengaliImage from "./assets/VocabAssets/foodButtonBengaliImage.png";
 import timeButtonEnglishImage from "./assets/VocabAssets/timeButtonEnglishImage.png";
 import timeButtonBengaliImage from "./assets/VocabAssets/timeButtonBengaliImage.png";
-
+import TestBackend from "./components/testBackend";
+import sworoPictureGameOneQuizQuestions from "./quizQuestions/sworoPictureGameOneQuizQuestions";
+import sworoPictureGameTwoQuizQuestions from "./quizQuestions/sworoPictureGameTwoQuizQuestions";
+import byanjonPictureGameOneQuizQuestions from "./quizQuestions/byanjonPictureGameOneQuizQuestions";
+import byanjonPictureGameTwoQuizQuestions from "./quizQuestions/byanjonPictureGameTwoQuizQuestions";
+import byanjonPictureGameThreeQuizQuestions from "./quizQuestions/byanjonPictureGameThreeQuizQuestions";
+import byanjonPictureGameFourQuizQuestions from "./quizQuestions/byanjonPictureGameFourQuizQuestions";
+import byanjonPictureGameFiveQuizQuestions from "./quizQuestions/byanjonPictureGameFiveQuizQuestions";
+import byanjonPictureGameSixQuizQuestions from "./quizQuestions/byanjonPictureGameSixQuizQuestions";
+import byanjonPictureGameSevenQuizQuestions from "./quizQuestions/byanjonPictureGameSevenQuizQuestions";
+import byanjonPictureGameEightQuizQuestions from "./quizQuestions/byanjonPictureGameEightQuizQuestions";
+import VocabGame from "./components/vocabGame";
+import PronunciationHomePage from "./components/pronunciationHomePage";
+import byanjonLettersKawToGhawPronunciation from "./assets/PronunciationAssets/byanjonLettersKawToGhawPronunciation";
+import byanjonLettersChawToJhawPronunciation from "./assets/PronunciationAssets/byanjonLettersChawToJhawPronunciation";
+import byanjonLettersTawToDhawPronunciation from "./assets/PronunciationAssets/byanjonLettersTawToDhawPronunciation";
+import byanjonLettersTawToDhawTwoPronunciation from "./assets/PronunciationAssets/byanjonLettersTawToDhawTwoPronunciation";
+import byanjonLettersPawToBhawPronunciation from "./assets/PronunciationAssets/byanjonLettersPawToBhawPronunciation";
+import byanjonLettersRawPronunciation from "./assets/PronunciationAssets/byanjonLettersRawPronunciation";
+import byanjonLettersAntYawJawPronunciation from "./assets/PronunciationAssets/byanjonLettersAntYawJawPronunciation";
+import intro_video_green from "./assets/intro_video_green.mp4";
+import intro_video_green_pronunciation from "./assets/intro_video_green_pronunciation.mp4";
+import DaysOfTheWeek from "./components/daysOfTheWeek";
 class App extends Component {
   render() {
     return (
@@ -67,6 +91,8 @@ class App extends Component {
               quizQuestions={sworoBornoAudioQuiz}
               isAudioQuiz={true}
               heading="স্বরবর্ণ খেলা"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -78,6 +104,8 @@ class App extends Component {
               quizQuestions={byanjonborno_1}
               isAudioQuiz={true}
               heading="ব্যঞ্জনবর্ণ খেলা"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -89,6 +117,8 @@ class App extends Component {
               quizQuestions={byanjonborno_2}
               isAudioQuiz={true}
               heading="ব্যঞ্জনবর্ণ খেলা"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -100,6 +130,8 @@ class App extends Component {
               quizQuestions={byanjonborno_3}
               isAudioQuiz={true}
               heading="ব্যঞ্জনবর্ণ খেলা"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -111,6 +143,8 @@ class App extends Component {
               quizQuestions={byanjonborno_4}
               isAudioQuiz={true}
               heading="ব্যঞ্জনবর্ণ খেলা"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -133,6 +167,8 @@ class App extends Component {
               quizQuestions={revision_1}
               isAudioQuiz={true}
               heading="Revision-1"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -155,6 +191,8 @@ class App extends Component {
               quizQuestions={revision_2}
               isAudioQuiz={true}
               heading="Revision-2"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -177,6 +215,8 @@ class App extends Component {
               quizQuestions={revision_3}
               isAudioQuiz={true}
               heading="Revision-3"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -199,6 +239,8 @@ class App extends Component {
               quizQuestions={revision_4}
               isAudioQuiz={true}
               heading="Revision-4"
+              renderOptionsType="button"
+              homeButtonLink="/letterhomepage"
             />
           )}
         />
@@ -208,6 +250,9 @@ class App extends Component {
           render={() => (
             <SixButtonVideoLesson
               letterSet={sworoLettersOneToSix}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></SixButtonVideoLesson>
           )}
         />
@@ -217,6 +262,9 @@ class App extends Component {
           render={() => (
             <FiveButtonVideoLesson
               letterSet={sworoLettersSevenToEleven}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FiveButtonVideoLesson>
           )}
         />
@@ -226,6 +274,9 @@ class App extends Component {
           render={() => (
             <FiveButtonVideoLesson
               letterSet={byanjonLettersOneToFive}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FiveButtonVideoLesson>
           )}
         />
@@ -235,6 +286,9 @@ class App extends Component {
           render={() => (
             <FiveButtonVideoLesson
               letterSet={byanjonLettersSixToTen}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FiveButtonVideoLesson>
           )}
         />
@@ -244,6 +298,9 @@ class App extends Component {
           render={() => (
             <FiveButtonVideoLesson
               letterSet={byanjonLettersElevenToFifteen}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FiveButtonVideoLesson>
           )}
         />
@@ -253,6 +310,9 @@ class App extends Component {
           render={() => (
             <FiveButtonVideoLesson
               letterSet={byanjonLettersSixteenToTwenty}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FiveButtonVideoLesson>
           )}
         />
@@ -262,6 +322,9 @@ class App extends Component {
           render={() => (
             <FourButtonVideoLesson
               letterSet={byanjonLettersTwetOneToTwetFour}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FourButtonVideoLesson>
           )}
         />
@@ -271,6 +334,9 @@ class App extends Component {
           render={() => (
             <FourButtonVideoLesson
               letterSet={byanjonLettersTwetFiveToTwetEight}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FourButtonVideoLesson>
           )}
         />
@@ -278,17 +344,23 @@ class App extends Component {
           path="/byanjontwetninetothrtthree"
           exact
           render={() => (
-            <FiveButtonVideoLesson
+            <SixButtonVideoLesson
               letterSet={byanjonLettersTwetNineToThrtThree}
-            ></FiveButtonVideoLesson>
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
+            ></SixButtonVideoLesson>
           )}
         />
         <Route
-          path="/byanjonthrtfourtothrteight"
+          path="/byanjonthrtfourtothrtnine"
           exact
           render={() => (
             <FiveButtonVideoLesson
-              letterSet={byanjonLettersThrtFourToThrtEight}
+              letterSet={byanjonLettersThrtFourToThrtNine}
+              homeButtonLink="/letterhomepage"
+              gameButtonVisibility=""
+              introVideoLink={intro_video_green}
             ></FiveButtonVideoLesson>
           )}
         />
@@ -411,6 +483,240 @@ class App extends Component {
               moreButtonLinkValue=""
             ></VocabHomePage>
           )}
+        />
+        <Route
+          path="/testtest"
+          exact
+          render={() => <TestBackend></TestBackend>}
+        />
+        <Route
+          path="/sworopicturegameone"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={sworoPictureGameOneQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/sworoonetosix"
+            />
+          )}
+        />
+        <Route
+          path="/sworopicturegametwo"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={sworoPictureGameTwoQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/sworoseventoeleven"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegameone"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameOneQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjononetofive"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegametwo"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameTwoQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjonsixtoten"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegamethree"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameThreeQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjoneleventofifteen"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegamefour"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameFourQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjonsixteentotwenty"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegamefive"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameFiveQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjontwetonetotwetfour"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegamesix"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameSixQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjontwetfivetotweteight"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegameseven"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameSevenQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjontwetninetothrtthree"
+            />
+          )}
+        />
+        <Route
+          path="/byanjonpicturegameeight"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={byanjonPictureGameEightQuizQuestions}
+              isAudioQuiz={true}
+              heading=""
+              renderOptionsType="picture"
+              homeButtonLink="/byanjonthrtfourtothrtnine"
+            />
+          )}
+        />
+        <Route
+          path="/vocabGame"
+          exact
+          render={() => <VocabGame></VocabGame>}
+        ></Route>
+        <Route
+          path="/pronunciationhomepage"
+          exact
+          render={() => <PronunciationHomePage></PronunciationHomePage>}
+        ></Route>
+        <Route
+          path="/byanjonLettersKawToGhawPronunciation"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersKawToGhawPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonLettersChawToJhawPronunciation"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersChawToJhawPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonLettersTawToDhawPronunciation"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersTawToDhawPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonLettersTawToDhawTwoPronunciation"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersTawToDhawTwoPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonLettersPawToBhawPronunciation"
+          exact
+          render={() => (
+            <FourButtonVideoLesson
+              letterSet={byanjonLettersPawToBhawPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></FourButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonLettersRawPronunciation"
+          exact
+          render={() => (
+            <ThreeButtonVideoLesson
+              letterSet={byanjonLettersRawPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></ThreeButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/byanjonLettersAntYawJawPronunciation"
+          exact
+          render={() => (
+            <TwoButtonVideoLesson
+              letterSet={byanjonLettersAntYawJawPronunciation}
+              homeButtonLink="/pronunciationhomepage"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green_pronunciation}
+            ></TwoButtonVideoLesson>
+          )}
+        />
+        <Route
+          path="/daysOfTheWeek"
+          exact
+          render={() => <DaysOfTheWeek></DaysOfTheWeek>}
         />
       </div>
     );

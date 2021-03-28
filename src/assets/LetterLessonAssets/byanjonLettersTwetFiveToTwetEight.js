@@ -8,6 +8,7 @@ var byanjonLettersTwetFiveToTwetEight = [
   { letter: "য", video: ant_jaw_video },
   { letter: "র", video: bawshun_raw_video },
   { letter: "ল", video: law_video },
+  { linkKind: "game", link: "/byanjonpicturegamesix" },
   { linkKind: "previous", link: "/byanjontwetonetotwetfour" }
 ];
 

@@ -280,6 +280,7 @@ html {
   border: 1px solid black;
   border-radius: 10px;
   margin-left: 16%;
+  margin-top: 0.32%;
 }
 
 .next-btn {
@@ -311,14 +312,30 @@ html {
   height: 8%;
 }
 
-.languageOptionButton:hover {
-  cursor: pointer;
-}
-
 .btn:hover,
 .quiz-button:hover,
 .next-btn:hover,
 .btn-video-tiles:hover,
-.mute-btn:hover {
+.mute-btn:hover,
+.picture-option-button:hover {
   cursor: pointer;
+}
+
+.languageOptionButton:hover {
+  cursor: pointer;
+}
+
+.vocab-game-option {
+  cursor: pointer;
+}
+.vocab-game-option.correct {
+  visibility: hidden;
+}
+
+.base-room-image-correct {
+  border: 10px solid greenyellow;
+}
+
+.base-room-image-wrong {
+  border: 10px solid red;
 }

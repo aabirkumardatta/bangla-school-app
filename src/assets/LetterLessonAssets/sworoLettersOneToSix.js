@@ -12,6 +12,7 @@ var sworoLettersOneToSix = [
   { letter: "ঈ", video: v4_video },
   { letter: "উ", video: v5_video },
   { letter: "ঊ", video: v6_video },
+  { linkKind: "game", link: "/sworopicturegameone" },
   { linkKind: "next", link: "/sworoseventoeleven" }
 ];
 

@@ -10,6 +10,7 @@ var sworoLettersSevenToEleven = [
   { letter: "ঐ", video: v9_video },
   { letter: "ও", video: v10_video },
   { letter: "ঔ", video: v11_video },
+  { linkKind: "game", link: "/sworopicturegametwo" },
   { linkKind: "previous", link: "/sworoonetosix" }
 ];
 

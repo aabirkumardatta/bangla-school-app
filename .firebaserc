@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "routingtestmojaru"
+    "mojaru": "mojaru",
+    "default": "mojaru"
   }
 }

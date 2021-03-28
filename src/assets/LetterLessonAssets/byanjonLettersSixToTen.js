@@ -10,6 +10,7 @@ var byanjonLettersSixToTen = [
   { letter: "জ", video: borgiyo_jaw_video },
   { letter: "ঝ", video: jhaw_video },
   { letter: "ঞ", video: eyow_video },
+  { linkKind: "game", link: "/byanjonpicturegametwo" },
   { linkKind: "previous", link: "/byanjononetofive" }
 ];
 

@@ -124,7 +124,8 @@ class LessonsHomePage extends Component {
               </Link>
             </span>
             <span>
-              <Link to="/vocabhomepage">
+              {/* <Link to="/vocabhomepage"> */}
+              <Link to="/daysOfTheWeek">
                 <img
                   src={this.state.vocabularyButton}
                   alt="could not be loaded"
@@ -139,7 +140,7 @@ class LessonsHomePage extends Component {
           </div>
 
           <div style={{ marginTop: "-15%" }}>
-            <Link to="/">
+            <Link to="/pronunciationhomepage">
               <img
                 src={this.state.pronunciationButton}
                 alt="could not be loaded"

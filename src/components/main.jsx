@@ -25,6 +25,7 @@ class Main extends Component {
       heading: this.props.heading,
       nextButtonDisabled: true,
       optionsDisabled: true,
+      pictureOptionsDisabled: true,
       quizBgm: new Howl({ src: [quizBgm], html5: true, loop: true })
     };
   }
@@ -56,6 +57,9 @@ class Main extends Component {
   playQuestionSound = () => {
     document.getElementById("playQuestionButton").classList.remove("flashit");
     this.setState({ optionsDisabled: false });
+    this.state.nextButtonDisabled === true
+      ? this.setState({ pictureOptionsDisabled: false })
+      : this.setState({ pictureOptionsDisabled: true });
     const sound = new Howl({ src: [this.state.questionAudio] });
     sound.volume(10.0);
     sound.play();
@@ -66,28 +70,36 @@ class Main extends Component {
     this.setState({ nextButtonDisabled: false });
     const optionSelectedByUser = event.target;
     Array.from(optionSelectedByUser.parentElement.children).forEach(child => {
+      this.setState({ pictureOptionsDisabled: true });
       child.disabled = true;
     });
     this.setOptionStyle(optionSelectedByUser);
-    this.setUserAnswer(optionSelectedByUser.value);
+    this.setUserAnswer(optionSelectedByUser.id);
   };
 
   setOptionStyle = selectedElement => {
-    if (selectedElement.value === "true") {
+    if (selectedElement.id === "true") {
       const correctAnswerSound = new Howl({ src: [correctAnswer] });
       correctAnswerSound.volume(4.0);
       correctAnswerSound.play();
       const totalScore = this.state.totalScore + 1;
       this.setState({ totalScore });
-      selectedElement.classList.add("correct");
+
+      this.props.renderOptionsType === "button"
+        ? selectedElement.classList.add("correct")
+        : (selectedElement.style.border = "10px solid greenyellow");
     } else {
       const wrongAnswerSound = new Howl({ src: [wrongAnswer] });
       wrongAnswerSound.volume(4.0);
       wrongAnswerSound.play();
       Array.from(selectedElement.parentElement.children).forEach(child => {
-        child.value === "false"
-          ? child.classList.add("wrong")
-          : child.classList.add("correct");
+        child.id === "false"
+          ? this.props.renderOptionsType === "button"
+            ? child.classList.add("wrong")
+            : (child.style.border = "10px solid red")
+          : this.props.renderOptionsType === "button"
+          ? child.classList.add("correct")
+          : (child.style.border = "10px solid greenyellow");
       });
     }
   };
@@ -105,6 +117,7 @@ class Main extends Component {
   setnextQuestion = () => {
     document.getElementById("nextQuestionButton").classList.remove("flashit");
     this.setState({ nextButtonDisabled: true });
+    this.setState({ pictureOptionsDisabled: false });
     if (this.state.questionId < this.props.quizQuestions.length) {
       const counter = this.state.counter + 1;
       const questionId = this.state.questionId + 1;
@@ -144,7 +157,6 @@ class Main extends Component {
   renderQuiz = () => {
     return (
       <div>
-        <h1 className="quiz-title">{this.state.heading}</h1>
         <div className="quiz-container">
           <Quiz
             answer={this.state.answer}
@@ -157,8 +169,10 @@ class Main extends Component {
             playQuestionSound={this.playQuestionSound}
             totalScore={this.state.totalScore}
             isAudioQuiz={this.props.isAudioQuiz}
+            renderOptionsType={this.props.renderOptionsType}
             nextButtonDisabled={this.state.nextButtonDisabled}
             optionsDisabled={this.state.optionsDisabled}
+            pictureOptionsDisabled={this.state.pictureOptionsDisabled}
             muteMusic={this.muteMusic}
             unmuteMusic={this.unmuteMusic}
           ></Quiz>
@@ -182,28 +196,31 @@ class Main extends Component {
 
   render() {
     return (
-      <div style={{ overflow: "hidden" }}>
-        <div
-          style={{
-            position: "fixed",
-            top: "0.5vh",
-            marginLeft: "1%"
-          }}
-        >
-          <Link to="/letterhomepage">
-            <img
-              src={homebuttonImage}
-              alt="could not be loaded"
-              style={{
-                position: "fixed",
-                width: "12vh",
-                height: "12vh"
-              }}
-            ></img>
-          </Link>
+      <div>
+        <div style={{ overflow: "hidden" }}>
+          <div
+            style={{
+              position: "fixed",
+              top: "0.5vh",
+              marginLeft: "1%"
+            }}
+          >
+            <Link to={this.props.homeButtonLink}>
+              <img
+                src={homebuttonImage}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "12vh",
+                  height: "12vh"
+                }}
+              ></img>
+            </Link>
+          </div>
+          <div>
+            {this.state.result ? this.renderResult() : this.renderQuiz()}
+          </div>
         </div>
-        <div>{this.state.result ? this.renderResult() : this.renderQuiz()}</div>
-        {/* <div>{this.renderResult()}</div> */}
       </div>
     );
   }

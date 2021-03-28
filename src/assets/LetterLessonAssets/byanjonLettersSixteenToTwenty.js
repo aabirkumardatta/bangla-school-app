@@ -10,6 +10,7 @@ var byanjonLettersSixteenToTwenty = [
   { letter: "দ", video: daw_2_video },
   { letter: "ধ", video: dhaw_2_video },
   { letter: "ন", video: don_naw_video },
+  { linkKind: "game", link: "/byanjonpicturegamefour" },
   { linkKind: "previous", link: "/byanjoneleventofifteen" }
 ];
 

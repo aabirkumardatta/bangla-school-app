@@ -29,6 +29,21 @@ class AppHomePage extends Component {
             }}
           ></img>
         </Link>
+        {/* <span>
+          <Link to="/testtest">
+            <img
+              src={nextButtonImage}
+              alt="could not be loaded"
+              style={{
+                position: "fixed",
+                width: "12vh",
+                height: "12vh",
+                left: "2vh",
+                visibility: ""
+              }}
+            ></img>
+          </Link>
+        </span> */}
       </div>
     );
   }

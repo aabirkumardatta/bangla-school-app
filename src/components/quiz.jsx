@@ -30,6 +30,8 @@ class Quiz extends Component {
         <AnswerOption
           optionList={this.props}
           optionsDisabled={this.props.optionsDisabled}
+          pictureOptionsDisabled={this.props.pictureOptionsDisabled}
+          renderOptionsType={this.props.renderOptionsType}
         />
         <NextButton
           setnextQuestion={this.props.setnextQuestion}

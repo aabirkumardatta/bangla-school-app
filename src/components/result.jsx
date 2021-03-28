@@ -4,6 +4,8 @@ import React, { Component } from "react";
 import goodJobClap from "../assets/goodJobClap.gif";
 import smileyGreatJob from "../assets/smileyGoodJob.gif";
 import bestCupGif from "../assets/bestCupGif.gif";
+import owl_one_balloon from "../assets/owl_one_balloon.png";
+import dog_few_balloon from "../assets/dog_few_balloon.png";
 import resultBgm from "../assets/resultBgm.mp3";
 import { Howl, Howler } from "howler";
 
@@ -12,7 +14,9 @@ class Result extends Component {
     super();
     this.state = {
       resultBgm: new Howl({ src: [resultBgm], html5: true, loop: true }),
-      image: ""
+      image1: owl_one_balloon,
+      image2: "",
+      image3: dog_few_balloon
     };
   }
 
@@ -23,15 +27,15 @@ class Result extends Component {
 
     if (resultPercentage <= 50) {
       this.setState({
-        image: goodJobClap
+        image2: goodJobClap
       });
     } else if (resultPercentage > 50 && resultPercentage <= 80) {
       this.setState({
-        image: smileyGreatJob
+        image2: smileyGreatJob
       });
     } else {
       this.setState({
-        image: bestCupGif
+        image2: bestCupGif
       });
     }
   }
@@ -48,15 +52,33 @@ class Result extends Component {
             style={{
               marginTop: "-1%",
               marginBottom: "2%",
-              marginLeft: "35%"
+              marginLeft: "1%"
             }}
           >
             <img
-              src={this.state.image}
+              src={this.state.image1}
               alt="could not be loaded"
               style={{
-                width: "55%",
-                minHeight: "55%"
+                width: "25%",
+                minHeight: "25vh"
+              }}
+            ></img>
+            <img
+              src={this.state.image2}
+              alt="could not be loaded"
+              style={{
+                width: "37%",
+                minHeight: "32vh",
+                marginLeft: "6%",
+                marginRight: "5%"
+              }}
+            ></img>
+            <img
+              src={this.state.image3}
+              alt="could not be loaded"
+              style={{
+                width: "25%",
+                minHeight: "25vh"
               }}
             ></img>
           </div>
@@ -72,7 +94,7 @@ class Result extends Component {
   };
 
   render() {
-    Howler.volume(2.0);
+    Howler.volume(0.1);
     return <React.Fragment>{this.showResultPage()}</React.Fragment>;
   }
 }

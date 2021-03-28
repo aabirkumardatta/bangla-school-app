@@ -2,15 +2,15 @@ import React, { Component } from "react";
 import VideoPlayer from "./videoPlayer";
 import { Link } from "react-router-dom";
 import homebuttonImage from "../assets/homeButtonImage.png";
-import intro_video_green from "../assets/intro_video_green.mp4";
 import nextButtonImage from "../assets/nextButtonImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
+import gameButtonEnglishImage from "../assets/ReadingHomePageButtons/gameButtonEnglishImage.png";
 
 class FourButtonVideoLesson extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      linkToVideo: intro_video_green
+      linkToVideo: this.props.introVideoLink
     };
   }
 
@@ -30,14 +30,15 @@ class FourButtonVideoLesson extends Component {
           right: "14vh"
         }}
       >
-        <Link to={this.props.letterSet[4].link}>
+        <Link to={this.props.letterSet[5].link}>
           <img
             src={nextButtonImage}
             alt="could not be loaded"
             style={{
               position: "fixed",
               width: "12vh",
-              height: "12vh"
+              height: "12vh",
+              visibility: this.props.gameButtonVisibility
             }}
           ></img>
         </Link>
@@ -54,14 +55,15 @@ class FourButtonVideoLesson extends Component {
           marginLeft: "1%"
         }}
       >
-        <Link to={this.props.letterSet[4].link}>
+        <Link to={this.props.letterSet[5].link}>
           <img
             src={previousButtonImage}
             alt="could not be loaded"
             style={{
               position: "fixed",
               width: "12vh",
-              height: "12vh"
+              height: "12vh",
+              visibility: this.props.gameButtonVisibility
             }}
           ></img>
         </Link>
@@ -73,7 +75,7 @@ class FourButtonVideoLesson extends Component {
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
-          <Link to="/letterhomepage">
+          <Link to={this.props.homeButtonLink}>
             <img
               style={{ width: "12vh", height: "12vh" }}
               src={homebuttonImage}
@@ -81,6 +83,22 @@ class FourButtonVideoLesson extends Component {
               className="languageOptionButton"
             ></img>
           </Link>
+          <span style={{ marginLeft: "45%" }}>
+            <Link to={this.props.letterSet[4].link}>
+              <img
+                style={{
+                  marginTop: "1%",
+                  width: "17vh",
+                  height: "10vh",
+                  position: "fixed",
+                  right: "2vh",
+                  visibility: this.props.gameButtonVisibility
+                }}
+                src={gameButtonEnglishImage}
+                alt="could not be loaded"
+              ></img>
+            </Link>
+          </span>
         </div>
 
         <div>
@@ -148,7 +166,7 @@ class FourButtonVideoLesson extends Component {
             </div>
           </div>
         </div>
-        {this.props.letterSet[4].linkKind === "next"
+        {this.props.letterSet[5].linkKind === "next"
           ? this.renderNextPage()
           : this.renderPreviousPage()}
       </div>

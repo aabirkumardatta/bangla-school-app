@@ -8,6 +8,7 @@ var byanjonLettersTwetOneToTwetFour = [
   { letter: "ফ", video: phaw_video },
   { letter: "ব", video: baw_video },
   { letter: "ভ", video: bhaw_video },
+  { linkKind: "game", link: "/byanjonpicturegamefive" },
   { linkKind: "next", link: "/byanjontwetfivetotweteight" }
 ];
 

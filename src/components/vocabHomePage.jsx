@@ -94,11 +94,13 @@ class VocabHomePage extends Component {
             src={this.state.vocabularyButton}
             alt="could not be loaded"
           ></img>
-          <img
-            style={{ width: this.props.imageOneWidth, marginLeft: "20%" }}
-            src={this.state.imageOne}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/vocabGame">
+            <img
+              style={{ width: this.props.imageOneWidth, marginLeft: "20%" }}
+              src={this.state.imageOne}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
           <img
