@@ -94,7 +94,7 @@ class VocabHomePage extends Component {
             src={this.state.vocabularyButton}
             alt="could not be loaded"
           ></img>
-          <Link to="/vocabGame">
+          <Link to={this.props.imageOneLink}>
             <img
               style={{ width: this.props.imageOneWidth, marginLeft: "20%" }}
               src={this.state.imageOne}
@@ -103,39 +103,45 @@ class VocabHomePage extends Component {
           </Link>
         </div>
         <div>
-          <img
-            src={this.state.quizButton}
-            style={{
-              width: "8%",
-              marginLeft: this.props.quizButtonOneMarginLeft,
-              marginTop: this.props.quizButtonOneMarginTop
-            }}
-            alt="could not be loaded"
-          ></img>
+          <Link to={this.props.imageOneQuizLink}>
+            <img
+              src={this.state.quizButton}
+              style={{
+                width: "8%",
+                marginLeft: this.props.quizButtonOneMarginLeft,
+                marginTop: this.props.quizButtonOneMarginTop
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <img
-            src={this.state.imageTwo}
-            style={{
-              width: this.props.imageTwoWidth,
-              marginLeft: this.props.imageTwoMarginLeft,
-              marginTop: this.props.imageTwoMarginTop,
-              visibility: this.props.moreButtonVisibility
-            }}
-            alt="could not be loaded"
-          ></img>
+          <Link to={this.props.imageTwoLink}>
+            <img
+              src={this.state.imageTwo}
+              style={{
+                width: this.props.imageTwoWidth,
+                marginLeft: this.props.imageTwoMarginLeft,
+                marginTop: this.props.imageTwoMarginTop,
+                visibility: this.props.moreButtonVisibility
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <img
-            src={this.state.quizButton}
-            style={{
-              width: "8%",
-              marginLeft: this.props.quizButtonTwoMarginLeft,
-              marginTop: this.props.quizButtonTwoMarginTop,
-              visibility: this.props.moreButtonVisibility
-            }}
-            alt="could not be loaded"
-          ></img>
+          <Link to={this.props.imageTwoQuizLink}>
+            <img
+              src={this.state.quizButton}
+              style={{
+                width: "8%",
+                marginLeft: this.props.quizButtonTwoMarginLeft,
+                marginTop: this.props.quizButtonTwoMarginTop,
+                visibility: this.props.moreButtonVisibility
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div
           style={{

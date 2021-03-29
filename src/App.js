@@ -33,10 +33,14 @@ import byanjonLettersTwetFiveToTwetEight from "./assets/LetterLessonAssets/byanj
 import byanjonLettersTwetNineToThrtThree from "./assets/LetterLessonAssets/byanjonLettersTwetNineToThrtThree";
 import byanjonLettersThrtFourToThrtNine from "./assets/LetterLessonAssets/byanjonLettersThrtFourToThrtNine";
 import VocabHomePage from "./components/vocabHomePage";
+import thingsInRoomButtonEnglishImage from "./assets/VocabAssets/thingsInRoomButtonEnglishImage.png";
+import thingsInRoomButtonBengaliImage from "./assets/VocabAssets/thingsInRoomButtonBengaliImage.png";
+import myThingsButtonEnglishImage from "./assets/VocabAssets/myThingsButtonEnglishImage.png";
+import myThingsButtonBengaliImage from "./assets/VocabAssets/myThingsButtonBengaliImage.png";
 import colorShapesButtonEnglishImage from "./assets/VocabAssets/colorShapesButtonEnglishImage.png";
 import colorShapesButtonBengaliImage from "./assets/VocabAssets/colorShapesButtonBengaliImage.png";
-import thingsCommonButtonEnglishImage from "./assets/VocabAssets/thingsCommonButtonEnglishImage.png";
-import thingsCommonButtonBengaliImage from "./assets/VocabAssets/thingsCommonButtonBengaliImage.png";
+import thingsOutsideHouseButtonEnglishImage from "./assets/VocabAssets/thingsOutsideHouseButtonEnglishImage.png";
+import thingsOutsideHouseButtonBengaliImage from "./assets/VocabAssets/thingsOutsideHouseButtonBengaliImage.png";
 import familyButtonEnglishImage from "./assets/VocabAssets/familyButtonEnglishImage.png";
 import familyButtonBengaliImage from "./assets/VocabAssets/familyButtonBengaliImage.png";
 import bodyPartsButtonEnglishImage from "./assets/VocabAssets/bodyPartsButtonEnglishImage.png";
@@ -74,6 +78,16 @@ import byanjonLettersAntYawJawPronunciation from "./assets/PronunciationAssets/b
 import intro_video_green from "./assets/intro_video_green.mp4";
 import intro_video_green_pronunciation from "./assets/intro_video_green_pronunciation.mp4";
 import DaysOfTheWeek from "./components/daysOfTheWeek";
+import NongradaanoHomePage from "./components/nongradaanoHomePage";
+import {
+  roomOnePicturePositionsMap,
+  vocabGameRoomOneQuestions
+} from "./quizQuestions/vocabGameRoomOne";
+import {
+  roomTwoPicturePositionsMap,
+  vocabGameRoomTwoQuestions
+} from "./quizQuestions/vocabGameRoomTwo";
+
 class App extends Component {
   render() {
     return (
@@ -369,42 +383,50 @@ class App extends Component {
           exact
           render={() => (
             <VocabHomePage
-              imageOneEnglish={thingsCommonButtonEnglishImage}
-              imageOneBengali={thingsCommonButtonBengaliImage}
-              imageOneWidth="40%"
-              quizButtonOneMarginTop="-1%"
+              imageOneEnglish={myThingsButtonEnglishImage}
+              imageOneBengali={myThingsButtonBengaliImage}
+              imageOneWidth="35%"
+              imageOneLink=""
+              quizButtonOneMarginTop="-2%"
               quizButtonOneMarginLeft="48%"
-              imageTwoEnglish={colorShapesButtonEnglishImage}
-              imageTwoBengali={colorShapesButtonBengaliImage}
-              imageTwoWidth="40%"
+              imageOneQuizLink=""
+              imageTwoEnglish={thingsInRoomButtonEnglishImage}
+              imageTwoBengali={thingsInRoomButtonBengaliImage}
+              imageTwoWidth="35%"
+              imageTwoLink=""
               imageTwoMarginTop="3%"
-              imageTwoMarginLeft="25%"
-              quizButtonTwoMarginTop="-3%"
+              imageTwoMarginLeft="38%"
+              quizButtonTwoMarginTop="-2%"
               quizButtonTwoMarginLeft="48%"
+              imageTwoQuizLink="/nongradaanoHomePage"
               previousButtonVisibility=""
               previousButtonLinkValue="/lessonshomepage"
               moreButtonVisibility=""
-              moreButtonLinkValue="/vocabhomepagefamilybody"
+              moreButtonLinkValue="/vocabhomepageoutsidehousecolor"
             ></VocabHomePage>
           )}
         />
         <Route
-          path="/vocabhomepagefamilybody"
+          path="/vocabhomepageoutsidehousecolor"
           exact
           render={() => (
             <VocabHomePage
-              imageOneEnglish={familyButtonEnglishImage}
-              imageOneBengali={familyButtonBengaliImage}
+              imageOneEnglish={thingsOutsideHouseButtonEnglishImage}
+              imageOneBengali={thingsOutsideHouseButtonBengaliImage}
               imageOneWidth="40%"
-              quizButtonOneMarginTop="-5%"
-              quizButtonOneMarginLeft="45%"
-              imageTwoEnglish={bodyPartsButtonEnglishImage}
-              imageTwoBengali={bodyPartsButtonBengaliImage}
+              imageOneLink=""
+              quizButtonOneMarginTop="-1%"
+              quizButtonOneMarginLeft="46%"
+              imageOneQuizLink=""
+              imageTwoEnglish={colorShapesButtonEnglishImage}
+              imageTwoBengali={colorShapesButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoMarginTop="1%"
+              imageTwoLink=""
+              imageTwoMarginTop="5%"
               imageTwoMarginLeft="28%"
-              quizButtonTwoMarginTop="-15%"
-              quizButtonTwoMarginLeft="45%"
+              quizButtonTwoMarginTop="-2%"
+              quizButtonTwoMarginLeft="46%"
+              imageTwoQuizLink=""
               previousButtonVisibility=""
               previousButtonLinkValue="/vocabhomepage"
               moreButtonVisibility=""
@@ -420,17 +442,49 @@ class App extends Component {
               imageOneEnglish={daysWeekButtonEnglishImage}
               imageOneBengali={daysWeekButtonBengaliImage}
               imageOneWidth="40%"
+              imageOneLink="/daysOfTheWeek"
               quizButtonOneMarginTop="-1%"
               quizButtonOneMarginLeft="46%"
+              imageOneQuizLink=""
               imageTwoEnglish={natureButtonEnglishImage}
               imageTwoBengali={natureButtonBengaliImage}
               imageTwoWidth="35%"
+              imageTwoLink=""
               imageTwoMarginTop=""
               imageTwoMarginLeft="25%"
               quizButtonTwoMarginTop="-3%"
               quizButtonTwoMarginLeft="46%"
+              imageTwoQuizLink=""
               previousButtonVisibility=""
-              previousButtonLinkValue="/vocabhomepagefamilybody"
+              previousButtonLinkValue="/vocabhomepageoutsidehousecolor"
+              moreButtonVisibility=""
+              moreButtonLinkValue="/vocabhomepagefamilybody"
+            ></VocabHomePage>
+          )}
+        />
+        <Route
+          path="/vocabhomepagefamilybody"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={familyButtonEnglishImage}
+              imageOneBengali={familyButtonBengaliImage}
+              imageOneWidth="40%"
+              imageOneLink=""
+              quizButtonOneMarginTop="-5%"
+              quizButtonOneMarginLeft="45%"
+              imageOneQuizLink=""
+              imageTwoEnglish={bodyPartsButtonEnglishImage}
+              imageTwoBengali={bodyPartsButtonBengaliImage}
+              imageTwoWidth="35%"
+              imageTwoLink=""
+              imageTwoMarginTop="1%"
+              imageTwoMarginLeft="28%"
+              quizButtonTwoMarginTop="-15%"
+              quizButtonTwoMarginLeft="45%"
+              imageTwoQuizLink=""
+              previousButtonVisibility=""
+              previousButtonLinkValue="/vocabhomepagedaysnature"
               moreButtonVisibility=""
               moreButtonLinkValue="/vocabhomepageoppositesfood"
             ></VocabHomePage>
@@ -444,17 +498,21 @@ class App extends Component {
               imageOneEnglish={oppositesButtonEnglishImage}
               imageOneBengali={oppositesButtonBengaliImage}
               imageOneWidth="35%"
+              imageOneLink=""
               quizButtonOneMarginTop="-1.5%"
               quizButtonOneMarginLeft="46%"
+              imageOneQuizLink=""
               imageTwoEnglish={foodButtonEnglishImage}
               imageTwoBengali={foodButtonBengaliImage}
               imageTwoWidth="35%"
+              imageTwoLink=""
               imageTwoMarginTop=""
               imageTwoMarginLeft="25%"
               quizButtonTwoMarginTop="1%"
               quizButtonTwoMarginLeft="46%"
+              imageTwoQuizLink=""
               previousButtonVisibility=""
-              previousButtonLinkValue="/vocabhomepagedaysnature"
+              previousButtonLinkValue="/vocabhomepagefamilybody"
               moreButtonVisibility=""
               moreButtonLinkValue="/vocabhomepagetime"
             ></VocabHomePage>
@@ -468,21 +526,30 @@ class App extends Component {
               imageOneEnglish={timeButtonEnglishImage}
               imageOneBengali={timeButtonBengaliImage}
               imageOneWidth="35%"
+              imageOneLink=""
               quizButtonOneMarginTop="1%"
               quizButtonOneMarginLeft="46%"
+              imageOneQuizLink=""
               imageTwoEnglish={null}
               imageTwoBengali={null}
               imageTwoWidth=""
+              imageTwoLink=""
               imageTwoMarginTop=""
               imageTwoMarginLeft=""
               quizButtonTwoMarginTop=""
               quizButtonTwoMarginLeft=""
+              imageTwoQuizLink=""
               previousButtonVisibility=""
               previousButtonLinkValue="/vocabhomepageoppositesfood"
               moreButtonVisibility="hidden"
               moreButtonLinkValue=""
             ></VocabHomePage>
           )}
+        />
+        <Route
+          path="/nongradaanoHomePage"
+          exact
+          render={() => <NongradaanoHomePage />}
         />
         <Route
           path="/testtest"
@@ -620,9 +687,24 @@ class App extends Component {
           )}
         />
         <Route
-          path="/vocabGame"
+          path="/vocabGameRoomOne"
           exact
-          render={() => <VocabGame></VocabGame>}
+          render={() => (
+            <VocabGame
+              quizQuestions={vocabGameRoomOneQuestions}
+              roomPicturePositionsMap={roomOnePicturePositionsMap}
+            ></VocabGame>
+          )}
+        ></Route>
+        <Route
+          path="/vocabGameRoomTwo"
+          exact
+          render={() => (
+            <VocabGame
+              quizQuestions={vocabGameRoomTwoQuestions}
+              roomPicturePositionsMap={roomTwoPicturePositionsMap}
+            ></VocabGame>
+          )}
         ></Route>
         <Route
           path="/pronunciationhomepage"

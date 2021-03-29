@@ -124,8 +124,8 @@ class LessonsHomePage extends Component {
               </Link>
             </span>
             <span>
-              {/* <Link to="/vocabhomepage"> */}
-              <Link to="/daysOfTheWeek">
+              <Link to="/vocabhomepage">
+                {/* <Link to="/daysOfTheWeek"> */}
                 <img
                   src={this.state.vocabularyButton}
                   alt="could not be loaded"

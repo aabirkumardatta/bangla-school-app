@@ -29,7 +29,7 @@ const questionAudioAndCorrectAnswerMap = [
   { audio: capAudio, correct: capImage }
 ];
 
-var roomPicturePositionsMap = [
+var roomOnePicturePositionsMap = [
   { imageSource: pantImage },
   { imageSource: sockImage },
   { imageSource: dressImage },
@@ -80,4 +80,4 @@ var vocabGameRoomOneQuestions = [
   }
 ];
 
-export { roomPicturePositionsMap, vocabGameRoomOneQuestions };
+export { roomOnePicturePositionsMap, vocabGameRoomOneQuestions };

@@ -15,7 +15,7 @@ class DaysOfTheWeek extends Component {
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
-          <Link to="/lessonshomepage">
+          <Link to="/vocabhomepagedaysnature">
             <img
               style={{ width: "12vh", height: "12vh" }}
               src={homebuttonImage}

@@ -4,10 +4,6 @@ import helpButtonImage from "../assets/VocabAssets/helpButtonImage.PNG";
 import PlayButton from "./playSound";
 import NextButton from "./nextButton";
 import { Link } from "react-router-dom";
-import {
-  roomPicturePositionsMap,
-  vocabGameRoomOneQuestions
-} from "../quizQuestions/vocabGameRoomOne";
 import { Howl } from "howler";
 import quizBgm from "../assets/quizBgm.mp3";
 import correctAnswer from "../assets/correctAnswer.mp3";
@@ -29,7 +25,8 @@ class VocabGame extends Component {
       nextButtonDisabled: true,
       optionsDisabled: true,
       correctAnswer: "",
-      quizQuestions: vocabGameRoomOneQuestions,
+      quizQuestions: this.props.quizQuestions,
+      roomPicturePositionsMap: this.props.roomPicturePositionsMap,
       questionTotal: "",
       quizBgm: new Howl({ src: [quizBgm], html5: true, loop: true })
     };
@@ -275,10 +272,10 @@ class VocabGame extends Component {
               left: "23%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[0].imageSource}
+            src={this.state.roomPicturePositionsMap[0].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[0].imageSource}
-            id={roomPicturePositionsMap[0].imageSource}
+            key={this.state.roomPicturePositionsMap[0].imageSource}
+            id={this.state.roomPicturePositionsMap[0].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -291,10 +288,10 @@ class VocabGame extends Component {
               left: "47%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[1].imageSource}
+            src={this.state.roomPicturePositionsMap[1].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[1].imageSource}
-            id={roomPicturePositionsMap[1].imageSource}
+            key={this.state.roomPicturePositionsMap[1].imageSource}
+            id={this.state.roomPicturePositionsMap[1].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -307,10 +304,10 @@ class VocabGame extends Component {
               left: "60%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[2].imageSource}
+            src={this.state.roomPicturePositionsMap[2].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[2].imageSource}
-            id={roomPicturePositionsMap[2].imageSource}
+            key={this.state.roomPicturePositionsMap[2].imageSource}
+            id={this.state.roomPicturePositionsMap[2].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -323,10 +320,10 @@ class VocabGame extends Component {
               right: "25.5%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[3].imageSource}
+            src={this.state.roomPicturePositionsMap[3].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[3].imageSource}
-            id={roomPicturePositionsMap[3].imageSource}
+            key={this.state.roomPicturePositionsMap[3].imageSource}
+            id={this.state.roomPicturePositionsMap[3].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -339,10 +336,10 @@ class VocabGame extends Component {
               right: "35%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[4].imageSource}
+            src={this.state.roomPicturePositionsMap[4].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[4].imageSource}
-            id={roomPicturePositionsMap[4].imageSource}
+            key={this.state.roomPicturePositionsMap[4].imageSource}
+            id={this.state.roomPicturePositionsMap[4].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -355,10 +352,10 @@ class VocabGame extends Component {
               right: "46%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[5].imageSource}
+            src={this.state.roomPicturePositionsMap[5].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[5].imageSource}
-            id={roomPicturePositionsMap[5].imageSource}
+            key={this.state.roomPicturePositionsMap[5].imageSource}
+            id={this.state.roomPicturePositionsMap[5].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -371,10 +368,10 @@ class VocabGame extends Component {
               left: "35%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[6].imageSource}
+            src={this.state.roomPicturePositionsMap[6].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[6].imageSource}
-            id={roomPicturePositionsMap[6].imageSource}
+            key={this.state.roomPicturePositionsMap[6].imageSource}
+            id={this.state.roomPicturePositionsMap[6].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -387,10 +384,10 @@ class VocabGame extends Component {
               left: "28%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[7].imageSource}
+            src={this.state.roomPicturePositionsMap[7].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[7].imageSource}
-            id={roomPicturePositionsMap[7].imageSource}
+            key={this.state.roomPicturePositionsMap[7].imageSource}
+            id={this.state.roomPicturePositionsMap[7].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -403,10 +400,10 @@ class VocabGame extends Component {
               right: "34%"
             }}
             className="vocab-game-option"
-            src={roomPicturePositionsMap[8].imageSource}
+            src={this.state.roomPicturePositionsMap[8].imageSource}
             alt="could not be loaded"
-            key={roomPicturePositionsMap[8].imageSource}
-            id={roomPicturePositionsMap[8].imageSource}
+            key={this.state.roomPicturePositionsMap[8].imageSource}
+            id={this.state.roomPicturePositionsMap[8].imageSource}
             onClick={
               this.state.optionsDisabled ? null : this.handleAnswerSelected
             }
@@ -438,7 +435,7 @@ class VocabGame extends Component {
             marginLeft: "1%"
           }}
         >
-          <Link to="/vocabhomepage">
+          <Link to="/nongradaanoHomePage">
             <img
               src={homebuttonImage}
               alt="could not be loaded"
