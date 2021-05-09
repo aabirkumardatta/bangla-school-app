@@ -87,6 +87,10 @@ import {
   roomTwoPicturePositionsMap,
   vocabGameRoomTwoQuestions
 } from "./quizQuestions/vocabGameRoomTwo";
+import VocabLessonHomePage from "./components/vocabLessonHomePage";
+import myThingsLessonPageOne from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageOne";
+import myThingsLessonPageTwo from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageTwo";
+import myThingsLessonPageThree from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageThree";
 
 class App extends Component {
   render() {
@@ -386,10 +390,10 @@ class App extends Component {
               imageOneEnglish={myThingsButtonEnglishImage}
               imageOneBengali={myThingsButtonBengaliImage}
               imageOneWidth="35%"
-              imageOneLink=""
+              imageOneLink="/myThingsVocabLessonOne"
               quizButtonOneMarginTop="-2%"
               quizButtonOneMarginLeft="48%"
-              imageOneQuizLink=""
+              imageOneQuizLink="/nongradaanoHomePage"
               imageTwoEnglish={thingsInRoomButtonEnglishImage}
               imageTwoBengali={thingsInRoomButtonBengaliImage}
               imageTwoWidth="35%"
@@ -398,7 +402,7 @@ class App extends Component {
               imageTwoMarginLeft="38%"
               quizButtonTwoMarginTop="-2%"
               quizButtonTwoMarginLeft="48%"
-              imageTwoQuizLink="/nongradaanoHomePage"
+              imageTwoQuizLink=""
               previousButtonVisibility=""
               previousButtonLinkValue="/lessonshomepage"
               moreButtonVisibility=""
@@ -799,6 +803,33 @@ class App extends Component {
           path="/daysOfTheWeek"
           exact
           render={() => <DaysOfTheWeek></DaysOfTheWeek>}
+        />
+        <Route
+          path="/myThingsVocabLessonOne"
+          exact
+          render={() => (
+            <VocabLessonHomePage
+              imageAudioMap={myThingsLessonPageOne}
+            ></VocabLessonHomePage>
+          )}
+        />
+        <Route
+          path="/myThingsVocabLessonTwo"
+          exact
+          render={() => (
+            <VocabLessonHomePage
+              imageAudioMap={myThingsLessonPageTwo}
+            ></VocabLessonHomePage>
+          )}
+        />
+        <Route
+          path="/myThingsVocabLessonThree"
+          exact
+          render={() => (
+            <VocabLessonHomePage
+              imageAudioMap={myThingsLessonPageThree}
+            ></VocabLessonHomePage>
+          )}
         />
       </div>
     );

@@ -4,7 +4,7 @@ import notebookImage from "../assets/VocabAssets/VocabGame2/notebookImage.png";
 import pencilImage from "../assets/VocabAssets/VocabGame2/pencilImage.png";
 import watchImage from "../assets/VocabAssets/VocabGame2/watchImage.png";
 import scissorsImage from "../assets/VocabAssets/VocabGame2/scissorsImage.png";
-import toothBrushImage from "../assets/VocabAssets/VocabGame2/toothBrushImage.png";
+import toothPasteImage from "../assets/VocabAssets/VocabGame2/toothPasteImage.png";
 import bookImage from "../assets/VocabAssets/VocabGame2/bookImage.png";
 import paintBrushImage from "../assets/VocabAssets/VocabGame2/paintBrushImage.png";
 import dollAudio from "../assets/VocabAssets/VocabGame2/dollAudio.m4a";
@@ -13,7 +13,7 @@ import notebookAudio from "../assets/VocabAssets/VocabGame2/notebookAudio.m4a";
 import pencilAudio from "../assets/VocabAssets/VocabGame2/pencilAudio.m4a";
 import watchAudio from "../assets/VocabAssets/VocabGame2/watchAudio.m4a";
 import scissorsAudio from "../assets/VocabAssets/VocabGame2/scissorsAudio.m4a";
-import toothBrushAudio from "../assets/VocabAssets/VocabGame2/toothBrushAudio.m4a";
+import toothPasteAudio from "../assets/VocabAssets/VocabGame2/toothPasteAudio.m4a";
 import bookAudio from "../assets/VocabAssets/VocabGame2/bookAudio.m4a";
 import paintBrushAudio from "../assets/VocabAssets/VocabGame2/paintBrushAudio.m4a";
 
@@ -24,7 +24,7 @@ const questionAudioAndCorrectAnswerMap = [
   { audio: pencilAudio, correct: pencilImage },
   { audio: watchAudio, correct: watchImage },
   { audio: scissorsAudio, correct: scissorsImage },
-  { audio: toothBrushAudio, correct: toothBrushImage },
+  { audio: toothPasteAudio, correct: toothPasteImage },
   { audio: bookAudio, correct: bookImage },
   { audio: paintBrushAudio, correct: paintBrushImage }
 ];
@@ -36,7 +36,7 @@ var roomTwoPicturePositionsMap = [
   { imageSource: pencilImage },
   { imageSource: watchImage },
   { imageSource: scissorsImage },
-  { imageSource: toothBrushImage },
+  { imageSource: toothPasteImage },
   { imageSource: bookImage },
   { imageSource: paintBrushImage }
 ];
