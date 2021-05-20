@@ -91,6 +91,10 @@ import VocabLessonHomePage from "./components/vocabLessonHomePage";
 import myThingsLessonPageOne from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageOne";
 import myThingsLessonPageTwo from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageTwo";
 import myThingsLessonPageThree from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageThree";
+import thingsInARoomLessonPageOne from "./assets/VocabAssets/VocabLesson/Things In A Room/Questions/thingsInARoomLessonPageOne";
+import thingsInARoomLessonPageTwo from "./assets/VocabAssets/VocabLesson/Things In A Room/Questions/thingsInARoomLessonPageTwo";
+import thingsInARoomLessonPageThree from "./assets/VocabAssets/VocabLesson/Things In A Room/Questions/thingsInARoomLessonPageThree";
+import VocabLessonHomePageEight from "./components/vocabLessonHomePageEight";
 
 class App extends Component {
   render() {
@@ -397,7 +401,7 @@ class App extends Component {
               imageTwoEnglish={thingsInRoomButtonEnglishImage}
               imageTwoBengali={thingsInRoomButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoLink=""
+              imageTwoLink="/thingsInARoomLessonPageOne"
               imageTwoMarginTop="3%"
               imageTwoMarginLeft="38%"
               quizButtonTwoMarginTop="-2%"
@@ -829,6 +833,33 @@ class App extends Component {
             <VocabLessonHomePage
               imageAudioMap={myThingsLessonPageThree}
             ></VocabLessonHomePage>
+          )}
+        />
+        <Route
+          path="/thingsInARoomLessonPageOne"
+          exact
+          render={() => (
+            <VocabLessonHomePage
+              imageAudioMap={thingsInARoomLessonPageOne}
+            ></VocabLessonHomePage>
+          )}
+        />
+        <Route
+          path="/thingsInARoomLessonPageTwo"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={thingsInARoomLessonPageTwo}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/thingsInARoomLessonPageThree"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={thingsInARoomLessonPageThree}
+            ></VocabLessonHomePageEight>
           )}
         />
       </div>
