@@ -77,7 +77,8 @@ import byanjonLettersRawPronunciation from "./assets/PronunciationAssets/byanjon
 import byanjonLettersAntYawJawPronunciation from "./assets/PronunciationAssets/byanjonLettersAntYawJawPronunciation";
 import intro_video_green from "./assets/intro_video_green.mp4";
 import intro_video_green_pronunciation from "./assets/intro_video_green_pronunciation.mp4";
-import DaysOfTheWeek from "./components/daysOfTheWeek";
+import LandscapeVideoComponent from "./components/landscapeVideoComponent";
+import daysOfTheWeekVideo from "./assets/VocabAssets/DaysOfTheWeek/daysOfTheWeekVideo.mp4";
 import NongradaanoHomePage from "./components/nongradaanoHomePage";
 import {
   roomOnePicturePositionsMap,
@@ -95,6 +96,22 @@ import thingsInARoomLessonPageOne from "./assets/VocabAssets/VocabLesson/Things 
 import thingsInARoomLessonPageTwo from "./assets/VocabAssets/VocabLesson/Things In A Room/Questions/thingsInARoomLessonPageTwo";
 import thingsInARoomLessonPageThree from "./assets/VocabAssets/VocabLesson/Things In A Room/Questions/thingsInARoomLessonPageThree";
 import VocabLessonHomePageEight from "./components/vocabLessonHomePageEight";
+import natureLessonPageOne from "./assets/VocabAssets/VocabLesson/Nature/Questions/natureLessonPageOne";
+import natureLessonPageTwo from "./assets/VocabAssets/VocabLesson/Nature/Questions/natureLessonPageTwo";
+import natureLessonPageThree from "./assets/VocabAssets/VocabLesson/Nature/Questions/natureLessonPageThree";
+import bodyPartsLessonPageOne from "./assets/VocabAssets/VocabLesson/Body Parts/Question/bodyPartsLessonPageOne";
+import BodyPartsLessonTwoButton from "./components/bodyPartsLessonTwoButton";
+import foodLessonPageOne from "./assets/VocabAssets/VocabLesson/Food/Questions/foodLessonPageOne";
+import foodLessonPageTwo from "./assets/VocabAssets/VocabLesson/Food/Questions/foodLessonPageTwo";
+import foodLessonPageThree from "./assets/VocabAssets/VocabLesson/Food/Questions/foodLessonPageThree";
+import foodLessonPageFour from "./assets/VocabAssets/VocabLesson/Food/Questions/foodLessonPageFour";
+import thingsOutsideHouseLessonPageOne from "./assets/VocabAssets/VocabLesson/Things Outside House/Questions/thingsOutsideHouseLessonPageOne";
+import thingsOutsideHouseLessonPageTwo from "./assets/VocabAssets/VocabLesson/Things Outside House/Questions/thingsOutsideHouseLessonPageTwo";
+import BodyPartsLessonThreeButton from "./components/bodyPartsLessonThreeButton";
+import bodyPartsLessonPageTwo from "./assets/VocabAssets/VocabLesson/Body Parts/Question/bodyPartsLessonPageTwo";
+import family_tree_video from "./assets/VocabAssets/VocabLesson/Family Tree/Assets/family_tree_video.mp4";
+import ColorLesson from "./components/colorLesson";
+import ShapeLesson from "./components/shapeLesson";
 
 class App extends Component {
   render() {
@@ -422,14 +439,14 @@ class App extends Component {
               imageOneEnglish={thingsOutsideHouseButtonEnglishImage}
               imageOneBengali={thingsOutsideHouseButtonBengaliImage}
               imageOneWidth="40%"
-              imageOneLink=""
+              imageOneLink="/thingsOutsideHouseLessonPageOne"
               quizButtonOneMarginTop="-1%"
               quizButtonOneMarginLeft="46%"
               imageOneQuizLink=""
               imageTwoEnglish={colorShapesButtonEnglishImage}
               imageTwoBengali={colorShapesButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoLink=""
+              imageTwoLink="/colorLesson"
               imageTwoMarginTop="5%"
               imageTwoMarginLeft="28%"
               quizButtonTwoMarginTop="-2%"
@@ -450,14 +467,14 @@ class App extends Component {
               imageOneEnglish={daysWeekButtonEnglishImage}
               imageOneBengali={daysWeekButtonBengaliImage}
               imageOneWidth="40%"
-              imageOneLink="/daysOfTheWeek"
+              imageOneLink="/daysOfTheWeekLesson"
               quizButtonOneMarginTop="-1%"
               quizButtonOneMarginLeft="46%"
               imageOneQuizLink=""
               imageTwoEnglish={natureButtonEnglishImage}
               imageTwoBengali={natureButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoLink=""
+              imageTwoLink="/natureLessonPageOne"
               imageTwoMarginTop=""
               imageTwoMarginLeft="25%"
               quizButtonTwoMarginTop="-3%"
@@ -478,14 +495,14 @@ class App extends Component {
               imageOneEnglish={familyButtonEnglishImage}
               imageOneBengali={familyButtonBengaliImage}
               imageOneWidth="40%"
-              imageOneLink=""
+              imageOneLink="/familyTreeLesson"
               quizButtonOneMarginTop="-5%"
               quizButtonOneMarginLeft="45%"
               imageOneQuizLink=""
               imageTwoEnglish={bodyPartsButtonEnglishImage}
               imageTwoBengali={bodyPartsButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoLink=""
+              imageTwoLink="/bodyPartsLessonPageOne"
               imageTwoMarginTop="1%"
               imageTwoMarginLeft="28%"
               quizButtonTwoMarginTop="-15%"
@@ -513,7 +530,7 @@ class App extends Component {
               imageTwoEnglish={foodButtonEnglishImage}
               imageTwoBengali={foodButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoLink=""
+              imageTwoLink="/foodLessonPageOne"
               imageTwoMarginTop=""
               imageTwoMarginLeft="25%"
               quizButtonTwoMarginTop="1%"
@@ -804,9 +821,14 @@ class App extends Component {
           )}
         />
         <Route
-          path="/daysOfTheWeek"
+          path="/daysOfTheWeekLesson"
           exact
-          render={() => <DaysOfTheWeek></DaysOfTheWeek>}
+          render={() => (
+            <LandscapeVideoComponent
+              videoSource={daysOfTheWeekVideo}
+              homePageLink="/vocabhomepagedaysnature"
+            ></LandscapeVideoComponent>
+          )}
         />
         <Route
           path="/myThingsVocabLessonOne"
@@ -861,6 +883,131 @@ class App extends Component {
               imageAudioMap={thingsInARoomLessonPageThree}
             ></VocabLessonHomePageEight>
           )}
+        />
+        <Route
+          path="/bodyPartsLessonPageOne"
+          exact
+          render={() => (
+            <BodyPartsLessonTwoButton
+              letterSet={bodyPartsLessonPageOne}
+              homeButtonLink="/vocabhomepagefamilybody"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green}
+            ></BodyPartsLessonTwoButton>
+          )}
+        />
+        <Route
+          path="/bodyPartsLessonPageTwo"
+          exact
+          render={() => (
+            <BodyPartsLessonThreeButton
+              letterSet={bodyPartsLessonPageTwo}
+              homeButtonLink="/vocabhomepagefamilybody"
+              gameButtonVisibility="hidden"
+              introVideoLink={intro_video_green}
+            ></BodyPartsLessonThreeButton>
+          )}
+        />
+        <Route
+          path="/natureLessonPageOne"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={natureLessonPageOne}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/natureLessonPageTwo"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={natureLessonPageTwo}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/natureLessonPageThree"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={natureLessonPageThree}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/foodLessonPageOne"
+          exact
+          render={() => (
+            <VocabLessonHomePage
+              imageAudioMap={foodLessonPageOne}
+            ></VocabLessonHomePage>
+          )}
+        />
+        <Route
+          path="/foodLessonPageTwo"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={foodLessonPageTwo}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/foodLessonPageThree"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={foodLessonPageThree}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/foodLessonPageFour"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={foodLessonPageFour}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/thingsOutsideHouseLessonPageOne"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={thingsOutsideHouseLessonPageOne}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/thingsOutsideHouseLessonPageTwo"
+          exact
+          render={() => (
+            <VocabLessonHomePageEight
+              imageAudioMap={thingsOutsideHouseLessonPageTwo}
+            ></VocabLessonHomePageEight>
+          )}
+        />
+        <Route
+          path="/familyTreeLesson"
+          exact
+          render={() => (
+            <LandscapeVideoComponent
+              videoSource={family_tree_video}
+              homePageLink="/vocabhomepagefamilybody"
+            ></LandscapeVideoComponent>
+          )}
+        />
+        <Route
+          path="/colorLesson"
+          exact
+          render={() => <ColorLesson></ColorLesson>}
+        />
+        <Route
+          path="/shapeLesson"
+          exact
+          render={() => <ShapeLesson></ShapeLesson>}
         />
       </div>
     );

@@ -86,6 +86,7 @@ class PronunciationHomePage extends Component {
         <div>
           <Link to="/byanjonLettersKawToGhawPronunciation">
             <img
+              className="picture-option-button"
               style={{
                 position: "fixed",
                 height: "10vh",

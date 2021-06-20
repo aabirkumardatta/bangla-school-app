@@ -305,6 +305,21 @@ html {
     -8px -8px 12px 0 rgba(0, 0, 0, 0.5);
 }
 
+.btn-food-lesson-video-tiles {
+  background-color: rgba(232, 210, 91);
+  border: 1px solid black;
+  border-radius: 20%;
+  justify-content: center;
+  padding: 18% 10%;
+  color: black;
+  outline: none;
+  font-size: 5vh;
+  height: 10vh;
+  width: 25vh;
+  box-shadow: 12px 12px 16px 0 rgba(0, 0, 0, 0.5),
+    -8px -8px 12px 0 rgba(0, 0, 0, 0.5);
+}
+
 .languageOptionButton {
   margin-top: 0.2%;
   margin-left: 2%;
@@ -312,11 +327,20 @@ html {
   height: 8%;
 }
 
+.round-button-english {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  padding-top: 100%;
+}
+
 .btn:hover,
 .quiz-button:hover,
 .next-btn:hover,
 .btn-video-tiles:hover,
+.btn-food-lesson-video-tiles:hover,
 .mute-btn:hover,
+.round-button-english:hover,
 .picture-option-button:hover {
   cursor: pointer;
 }

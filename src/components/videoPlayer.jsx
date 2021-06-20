@@ -29,6 +29,15 @@ class VideoPlayer extends Component {
     });
   }
 
+  getControlsShowProperty() {
+    try {
+      if (this.props.controlsShowProperty === null) return false;
+      else return this.props.controlsShowProperty;
+    } catch (e) {
+      return false;
+    }
+  }
+
   render() {
     return (
       <div id="videoPlayerDiv">
@@ -41,6 +50,7 @@ class VideoPlayer extends Component {
             height="30%"
             style={this.state.videoPlayerStyle}
             loop={false}
+            controls={this.getControlsShowProperty()}
           />
         }
       </div>
