@@ -50,7 +50,7 @@ class VideoPlayer extends Component {
             height="30%"
             style={this.state.videoPlayerStyle}
             loop={false}
-            controls={this.getControlsShowProperty()}
+            controls={true}
           />
         }
       </div>

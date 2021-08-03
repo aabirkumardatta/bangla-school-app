@@ -96,17 +96,17 @@ class LessonsHomePage extends Component {
               </Link>
             </span>
             <span>
-              <Link to="/">
-                <img
-                  src={this.state.writingButton}
-                  alt="could not be loaded"
-                  style={{
-                    marginLeft: "13%",
-                    width: "35vh",
-                    height: "25vh"
-                  }}
-                ></img>
-              </Link>
+              {/* <Link to="/"> */}
+              <img
+                src={this.state.writingButton}
+                alt="could not be loaded"
+                style={{
+                  marginLeft: "13%",
+                  width: "35vh",
+                  height: "25vh"
+                }}
+              ></img>
+              {/* </Link> */}
             </span>
           </div>
 

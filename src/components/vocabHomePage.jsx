@@ -21,6 +21,9 @@ class VocabHomePage extends Component {
       vocabularyButton: vocabularyButtonEnglishImage,
       imageOne: this.props.imageOneEnglish,
       imageTwo: this.props.imageTwoEnglish,
+      imageThree: this.props.imageThreeEnglish,
+      imageFour: this.props.imageFourEnglish,
+      imageFive: this.props.imageFiveEnglish,
       quizButton: quizButtonEnglishImage,
       moreButton: moreButtonEnglishImage
     };
@@ -41,6 +44,9 @@ class VocabHomePage extends Component {
         vocabularyButton: vocabularyButtonBengaliImage,
         imageOne: this.props.imageOneBengali,
         imageTwo: this.props.imageTwoBengali,
+        imageThree: this.props.imageThreeBengali,
+        imageFour: this.props.imageFourBengali,
+        imageFive: this.props.imageFiveBengali,
         quizButton: quizButtonBengaliImage,
         moreButton: moreButtonBengaliImage
       });
@@ -51,9 +57,184 @@ class VocabHomePage extends Component {
         vocabularyButton: vocabularyButtonEnglishImage,
         imageOne: this.props.imageOneEnglish,
         imageTwo: this.props.imageTwoEnglish,
+        imageThree: this.props.imageThreeEnglish,
+        imageFour: this.props.imageFourEnglish,
+        imageFive: this.props.imageFiveEnglish,
         quizButton: quizButtonEnglishImage,
         moreButton: moreButtonEnglishImage
       });
+    }
+  };
+
+  renderTwoButtonView = () => {
+    return (
+      <div>
+        <div>
+          <Link to={this.props.imageTwoLink}>
+            <img
+              src={this.state.imageTwo}
+              style={{
+                width: this.props.imageTwoWidth,
+                marginLeft: this.props.imageTwoMarginLeft,
+                marginTop: this.props.imageTwoMarginTop
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <img
+            src={this.state.quizButton}
+            style={{
+              width: "8%",
+              marginLeft: this.props.quizButtonTwoMarginLeft,
+              marginTop: this.props.quizButtonTwoMarginTop
+            }}
+            alt="could not be loaded"
+          ></img>
+        </div>
+      </div>
+    );
+  };
+
+  renderFiveButtonView = () => {
+    return (
+      <div>
+        <div>
+          <Link to={this.props.imageTwoLink}>
+            <img
+              src={this.state.imageTwo}
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "35vh",
+                top: "50%",
+                left: "35%"
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <Link to={this.props.imageThreeLink}>
+            <img
+              src={this.state.imageThree}
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "35vh",
+                top: "50%",
+                left: "55%"
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <Link to={this.props.imageFourLink}>
+            <img
+              src={this.state.imageFour}
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "35vh",
+                top: "65%",
+                left: "35%"
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <Link to={this.props.imageFiveLink}>
+            <img
+              src={this.state.imageFive}
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "35vh",
+                top: "65%",
+                left: "55%"
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <img
+            src={this.state.quizButton}
+            style={{
+              position: "fixed",
+              height: "10vh",
+              width: "15vh",
+              top: "80%",
+              left: "49%"
+            }}
+            alt="could not be loaded"
+          ></img>
+        </div>
+      </div>
+    );
+  };
+
+  renderThreeButtonView = () => {
+    return (
+      <div>
+        <div>
+          <Link to={this.props.imageTwoLink}>
+            <img
+              src={this.state.imageTwo}
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "35vh",
+                top: "55%",
+                left: "35%"
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <Link to={this.props.imageThreeLink}>
+            <img
+              src={this.state.imageThree}
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "35vh",
+                top: "55%",
+                left: "55%"
+              }}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+        <div>
+          <img
+            src={this.state.quizButton}
+            style={{
+              position: "fixed",
+              height: "10vh",
+              width: "15vh",
+              top: "68%",
+              left: "50%"
+            }}
+            alt="could not be loaded"
+          ></img>
+        </div>
+      </div>
+    );
+  };
+
+  renderView = renderViewOptionPassed => {
+    switch (renderViewOptionPassed) {
+      case "renderFiveButtonView":
+        return this.renderFiveButtonView();
+      case "renderThreeButtonView":
+        return this.renderThreeButtonView();
+      default:
+        return this.renderTwoButtonView();
     }
   };
 
@@ -103,46 +284,17 @@ class VocabHomePage extends Component {
           </Link>
         </div>
         <div>
-          <Link to={this.props.imageOneQuizLink}>
-            <img
-              src={this.state.quizButton}
-              style={{
-                width: "8%",
-                marginLeft: this.props.quizButtonOneMarginLeft,
-                marginTop: this.props.quizButtonOneMarginTop
-              }}
-              alt="could not be loaded"
-            ></img>
-          </Link>
+          <img
+            src={this.state.quizButton}
+            style={{
+              width: "8%",
+              marginLeft: this.props.quizButtonOneMarginLeft,
+              marginTop: this.props.quizButtonOneMarginTop
+            }}
+            alt="could not be loaded"
+          ></img>
         </div>
-        <div>
-          <Link to={this.props.imageTwoLink}>
-            <img
-              src={this.state.imageTwo}
-              style={{
-                width: this.props.imageTwoWidth,
-                marginLeft: this.props.imageTwoMarginLeft,
-                marginTop: this.props.imageTwoMarginTop,
-                visibility: this.props.moreButtonVisibility
-              }}
-              alt="could not be loaded"
-            ></img>
-          </Link>
-        </div>
-        <div>
-          <Link to={this.props.imageTwoQuizLink}>
-            <img
-              src={this.state.quizButton}
-              style={{
-                width: "8%",
-                marginLeft: this.props.quizButtonTwoMarginLeft,
-                marginTop: this.props.quizButtonTwoMarginTop,
-                visibility: this.props.moreButtonVisibility
-              }}
-              alt="could not be loaded"
-            ></img>
-          </Link>
-        </div>
+        <div>{this.renderView(this.props.renderViewOptionPassed)}</div>
         <div
           style={{
             position: "fixed",

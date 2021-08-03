@@ -214,7 +214,7 @@ class ShapeLesson extends Component {
             right: "14vh"
           }}
         >
-          <Link to="">
+          <Link to="/colorShapeLessonPoemStory">
             <img
               src={nextButtonImage}
               alt="could not be loaded"

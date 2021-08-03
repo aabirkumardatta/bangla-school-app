@@ -47,8 +47,22 @@ import bodyPartsButtonEnglishImage from "./assets/VocabAssets/bodyPartsButtonEng
 import bodyPartsButtonBengaliImage from "./assets/VocabAssets/bodyPartsButtonBengaliImage.png";
 import daysWeekButtonEnglishImage from "./assets/VocabAssets/daysWeekButtonEnglishImage.png";
 import daysWeekButtonBengaliImage from "./assets/VocabAssets/daysWeekButtonBengaliImage.png";
+import monthAndSeasonButtonEnglishImage from "./assets/VocabAssets/monthAndSeasonButtonEnglishImage.png";
+import monthAndSeasonButtonBengaliImage from "./assets/VocabAssets/monthAndSeasonButtonBengaliImage.png";
 import natureButtonEnglishImage from "./assets/VocabAssets/natureButtonEnglishImage.png";
 import natureButtonBengaliImage from "./assets/VocabAssets/natureButtonBengaliImage.png";
+import animalsButtonEnglishImage from "./assets/VocabAssets/animalsButtonEnglishImage.png";
+import animalsButtonBengaliImage from "./assets/VocabAssets/animalsButtonBengaliImage.png";
+import insectsButtonEnglishImage from "./assets/VocabAssets/insectsButtonEnglishImage.png";
+import insectsButtonBengaliImage from "./assets/VocabAssets/insectsButtonBengaliImage.png";
+import birdsButtonEnglishImage from "./assets/VocabAssets/birdsButtonEnglishImage.png";
+import birdsButtonBengaliImage from "./assets/VocabAssets/birdsButtonBengaliImage.png";
+import flowersButtonEnglishImage from "./assets/VocabAssets/flowersButtonEnglishImage.png";
+import flowersButtonBengaliImage from "./assets/VocabAssets/flowersButtonBengaliImage.png";
+import fruitsButtonEnglishImage from "./assets/VocabAssets/fruitsButtonEnglishImage.png";
+import fruitsButtonBengaliImage from "./assets/VocabAssets/fruitsButtonBengaliImage.png";
+import vegetablesButtonEnglishImage from "./assets/VocabAssets/vegetablesButtonEnglishImage.png";
+import vegetablesButtonBengaliImage from "./assets/VocabAssets/vegetablesButtonBengaliImage.png";
 import oppositesButtonEnglishImage from "./assets/VocabAssets/oppositesButtonEnglishImage.png";
 import oppositesButtonBengaliImage from "./assets/VocabAssets/oppositesButtonBengaliImage.png";
 import foodButtonEnglishImage from "./assets/VocabAssets/foodButtonEnglishImage.png";
@@ -79,6 +93,7 @@ import intro_video_green from "./assets/intro_video_green.mp4";
 import intro_video_green_pronunciation from "./assets/intro_video_green_pronunciation.mp4";
 import LandscapeVideoComponent from "./components/landscapeVideoComponent";
 import daysOfTheWeekVideo from "./assets/VocabAssets/DaysOfTheWeek/daysOfTheWeekVideo.mp4";
+import monthAndSeasonVideo from "./assets/VocabAssets/VocabLesson/Month And Season/monthAndSeasonVideo.mp4";
 import NongradaanoHomePage from "./components/nongradaanoHomePage";
 import {
   roomOnePicturePositionsMap,
@@ -112,6 +127,46 @@ import bodyPartsLessonPageTwo from "./assets/VocabAssets/VocabLesson/Body Parts/
 import family_tree_video from "./assets/VocabAssets/VocabLesson/Family Tree/Assets/family_tree_video.mp4";
 import ColorLesson from "./components/colorLesson";
 import ShapeLesson from "./components/shapeLesson";
+import LandscapeVideoWithTwoButtonsRight from "./components/landscapeVideoWithTwoButtonsRight";
+import colorShapePageLeftEnglishImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/pageLeftEnglishImage.png";
+import colorShapePageLeftBengaliImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/pageLeftBengaliImage.png";
+import songButtonEnglishImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/songButtonEnglishImage.png";
+import songButtonBengaliImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/songButtonBengaliImage.png";
+import storyButtonEnglishImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/storyButtonEnglishImage.png";
+import storyButtonBengaliImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/storyButtonBengaliImage.png";
+import LandscapeVideoWithDownButtons from "./components/landscapeVideoWithDownButtons";
+import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/lettersWithSamePatternImage.png";
+import PortraitVideoWithCollageButtons from "./components/portraitVideoWithCollageButtons";
+
+import animalLessonButtonImageOne from "./assets/VocabAssets/animalLessonButtonImageOne.png";
+import animalLessonButtonImageTwo from "./assets/VocabAssets/animalLessonButtonImageTwo.png";
+import animalLessonButtonImageThree from "./assets/VocabAssets/animalLessonButtonImageThree.png";
+import animalLessonButtonImageFour from "./assets/VocabAssets/animalLessonButtonImageFour.png";
+import animalLessonVideoOne from "./assets/VocabAssets/VocabLesson/Animals Lesson/imageOneVideo.mp4";
+import animalLessonVideoTwo from "./assets/VocabAssets/VocabLesson/Animals Lesson/imageTwoVideo.mp4";
+import animalLessonVideoThree from "./assets/VocabAssets/VocabLesson/Animals Lesson/imageThreeVideo.mp4";
+import animalLessonVideoFour from "./assets/VocabAssets/VocabLesson/Animals Lesson/imageFourVideo.mp4";
+
+import insectLessonButtonImageOne from "./assets/VocabAssets/insectLessonButtonImageOne.png";
+import insectLessonButtonImageTwo from "./assets/VocabAssets/insectLessonButtonImageTwo.png";
+import insectLessonVideoOne from "./assets/VocabAssets/VocabLesson/Insects Lesson/imageOneVideo.mp4";
+import insectLessonVideoTwo from "./assets/VocabAssets/VocabLesson/Insects Lesson/imageTwoVideo.mp4";
+
+import birdLessonButtonImageOne from "./assets/VocabAssets/birdLessonButtonImageOne.png";
+import birdLessonButtonImageTwo from "./assets/VocabAssets/birdLessonButtonImageTwo.png";
+import birdLessonButtonImageThree from "./assets/VocabAssets/birdLessonButtonImageThree.png";
+import birdLessonButtonImageFour from "./assets/VocabAssets/birdLessonButtonImageFour.png";
+import birdLessonVideoOne from "./assets/VocabAssets/VocabLesson/Birds Lesson/imageOneVideo.mp4";
+import birdLessonVideoTwo from "./assets/VocabAssets/VocabLesson/Birds Lesson/imageTwoVideo.mp4";
+import birdLessonVideoThree from "./assets/VocabAssets/VocabLesson/Birds Lesson/imageThreeVideo.mp4";
+import birdLessonVideoFour from "./assets/VocabAssets/VocabLesson/Birds Lesson/imageFourVideo.mp4";
+
+import flowerVideo from "./assets/VocabAssets/VocabLesson/Flowers Lesson/flowerVideo.mp4";
+import fruitVideo from "./assets/VocabAssets/VocabLesson/Fruits Lesson/fruitVideo.mp4";
+import vegetableVideo from "./assets/VocabAssets/VocabLesson/Vegetables Lesson/vegetableVideo.mp4";
+
+import colorAndShapeSongVideo from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Videos/colorAndShapeSongVideo.mp4";
+import colorAndShapeStoryVideo from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Videos/colorAndShapeStoryVideo.mp4";
 
 class App extends Component {
   render() {
@@ -455,12 +510,12 @@ class App extends Component {
               previousButtonVisibility=""
               previousButtonLinkValue="/vocabhomepage"
               moreButtonVisibility=""
-              moreButtonLinkValue="/vocabhomepagedaysnature"
+              moreButtonLinkValue="/vocabhomepagedaysmonth"
             ></VocabHomePage>
           )}
         />
         <Route
-          path="/vocabhomepagedaysnature"
+          path="/vocabhomepagedaysmonth"
           exact
           render={() => (
             <VocabHomePage
@@ -471,10 +526,10 @@ class App extends Component {
               quizButtonOneMarginTop="-1%"
               quizButtonOneMarginLeft="46%"
               imageOneQuizLink=""
-              imageTwoEnglish={natureButtonEnglishImage}
-              imageTwoBengali={natureButtonBengaliImage}
+              imageTwoEnglish={monthAndSeasonButtonEnglishImage}
+              imageTwoBengali={monthAndSeasonButtonBengaliImage}
               imageTwoWidth="35%"
-              imageTwoLink="/natureLessonPageOne"
+              imageTwoLink="/monthAndSeasonLesson"
               imageTwoMarginTop=""
               imageTwoMarginLeft="25%"
               quizButtonTwoMarginTop="-3%"
@@ -483,7 +538,48 @@ class App extends Component {
               previousButtonVisibility=""
               previousButtonLinkValue="/vocabhomepageoutsidehousecolor"
               moreButtonVisibility=""
+              moreButtonLinkValue="/vocabhomepagenatureanimals"
+            ></VocabHomePage>
+          )}
+        />
+        <Route
+          path="/vocabhomepagenatureanimals"
+          exact
+          render={() => (
+            <VocabHomePage
+              imageOneEnglish={natureButtonEnglishImage}
+              imageOneBengali={natureButtonBengaliImage}
+              imageOneWidth="35%"
+              imageOneLink="/natureLessonPageOne"
+              quizButtonOneMarginTop="-2.5%"
+              quizButtonOneMarginLeft="48%"
+              imageOneQuizLink=""
+              imageTwoEnglish={animalsButtonEnglishImage}
+              imageTwoBengali={animalsButtonBengaliImage}
+              imageTwoWidth="35%"
+              imageTwoLink="/animalsLesson"
+              imageTwoMarginTop=""
+              imageTwoMarginLeft=""
+              quizButtonTwoMarginTop=""
+              quizButtonTwoMarginLeft=""
+              imageTwoQuizLink=""
+              previousButtonVisibility=""
+              previousButtonLinkValue="/vocabhomepagedaysmonth"
+              moreButtonVisibility=""
               moreButtonLinkValue="/vocabhomepagefamilybody"
+              imageThreeEnglish={insectsButtonEnglishImage}
+              imageThreeBengali={insectsButtonBengaliImage}
+              imageFourEnglish={birdsButtonEnglishImage}
+              imageFourBengali={birdsButtonBengaliImage}
+              imageFiveEnglish={flowersButtonEnglishImage}
+              imageFiveBengali={flowersButtonBengaliImage}
+              renderViewOptionPassed="renderFiveButtonView"
+              imageThreeLink="/insectsLesson"
+              imageFourLink="/birdsLesson"
+              imageFiveLink="/flowersLesson"
+              imageThreeQuizLink=""
+              imageFourQuizLink=""
+              imageFiveQuizLink=""
             ></VocabHomePage>
           )}
         />
@@ -509,42 +605,47 @@ class App extends Component {
               quizButtonTwoMarginLeft="45%"
               imageTwoQuizLink=""
               previousButtonVisibility=""
-              previousButtonLinkValue="/vocabhomepagedaysnature"
+              previousButtonLinkValue="/vocabhomepagenatureanimals"
               moreButtonVisibility=""
-              moreButtonLinkValue="/vocabhomepageoppositesfood"
+              moreButtonLinkValue="/vocabhomepagefoodfruits"
             ></VocabHomePage>
           )}
         />
         <Route
-          path="/vocabhomepageoppositesfood"
+          path="/vocabhomepagefoodfruits"
           exact
           render={() => (
             <VocabHomePage
-              imageOneEnglish={oppositesButtonEnglishImage}
-              imageOneBengali={oppositesButtonBengaliImage}
-              imageOneWidth="35%"
-              imageOneLink=""
-              quizButtonOneMarginTop="-1.5%"
-              quizButtonOneMarginLeft="46%"
+              imageOneEnglish={foodButtonEnglishImage}
+              imageOneBengali={foodButtonBengaliImage}
+              imageOneWidth="30%"
+              imageOneLink="/foodLessonPageOne"
+              quizButtonOneMarginTop="1%"
+              quizButtonOneMarginLeft="50%"
               imageOneQuizLink=""
-              imageTwoEnglish={foodButtonEnglishImage}
-              imageTwoBengali={foodButtonBengaliImage}
-              imageTwoWidth="35%"
-              imageTwoLink="/foodLessonPageOne"
+              imageTwoEnglish={fruitsButtonEnglishImage}
+              imageTwoBengali={fruitsButtonBengaliImage}
+              imageTwoWidth=""
+              imageTwoLink="/fruitsLesson"
               imageTwoMarginTop=""
-              imageTwoMarginLeft="25%"
-              quizButtonTwoMarginTop="1%"
-              quizButtonTwoMarginLeft="46%"
+              imageTwoMarginLeft=""
+              quizButtonTwoMarginTop=""
+              quizButtonTwoMarginLeft=""
               imageTwoQuizLink=""
               previousButtonVisibility=""
               previousButtonLinkValue="/vocabhomepagefamilybody"
-              moreButtonVisibility=""
-              moreButtonLinkValue="/vocabhomepagetime"
+              moreButtonLinkValue="/vocabhomepagetimeopposite"
+              imageThreeEnglish={vegetablesButtonEnglishImage}
+              imageThreeBengali={vegetablesButtonBengaliImage}
+              renderViewOptionPassed="renderThreeButtonView"
+              imageThreeLink="/vegetablesLesson"
+              imageThreeQuizLink=""
+              moreButtonVisibility="hidden"
             ></VocabHomePage>
           )}
         />
         <Route
-          path="/vocabhomepagetime"
+          path="/vocabhomepagetimeopposite"
           exact
           render={() => (
             <VocabHomePage
@@ -555,17 +656,17 @@ class App extends Component {
               quizButtonOneMarginTop="1%"
               quizButtonOneMarginLeft="46%"
               imageOneQuizLink=""
-              imageTwoEnglish={null}
-              imageTwoBengali={null}
-              imageTwoWidth=""
+              imageTwoEnglish={oppositesButtonEnglishImage}
+              imageTwoBengali={oppositesButtonBengaliImage}
+              imageTwoWidth="35%"
               imageTwoLink=""
-              imageTwoMarginTop=""
-              imageTwoMarginLeft=""
-              quizButtonTwoMarginTop=""
-              quizButtonTwoMarginLeft=""
+              imageTwoMarginTop="1%"
+              imageTwoMarginLeft="28%"
+              quizButtonTwoMarginTop="1"
+              quizButtonTwoMarginLeft="45%"
               imageTwoQuizLink=""
               previousButtonVisibility=""
-              previousButtonLinkValue="/vocabhomepageoppositesfood"
+              previousButtonLinkValue="/vocabhomepagefoodfruits"
               moreButtonVisibility="hidden"
               moreButtonLinkValue=""
             ></VocabHomePage>
@@ -826,7 +927,17 @@ class App extends Component {
           render={() => (
             <LandscapeVideoComponent
               videoSource={daysOfTheWeekVideo}
-              homePageLink="/vocabhomepagedaysnature"
+              homePageLink="/vocabhomepagedaysmonth"
+            ></LandscapeVideoComponent>
+          )}
+        />
+        <Route
+          path="/monthAndSeasonLesson"
+          exact
+          render={() => (
+            <LandscapeVideoComponent
+              videoSource={monthAndSeasonVideo}
+              homePageLink="/vocabhomepagedaysmonth"
             ></LandscapeVideoComponent>
           )}
         />
@@ -1008,6 +1119,115 @@ class App extends Component {
           path="/shapeLesson"
           exact
           render={() => <ShapeLesson></ShapeLesson>}
+        />
+        <Route
+          path="/colorShapeLessonPoemStory"
+          exact
+          render={() => (
+            <LandscapeVideoWithTwoButtonsRight
+              pageLeftEnglishImage={colorShapePageLeftEnglishImage}
+              pageLeftBengaliImage={colorShapePageLeftBengaliImage}
+              rightButtonOneEnglishImage={songButtonEnglishImage}
+              rightButtonOneBengaliImage={songButtonBengaliImage}
+              rightButtonTwoEnglishImage={storyButtonEnglishImage}
+              rightButtonTwoBengaliImage={storyButtonBengaliImage}
+              rightButtonOneVideo={colorAndShapeSongVideo}
+              rightButtonTwoVideo={colorAndShapeStoryVideo}
+            ></LandscapeVideoWithTwoButtonsRight>
+          )}
+        />
+        <Route
+          path="/testingLandscape"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/animalsLesson"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageLink="/vocabhomepagenatureanimals"
+              imageOne={animalLessonButtonImageOne}
+              imageTwo={animalLessonButtonImageTwo}
+              imageThree={animalLessonButtonImageThree}
+              imageFour={animalLessonButtonImageFour}
+              imageOneVideo={animalLessonVideoOne}
+              imageTwoVideo={animalLessonVideoTwo}
+              imageThreeVideo={animalLessonVideoThree}
+              imageFourVideo={animalLessonVideoFour}
+              renderViewOptionPassed="renderFourButtonView"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/birdsLesson"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageLink="/vocabhomepagenatureanimals"
+              imageOne={birdLessonButtonImageOne}
+              imageTwo={birdLessonButtonImageTwo}
+              imageThree={birdLessonButtonImageThree}
+              imageFour={birdLessonButtonImageFour}
+              imageOneVideo={birdLessonVideoOne}
+              imageTwoVideo={birdLessonVideoTwo}
+              imageThreeVideo={birdLessonVideoThree}
+              imageFourVideo={birdLessonVideoFour}
+              renderViewOptionPassed="renderFourButtonView"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/insectsLesson"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageLink="/vocabhomepagenatureanimals"
+              imageOne={insectLessonButtonImageOne}
+              imageTwo={insectLessonButtonImageTwo}
+              imageOneVideo={insectLessonVideoOne}
+              imageTwoVideo={insectLessonVideoTwo}
+              renderViewOptionPassed="renderTwoButtonView"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/flowersLesson"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageLink="/vocabhomepagenatureanimals"
+              renderViewOptionPassed="renderNoButtonView"
+              linkToVideo={flowerVideo}
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/fruitsLesson"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageLink="/vocabhomepagefoodfruits"
+              renderViewOptionPassed="renderNoButtonView"
+              linkToVideo={fruitVideo}
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/vegetablesLesson"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageLink="/vocabhomepagefoodfruits"
+              renderViewOptionPassed="renderNoButtonView"
+              linkToVideo={vegetableVideo}
+            ></PortraitVideoWithCollageButtons>
+          )}
         />
       </div>
     );

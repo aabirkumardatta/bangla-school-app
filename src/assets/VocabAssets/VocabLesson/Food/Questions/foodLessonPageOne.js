@@ -29,7 +29,7 @@ var foodLessonPageOne = [
     mapSource: "/foodLessonPageTwo",
     visibility: ""
   },
-  { linkKind: "home", link: "/vocabhomepageoppositesfood" }
+  { linkKind: "home", link: "/vocabhomepagefoodfruits" }
 ];
 
 export default foodLessonPageOne;

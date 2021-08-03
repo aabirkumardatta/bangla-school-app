@@ -35,7 +35,7 @@ var foodLessonPageFour = [
     mapSource: "",
     visibility: "hidden"
   },
-  { linkKind: "home", link: "/vocabhomepageoppositesfood" }
+  { linkKind: "home", link: "/vocabhomepagefoodfruits" }
 ];
 
 export default foodLessonPageFour;

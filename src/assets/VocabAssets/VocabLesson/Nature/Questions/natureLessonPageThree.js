@@ -35,7 +35,7 @@ var natureLessonPageThree = [
     mapSource: "",
     visibility: "hidden"
   },
-  { linkKind: "home", link: "/vocabhomepagedaysnature" }
+  { linkKind: "home", link: "/vocabhomepagenatureanimals" }
 ];
 
 export default natureLessonPageThree;

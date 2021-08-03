@@ -41,7 +41,7 @@ class VideoPlayerLandscape extends Component {
             height="50%"
             style={this.state.videoPlayerStyle}
             loop={false}
-            controls
+            controls={true}
           />
         }
       </div>
