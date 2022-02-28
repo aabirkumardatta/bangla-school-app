@@ -3,39 +3,54 @@ import { Link } from "react-router-dom";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import VideoPlayerLandscape from "./videoPlayerLandscape";
 import daysOfTheWeekVideo from "../assets/VocabAssets/DaysOfTheWeek/daysOfTheWeekVideo.mp4";
-import buttonImageAndLeftPercentageMap from "../assets/WritingAssets/WritingLesson/JS Files/button1";
+import intro_video_green from "../assets/intro_video_green.mp4";
+import buttonImageAndLeftPercentageMap from "../assets/WritingAssets/WritingLesson/JS Files/button11";
+import LetterWritingAndPronunciationPagePortrait from "./letterWritingAndPronunciationPagePortrait";
 
 class LandscapeVideoWithDownButtons extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      video: daysOfTheWeekVideo
+      video: daysOfTheWeekVideo,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("plaingreenbackgroundbgimage");
   }
 
-  returnView = button => {
-    console.log(button);
+  returnView = (button) => {
+    console.log("Inside renderView");
     return (
       <div>
         <img
           style={{
             position: "fixed",
-            height: "10vh",
+            cursor: "pointer",
+            height: "15vh",
             width: "15vh",
-            top: "15%",
-            left: `${button.leftPercentage}`
+            marginTop: "1%",
+            marginLeft: `${button.leftPercentage}`,
           }}
-          // onClick={() => {}}
+          onClick={() => {
+            this.renderWritingAndPronunciationPage();
+          }}
           src={button.buttonImage}
           alt="could not be loaded"
         ></img>
+      </div>
+    );
+  };
+
+  renderWritingAndPronunciationPage = () => {
+    return (
+      <div>
+        <LetterWritingAndPronunciationPagePortrait
+          linkToVideo={intro_video_green}
+        ></LetterWritingAndPronunciationPagePortrait>
       </div>
     );
   };
@@ -69,10 +84,10 @@ class LandscapeVideoWithDownButtons extends Component {
             marginTopValue={-10}
           ></VideoPlayerLandscape>
         </div>
-        {buttonImageAndLeftPercentageMap.forEach(button => {
-          console.log("I am here");
-          console.log(this.returnView(button));
+        {buttonImageAndLeftPercentageMap.map((button) => {
+          return this.returnView(button);
         })}
+        ;
       </div>
     );
   }

@@ -21,12 +21,15 @@ class VideoPlayerLandscape extends Component {
   }
 
   componentWillReceiveProps() {
-    this.setState({
-      videoPlayerStyle: {
-        ...this.state.videoPlayerStyle,
-        minHeight: document.getElementById("videoPlayerDiv").clientHeight + "px"
-      }
-    });
+    if (this.props.doComponentWillReceiveProps === undefined) {
+      this.setState({
+        videoPlayerStyle: {
+          ...this.state.videoPlayerStyle,
+          minHeight:
+            document.getElementById("videoPlayerDiv").clientHeight + "px"
+        }
+      });
+    }
   }
 
   render() {

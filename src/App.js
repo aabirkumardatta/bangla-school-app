@@ -97,11 +97,11 @@ import monthAndSeasonVideo from "./assets/VocabAssets/VocabLesson/Month And Seas
 import NongradaanoHomePage from "./components/nongradaanoHomePage";
 import {
   roomOnePicturePositionsMap,
-  vocabGameRoomOneQuestions
+  vocabGameRoomOneQuestions,
 } from "./quizQuestions/vocabGameRoomOne";
 import {
   roomTwoPicturePositionsMap,
-  vocabGameRoomTwoQuestions
+  vocabGameRoomTwoQuestions,
 } from "./quizQuestions/vocabGameRoomTwo";
 import VocabLessonHomePage from "./components/vocabLessonHomePage";
 import myThingsLessonPageOne from "./assets/VocabAssets/VocabLesson/My Things/Questions/myThingsLessonPageOne";
@@ -135,7 +135,6 @@ import songButtonBengaliImage from "./assets/VocabAssets/VocabLesson/Colors And 
 import storyButtonEnglishImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/storyButtonEnglishImage.png";
 import storyButtonBengaliImage from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Assests/storyButtonBengaliImage.png";
 import LandscapeVideoWithDownButtons from "./components/landscapeVideoWithDownButtons";
-import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/lettersWithSamePatternImage.png";
 import PortraitVideoWithCollageButtons from "./components/portraitVideoWithCollageButtons";
 
 import animalLessonButtonImageOne from "./assets/VocabAssets/animalLessonButtonImageOne.png";
@@ -167,6 +166,9 @@ import vegetableVideo from "./assets/VocabAssets/VocabLesson/Vegetables Lesson/v
 
 import colorAndShapeSongVideo from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Videos/colorAndShapeSongVideo.mp4";
 import colorAndShapeStoryVideo from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Videos/colorAndShapeStoryVideo.mp4";
+
+import LetterWritingAndPronunciationPagePortrait from "./components/letterWritingAndPronunciationPagePortrait";
+import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
 
 class App extends Component {
   render() {
@@ -1137,16 +1139,6 @@ class App extends Component {
           )}
         />
         <Route
-          path="/testingLandscape"
-          exact
-          render={() => (
-            <LandscapeVideoWithDownButtons
-              pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/"
-            ></LandscapeVideoWithDownButtons>
-          )}
-        />
-        <Route
           path="/animalsLesson"
           exact
           render={() => (
@@ -1227,6 +1219,25 @@ class App extends Component {
               renderViewOptionPassed="renderNoButtonView"
               linkToVideo={vegetableVideo}
             ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/letterWritingAndPronunciationPage"
+          exact
+          render={() => (
+            <LetterWritingAndPronunciationPagePortrait
+              linkToVideo={intro_video_green}
+            ></LetterWritingAndPronunciationPagePortrait>
+          )}
+        />
+        <Route
+          path="/testingLandscape"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/"
+            ></LandscapeVideoWithDownButtons>
           )}
         />
       </div>
