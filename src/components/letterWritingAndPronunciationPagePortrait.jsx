@@ -1,27 +1,28 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import homebuttonImage from "../assets/homeButtonImage.png";
-import nextButtonImage from "../assets/nextButtonImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
 import gridViewButtonImage from "../assets/WritingAssets/WritingLesson/Assets/Misc Button Images/gridViewButtonImage.png";
 import VideoPlayer from "./videoPlayer";
 import LetterWritingAndPronunciationPageLandscape from "./letterWritingAndPronunciationPageLandscape";
-import baw_image_pronunciation from "../assets/WritingAssets/WritingLesson/Assets/WritingPronunciationPageButtonImages/baw_image_pronunciation.png";
-import baw_image_writing from "../assets/WritingAssets/WritingLesson/Assets/WritingPronunciationPageButtonImages/baw_image_writing.png";
 import baw_video_pronunciation from "../assets/byanjonborno_3/baw_video_pronunciation.mp4";
 import baw_video_writing from "../assets/WritingAssets/WritingLesson/Assets/WritingPronunciationPageVideos/baw_video_writing.mp4";
+import LandscapeVideoWithDownButtons from "./landscapeVideoWithDownButtons";
+import lettersWithSamePatternImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
 
 class LetterWritingAndPronunciationPagePortrait extends Component {
   constructor(props) {
     super(props);
     this.state = {
       linkToVideo: this.props.linkToVideo,
-      isRenderPortraitComponent: true
+      renderComponent: "portrait",
+      pronunciationImage: this.props.pronunciationImage,
+      writingImage: this.props.writingImage,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("plaingreenbackgroundbgimage");
@@ -46,7 +47,7 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
                 top: "1vh",
                 right: "2vh",
                 width: "12vh",
-                height: "12vh"
+                height: "12vh",
                 // cursor: "pointer"
               }}
               src={gridViewButtonImage}
@@ -66,13 +67,13 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
 
         <div className="vocab-game-option">
           <img
-            src={baw_image_pronunciation}
+            src={this.state.pronunciationImage}
             style={{
               position: "fixed",
               height: "25vh",
               width: "20vh",
               top: "37%",
-              left: "25%"
+              left: "25%",
             }}
             alt="could not be loaded"
             onClick={() =>
@@ -82,16 +83,16 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
         </div>
         <div className="vocab-game-option">
           <img
-            src={baw_image_writing}
+            src={this.state.writingImage}
             style={{
               position: "fixed",
               height: "25vh",
               width: "20vh",
               top: "37%",
-              left: "69%"
+              left: "69%",
             }}
             alt="could not be loaded"
-            onClick={() => this.setState({ isRenderPortraitComponent: false })}
+            onClick={() => this.setState({ renderComponent: "landscape" })}
           ></img>
         </div>
 
@@ -100,38 +101,19 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
             style={{
               position: "fixed",
               bottom: "14vh",
-              marginLeft: "1%"
-            }}
-          >
-            <Link to="">
-              <img
-                src={previousButtonImage}
-                alt="could not be loaded"
-                style={{
-                  position: "fixed",
-                  width: "12vh",
-                  height: "12vh",
-                  cursor: "pointer"
-                }}
-              ></img>
-            </Link>
-          </div>
-          <div
-            style={{
-              position: "fixed",
-              bottom: "14vh",
-              right: "14vh"
+              marginLeft: "1%",
             }}
           >
             <img
-              src={nextButtonImage}
+              src={previousButtonImage}
               alt="could not be loaded"
               style={{
                 position: "fixed",
                 width: "12vh",
-                height: "12vh"
-                // cursor: "pointer"
+                height: "12vh",
+                cursor: "pointer",
               }}
+              onClick={() => this.setState({ renderComponent: "initial" })}
             ></img>
           </div>
         </div>
@@ -144,20 +126,37 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
       <div>
         <LetterWritingAndPronunciationPageLandscape
           linkToVideo={baw_video_writing}
+          pronunciationImage={this.state.pronunciationImage}
+          writingImage={this.state.writingImage}
         ></LetterWritingAndPronunciationPageLandscape>
       </div>
     );
   };
 
-  render() {
+  renderVideoWithButtonsPage = () => {
     return (
       <div>
-        {this.state.isRenderPortraitComponent
-          ? this.renderPortraitComponent()
-          : this.renderLandscapeComponent()}
-        ;
+        <LandscapeVideoWithDownButtons
+          buttonImageRenderMap={this.props.buttonImageRenderMap}
+          pageLeftImage={lettersWithSamePatternImage}
+          homePageLink="/writingHomePage"
+          backPageLink="/testingLandscape"
+        ></LandscapeVideoWithDownButtons>
       </div>
     );
+  };
+
+  render() {
+    switch (this.state.renderComponent) {
+      case "portrait":
+        return this.renderPortraitComponent();
+      case "landscape":
+        return this.renderLandscapeComponent();
+      case "initial":
+        return this.renderVideoWithButtonsPage();
+      default:
+        return this.renderVideoWithButtonsPage;
+    }
   }
 }
 

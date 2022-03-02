@@ -4,14 +4,18 @@ import homebuttonImage from "../assets/homeButtonImage.png";
 import VideoPlayerLandscape from "./videoPlayerLandscape";
 import daysOfTheWeekVideo from "../assets/VocabAssets/DaysOfTheWeek/daysOfTheWeekVideo.mp4";
 import intro_video_green from "../assets/intro_video_green.mp4";
-import buttonImageAndLeftPercentageMap from "../assets/WritingAssets/WritingLesson/JS Files/button11";
+import previousButtonImage from "../assets/previousButtonImage.png";
 import LetterWritingAndPronunciationPagePortrait from "./letterWritingAndPronunciationPagePortrait";
 
 class LandscapeVideoWithDownButtons extends Component {
   constructor(props) {
     super(props);
     this.state = {
+      buttonImageRenderMap: this.props.buttonImageRenderMap,
       video: daysOfTheWeekVideo,
+      isRenderButtonMapComponent: true,
+      pronunciationImage: "",
+      writingImage: "",
     };
   }
 
@@ -36,7 +40,11 @@ class LandscapeVideoWithDownButtons extends Component {
             marginLeft: `${button.leftPercentage}`,
           }}
           onClick={() => {
-            this.renderWritingAndPronunciationPage();
+            this.setState({
+              isRenderButtonMapComponent: false,
+              pronunciationImage: button.pronunciationImage,
+              writingImage: button.writingImage,
+            });
           }}
           src={button.buttonImage}
           alt="could not be loaded"
@@ -45,17 +53,7 @@ class LandscapeVideoWithDownButtons extends Component {
     );
   };
 
-  renderWritingAndPronunciationPage = () => {
-    return (
-      <div>
-        <LetterWritingAndPronunciationPagePortrait
-          linkToVideo={intro_video_green}
-        ></LetterWritingAndPronunciationPagePortrait>
-      </div>
-    );
-  };
-
-  render() {
+  renderButtonMapComponent = () => {
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
@@ -84,12 +82,54 @@ class LandscapeVideoWithDownButtons extends Component {
             marginTopValue={-10}
           ></VideoPlayerLandscape>
         </div>
-        {buttonImageAndLeftPercentageMap.map((button) => {
+        {this.state.buttonImageRenderMap.map((button) => {
           return this.returnView(button);
         })}
         ;
+        <div>
+          <div
+            style={{
+              position: "fixed",
+              bottom: "14vh",
+              marginLeft: "1%",
+            }}
+          >
+            <Link to="/writingHomePage">
+              <img
+                src={previousButtonImage}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "12vh",
+                  height: "12vh",
+                  cursor: "pointer",
+                }}
+              ></img>
+            </Link>
+          </div>
+        </div>
       </div>
     );
+  };
+
+  renderWritingAndPronunciationPageComponent = () => {
+    return (
+      <div>
+        <LetterWritingAndPronunciationPagePortrait
+          linkToVideo={intro_video_green}
+          pronunciationImage={this.state.pronunciationImage}
+          writingImage={this.state.writingImage}
+          backPageLink={this.props.backPageLink}
+          buttonImageRenderMap={this.state.buttonImageRenderMap}
+        ></LetterWritingAndPronunciationPagePortrait>
+      </div>
+    );
+  };
+
+  render() {
+    return this.state.isRenderButtonMapComponent
+      ? this.renderButtonMapComponent()
+      : this.renderWritingAndPronunciationPageComponent();
   }
 }
 

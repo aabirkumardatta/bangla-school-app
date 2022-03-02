@@ -168,7 +168,9 @@ import colorAndShapeSongVideo from "./assets/VocabAssets/VocabLesson/Colors And 
 import colorAndShapeStoryVideo from "./assets/VocabAssets/VocabLesson/Colors And Shapes/Videos/colorAndShapeStoryVideo.mp4";
 
 import LetterWritingAndPronunciationPagePortrait from "./components/letterWritingAndPronunciationPagePortrait";
+
 import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
+import buttonImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button1";
 
 class App extends Component {
   render() {
@@ -1235,8 +1237,10 @@ class App extends Component {
           exact
           render={() => (
             <LandscapeVideoWithDownButtons
+              buttonImageRenderMap={buttonImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/"
+              homePageLink="/writingHomePage"
+              backPageLink="/testingLandscape"
             ></LandscapeVideoWithDownButtons>
           )}
         />
