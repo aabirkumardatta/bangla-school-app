@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import VideoPlayerLandscape from "./videoPlayerLandscape";
-import daysOfTheWeekVideo from "../assets/VocabAssets/DaysOfTheWeek/daysOfTheWeekVideo.mp4";
 import intro_video_green from "../assets/intro_video_green.mp4";
+import intro_video_green_landscape from "../assets/intro_video_green_landscape.mp4";
 import previousButtonImage from "../assets/previousButtonImage.png";
 import LetterWritingAndPronunciationPagePortrait from "./letterWritingAndPronunciationPagePortrait";
 
@@ -12,10 +12,12 @@ class LandscapeVideoWithDownButtons extends Component {
     super(props);
     this.state = {
       buttonImageRenderMap: this.props.buttonImageRenderMap,
-      video: daysOfTheWeekVideo,
+      introVideo: intro_video_green_landscape,
       isRenderButtonMapComponent: true,
       pronunciationImage: "",
       writingImage: "",
+      pronunciationVideo: "",
+      writingVideo: "",
     };
   }
 
@@ -44,6 +46,8 @@ class LandscapeVideoWithDownButtons extends Component {
               isRenderButtonMapComponent: false,
               pronunciationImage: button.pronunciationImage,
               writingImage: button.writingImage,
+              pronunciationVideo: button.pronunciationVideo,
+              writingVideo: button.writingVideo,
             });
           }}
           src={button.buttonImage}
@@ -77,7 +81,7 @@ class LandscapeVideoWithDownButtons extends Component {
         <div>
           <VideoPlayerLandscape
             homePageLink="/"
-            url={this.state.video}
+            url={this.state.introVideo}
             marginLeftValue={25}
             marginTopValue={-10}
           ></VideoPlayerLandscape>
@@ -121,6 +125,8 @@ class LandscapeVideoWithDownButtons extends Component {
           writingImage={this.state.writingImage}
           backPageLink={this.props.backPageLink}
           buttonImageRenderMap={this.state.buttonImageRenderMap}
+          pronunciationVideo={this.state.pronunciationVideo}
+          writingVideo={this.state.writingVideo}
         ></LetterWritingAndPronunciationPagePortrait>
       </div>
     );

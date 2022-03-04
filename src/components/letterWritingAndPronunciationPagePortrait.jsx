@@ -5,8 +5,6 @@ import previousButtonImage from "../assets/previousButtonImage.png";
 import gridViewButtonImage from "../assets/WritingAssets/WritingLesson/Assets/Misc Button Images/gridViewButtonImage.png";
 import VideoPlayer from "./videoPlayer";
 import LetterWritingAndPronunciationPageLandscape from "./letterWritingAndPronunciationPageLandscape";
-import baw_video_pronunciation from "../assets/byanjonborno_3/baw_video_pronunciation.mp4";
-import baw_video_writing from "../assets/WritingAssets/WritingLesson/Assets/WritingPronunciationPageVideos/baw_video_writing.mp4";
 import LandscapeVideoWithDownButtons from "./landscapeVideoWithDownButtons";
 import lettersWithSamePatternImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
 
@@ -18,6 +16,8 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
       renderComponent: "portrait",
       pronunciationImage: this.props.pronunciationImage,
       writingImage: this.props.writingImage,
+      pronunciationVideo: this.props.pronunciationVideo,
+      writingVideo: this.props.writingVideo,
     };
   }
 
@@ -77,7 +77,7 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
             }}
             alt="could not be loaded"
             onClick={() =>
-              this.setState({ linkToVideo: baw_video_pronunciation })
+              this.setState({ linkToVideo: this.props.pronunciationVideo })
             }
           ></img>
         </div>
@@ -125,9 +125,12 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
     return (
       <div>
         <LetterWritingAndPronunciationPageLandscape
-          linkToVideo={baw_video_writing}
+          buttonImageRenderMap={this.props.buttonImageRenderMap}
+          linkToVideo={this.props.writingVideo}
           pronunciationImage={this.state.pronunciationImage}
           writingImage={this.state.writingImage}
+          pronunciationVideo={this.state.pronunciationVideo}
+          writingVideo={this.state.writingVideo}
         ></LetterWritingAndPronunciationPageLandscape>
       </div>
     );

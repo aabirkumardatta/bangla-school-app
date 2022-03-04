@@ -10,7 +10,6 @@ var buttonImageAndLeftPercentageMap = [
   { buttonImage: petkata_shaw_image, leftPercentage: "47.5%" },
   { buttonImage: phaw_image, leftPercentage: "55.5%" },
   { buttonImage: ghaw_image, leftPercentage: "63.5%" }
-  //{ buttonImage: sworo_v7_image, leftPercentage: "67.5%" }
 ];
 
 export default buttonImageAndLeftPercentageMap;

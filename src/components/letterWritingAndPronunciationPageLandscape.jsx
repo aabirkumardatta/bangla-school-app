@@ -5,8 +5,6 @@ import previousButtonImage from "../assets/previousButtonImage.png";
 import gridViewButtonImage from "../assets/WritingAssets/WritingLesson/Assets/Misc Button Images/gridViewButtonImage.png";
 import VideoPlayerLandscape from "./videoPlayerLandscape";
 import LetterWritingAndPronunciationPagePortrait from "./letterWritingAndPronunciationPagePortrait";
-import baw_video_pronunciation from "../assets/byanjonborno_3/baw_video_pronunciation.mp4";
-import baw_video_writing from "../assets/WritingAssets/WritingLesson/Assets/WritingPronunciationPageVideos/baw_video_writing.mp4";
 import LandscapeVideoWithDownButtons from "./landscapeVideoWithDownButtons";
 import lettersWithSamePatternImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
 
@@ -16,6 +14,10 @@ class LetterWritingAndPronunciationPageLandscape extends Component {
     this.state = {
       linkToVideo: this.props.linkToVideo,
       renderComponent: "landscape",
+      pronunciationImage: this.props.pronunciationImage,
+      writingImage: this.props.writingImage,
+      pronunciationVideo: this.props.pronunciationVideo,
+      writingVideo: this.props.writingVideo,
     };
   }
 
@@ -30,10 +32,13 @@ class LetterWritingAndPronunciationPageLandscape extends Component {
     return (
       <div>
         <LetterWritingAndPronunciationPagePortrait
-          linkToVideo={baw_video_pronunciation}
+          buttonImageRenderMap={this.props.buttonImageRenderMap}
+          linkToVideo={this.props.pronunciationVideo}
           pronunciationImage={this.props.pronunciationImage}
           writingImage={this.props.writingImage}
           backPageLink={this.props.backPageLink}
+          pronunciationVideo={this.state.pronunciationVideo}
+          writingVideo={this.state.writingVideo}
         ></LetterWritingAndPronunciationPagePortrait>
       </div>
     );
@@ -106,7 +111,9 @@ class LetterWritingAndPronunciationPageLandscape extends Component {
               left: "77%",
             }}
             alt="could not be loaded"
-            onClick={() => this.setState({ linkToVideo: baw_video_writing })}
+            onClick={() =>
+              this.setState({ linkToVideo: this.props.writingVideo })
+            }
           ></img>
         </div>
 
