@@ -170,7 +170,7 @@ import colorAndShapeStoryVideo from "./assets/VocabAssets/VocabLesson/Colors And
 import LetterWritingAndPronunciationPagePortrait from "./components/letterWritingAndPronunciationPagePortrait";
 
 import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
-import buttonImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button1";
+import buttonImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button14";
 
 class App extends Component {
   render() {
