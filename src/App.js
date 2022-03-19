@@ -170,7 +170,49 @@ import colorAndShapeStoryVideo from "./assets/VocabAssets/VocabLesson/Colors And
 import LetterWritingAndPronunciationPagePortrait from "./components/letterWritingAndPronunciationPagePortrait";
 
 import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
-import buttonImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button14";
+import WritingHomePage from "./components/writingHomePage";
+
+import buttonOneImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button1";
+import groupOneVideo from "./assets/WritingAssets/WritingLesson/Assets/Button1/groupOneVideo.mp4";
+
+import buttonTwoImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button2";
+import groupTwoVideo from "./assets/WritingAssets/WritingLesson/Assets/Button2/groupTwoVideo.mp4";
+
+import buttonThreeImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button3";
+import groupThreeVideo from "./assets/WritingAssets/WritingLesson/Assets/Button3/groupThreeVideo.mp4";
+
+import buttonFourImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button4";
+import groupFourVideo from "./assets/WritingAssets/WritingLesson/Assets/Button4/groupFourVideo.mp4";
+
+import buttonFiveImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button5";
+import groupFiveVideo from "./assets/WritingAssets/WritingLesson/Assets/Button5/groupFiveVideo.mp4";
+
+import buttonSixImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button6";
+import groupSixVideo from "./assets/WritingAssets/WritingLesson/Assets/Button6/groupSixVideo.mp4";
+
+import buttonSevenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button7";
+import groupSevenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button7/groupSevenVideo.mp4";
+
+import buttonEightImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button8";
+import groupEightVideo from "./assets/WritingAssets/WritingLesson/Assets/Button8/groupEightVideo.mp4";
+
+import buttonNineImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button9";
+import groupNineVideo from "./assets/WritingAssets/WritingLesson/Assets/Button9/groupNineVideo.mp4";
+
+import buttonTenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button10";
+import groupTenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button10/groupTenVideo.mp4";
+
+import buttonElevenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button11";
+import groupElevenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button11/groupElevenVideo.mp4";
+
+import buttonTwelveImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button12";
+import groupTwelveVideo from "./assets/WritingAssets/WritingLesson/Assets/Button12/groupTwelveVideo.mp4";
+
+import buttonThirteenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button13";
+import groupThirteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button13/groupThirteenVideo.mp4";
+
+import buttonFourteenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button14";
+import groupFourteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button14/groupFourteenVideo.mp4";
 
 class App extends Component {
   render() {
@@ -1233,14 +1275,189 @@ class App extends Component {
           )}
         />
         <Route
-          path="/testingLandscape"
+          path="/writingHomePage"
+          exact
+          render={() => <WritingHomePage></WritingHomePage>}
+        />
+        <Route
+          path="/writingGroupOne"
           exact
           render={() => (
             <LandscapeVideoWithDownButtons
-              buttonImageRenderMap={buttonImageRenderMap}
+              introVideo={groupOneVideo}
+              buttonImageRenderMap={buttonOneImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
               homePageLink="/writingHomePage"
-              backPageLink="/testingLandscape"
+              backPageLink="/writingGroupOne"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupTwo"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupTwoVideo}
+              buttonImageRenderMap={buttonTwoImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupTwo"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupThree"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupThreeVideo}
+              buttonImageRenderMap={buttonThreeImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupThree"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupFour"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupFourVideo}
+              buttonImageRenderMap={buttonFourImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupFour"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupFive"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupFiveVideo}
+              buttonImageRenderMap={buttonFiveImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupFive"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupSix"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupSixVideo}
+              buttonImageRenderMap={buttonSixImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupSix"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupSeven"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupSevenVideo}
+              buttonImageRenderMap={buttonSevenImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupSeven"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupEight"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupEightVideo}
+              buttonImageRenderMap={buttonEightImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupEight"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupNine"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupNineVideo}
+              buttonImageRenderMap={buttonNineImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupNine"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupTen"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupTenVideo}
+              buttonImageRenderMap={buttonTenImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupTen"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupEleven"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupElevenVideo}
+              buttonImageRenderMap={buttonElevenImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupEleven"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupTwelve"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupTwelveVideo}
+              buttonImageRenderMap={buttonTwelveImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupTwelve"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupThirteen"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupThirteenVideo}
+              buttonImageRenderMap={buttonThirteenImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupThirteen"
+            ></LandscapeVideoWithDownButtons>
+          )}
+        />
+        <Route
+          path="/writingGroupFourteen"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtons
+              introVideo={groupFourteenVideo}
+              buttonImageRenderMap={buttonFourteenImageRenderMap}
+              pageLeftImage={lettersWithSamePatternImage}
+              homePageLink="/writingHomePage"
+              backPageLink="/writingGroupFourteen"
             ></LandscapeVideoWithDownButtons>
           )}
         />

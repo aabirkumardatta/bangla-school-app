@@ -26,12 +26,12 @@ class LessonsHomePage extends Component {
       grammarButton: grammarButtonEnglishImage,
       pronunciationButton: pronunciationButtonEnglishImage,
       vocabularyButton: vocabularyButtonEnglishImage,
-      writingButton: writingButtonEnglishImage
+      writingButton: writingButtonEnglishImage,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("lessonsenglishbgimage");
@@ -48,7 +48,7 @@ class LessonsHomePage extends Component {
         grammarButton: grammarButtonBengaliImage,
         pronunciationButton: pronunciationButtonBengaliImage,
         vocabularyButton: vocabularyButtonBengaliImage,
-        writingButton: writingButtonBengaliImage
+        writingButton: writingButtonBengaliImage,
       });
     } else {
       document.body.classList.remove("lessonsbengalibgimage");
@@ -60,7 +60,7 @@ class LessonsHomePage extends Component {
         grammarButton: grammarButtonEnglishImage,
         pronunciationButton: pronunciationButtonEnglishImage,
         vocabularyButton: vocabularyButtonEnglishImage,
-        writingButton: writingButtonEnglishImage
+        writingButton: writingButtonEnglishImage,
       });
     }
   };
@@ -72,7 +72,7 @@ class LessonsHomePage extends Component {
           <img
             style={{
               width: "12vh",
-              height: "12vh"
+              height: "12vh",
             }}
             src={this.state.languageOptionButton}
             onClick={this.handleLanguageOptionButtonClick}
@@ -90,23 +90,23 @@ class LessonsHomePage extends Component {
                   alt="could not be loaded"
                   style={{
                     width: "35vh",
-                    height: "20vh"
+                    height: "20vh",
                   }}
                 ></img>
               </Link>
             </span>
             <span>
-              {/* <Link to="/"> */}
-              <img
-                src={this.state.writingButton}
-                alt="could not be loaded"
-                style={{
-                  marginLeft: "13%",
-                  width: "35vh",
-                  height: "25vh"
-                }}
-              ></img>
-              {/* </Link> */}
+              <Link to="/writingHomePage">
+                <img
+                  src={this.state.writingButton}
+                  alt="could not be loaded"
+                  style={{
+                    marginLeft: "13%",
+                    width: "35vh",
+                    height: "25vh",
+                  }}
+                ></img>
+              </Link>
             </span>
           </div>
 
@@ -118,7 +118,7 @@ class LessonsHomePage extends Component {
                   alt="could not be loaded"
                   style={{
                     width: "45vh",
-                    height: "45vh"
+                    height: "45vh",
                   }}
                 ></img>
               </Link>
@@ -132,7 +132,7 @@ class LessonsHomePage extends Component {
                   style={{
                     marginLeft: "25%",
                     width: "45vh",
-                    height: "45vh"
+                    height: "45vh",
                   }}
                 ></img>
               </Link>
@@ -147,7 +147,7 @@ class LessonsHomePage extends Component {
                 style={{
                   marginLeft: "38%",
                   width: "40vh",
-                  height: "30vh"
+                  height: "30vh",
                 }}
               ></img>
             </Link>
@@ -157,7 +157,7 @@ class LessonsHomePage extends Component {
           style={{
             position: "fixed",
             bottom: "14vh",
-            marginLeft: "1%"
+            marginLeft: "1%",
           }}
         >
           <span>
@@ -168,7 +168,7 @@ class LessonsHomePage extends Component {
                 style={{
                   position: "fixed",
                   width: "12vh",
-                  height: "12vh"
+                  height: "12vh",
                 }}
               ></img>
             </Link>

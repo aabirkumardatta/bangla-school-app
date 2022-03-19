@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import VideoPlayerLandscape from "./videoPlayerLandscape";
 import intro_video_green from "../assets/intro_video_green.mp4";
-import intro_video_green_landscape from "../assets/intro_video_green_landscape.mp4";
+
 import previousButtonImage from "../assets/previousButtonImage.png";
 import LetterWritingAndPronunciationPagePortrait from "./letterWritingAndPronunciationPagePortrait";
 
@@ -12,7 +12,7 @@ class LandscapeVideoWithDownButtons extends Component {
     super(props);
     this.state = {
       buttonImageRenderMap: this.props.buttonImageRenderMap,
-      introVideo: intro_video_green_landscape,
+      introVideo: this.props.introVideo,
       isRenderButtonMapComponent: true,
       pronunciationImage: "",
       writingImage: "",
