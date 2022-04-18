@@ -32,7 +32,7 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
-          <Link to="">
+          <Link to="/writingHomePage">
             <img
               style={{ width: "12vh", height: "12vh" }}
               src={homebuttonImage}
@@ -139,6 +139,7 @@ class LetterWritingAndPronunciationPagePortrait extends Component {
   renderVideoWithButtonsPage = () => {
     return (
       <div>
+        {window.location.reload()}
         <LandscapeVideoWithDownButtons
           buttonImageRenderMap={this.props.buttonImageRenderMap}
           pageLeftImage={lettersWithSamePatternImage}
