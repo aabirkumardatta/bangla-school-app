@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import gridViewButtonImage from "../assets/WritingAssets/WritingLesson/Assets/Misc Button Images/gridViewButtonImage.png";
-import writingButtonEnglishImage from "../assets/writingButtonEnglishImage.png";
+import writingHomePageLeftImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/writingHomePageLeftImage.png";
 import writingHomePageBanner from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/writingHomePageBanner.png";
 
 import button1HomePageImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/button1HomePageImage.png";
@@ -78,11 +78,11 @@ class WritingHomePage extends Component {
             style={{
               position: "fixed",
               width: "35vh",
-              height: "25vh",
-              top: "40%",
+              height: "40vh",
+              top: "25%",
               left: "1%",
             }}
-            src={writingButtonEnglishImage}
+            src={writingHomePageLeftImage}
             alt="could not be loaded"
           ></img>
         </div>
