@@ -213,6 +213,24 @@ import groupThirteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Butt
 
 import buttonFourteenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button14";
 import groupFourteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button14/groupFourteenVideo.mp4";
+import ReadingWordHomePage from "./components/readingWordHomePage";
+
+import readingWordGroupOneVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupOneVideo.mp4";
+import readingWordGroupTwoVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupTwoVideo.mp4";
+import readingWordGroupThreeVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupThreeVideo.mp4";
+import readingWordGroupFourVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFourVideo.mp4";
+import readingWordGroupFiveVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFiveVideo.mp4";
+import readingWordGroupSixVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupSixVideo.mp4";
+import readingWordGroupSevenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupSevenVideo.mp4";
+import readingWordGroupEightVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupEightVideo.mp4";
+import readingWordGroupNineVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupNineVideo.mp4";
+import readingWordGroupTenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupTenVideo.mp4";
+import readingWordGroupElevenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupElevenVideo.mp4";
+import readingWordGroupTwelveVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupTwelveVideo.mp4";
+import readingWordGroupThirteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupThirteenVideo.mp4";
+import readingWordGroupFourteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFourteenVideo.mp4";
+
+import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 
 class App extends Component {
   render() {
@@ -1461,6 +1479,137 @@ class App extends Component {
             ></LandscapeVideoWithDownButtons>
           )}
         />
+        <Route
+          path="/readingWordHomePage"
+          exact
+          render={() => <ReadingWordHomePage></ReadingWordHomePage>}
+        />
+        <Route
+          path="/readingGroupOne"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupOneVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupTwo"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupTwoVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupThree"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupThreeVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupFour"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupFourVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupFive"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupFiveVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupSix"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupSixVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupSeven"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupSevenVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupEight"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupEightVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupNine"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupNineVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupTen"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupTenVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupEleven"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupElevenVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupTwelve"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupTwelveVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupThirteen"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupThirteenVideo}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingGroupFourteen"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              linkToVideo={readingWordGroupFourteenVideo}
+            />
+          )}
+        ></Route>
       </div>
     );
   }

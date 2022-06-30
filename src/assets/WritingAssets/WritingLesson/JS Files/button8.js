@@ -43,8 +43,8 @@ var buttonImageAndLeftPercentageMap = [
   { buttonImage: dawshun_raw_image, leftPercentage: "35.5%", pronunciationImage: dawshun_raw_image_pronunciation, writingImage: dawshun_raw_image_writing, pronunciationVideo: dawshun_raw_video_pronunciation, writingVideo: dawshun_raw_video_writing },
   { buttonImage: sworo_v5_image, leftPercentage: "43.5%", pronunciationImage: sworo_v5_image_pronunciation, writingImage: sworo_v5_image_writing, pronunciationVideo: sworo_v5_video_pronunciation, writingVideo: sworo_v5_video_writing },
   { buttonImage: sworo_v6_image, leftPercentage: "51.5%", pronunciationImage: sworo_v6_image_pronunciation, writingImage: sworo_v6_image_writing, pronunciationVideo: sworo_v6_video_pronunciation, writingVideo: sworo_v6_video_writing },
-  { buttonImage: uyow_image, leftPercentage: "59.5%", pronunciationImage: uyow_image_pronunciation, writingImage: uyow_image_writing, pronunciationVideo: uyow_video_pronunciation, writingVideo: uyow_video_writing },
-  { buttonImage: borgiyo_jaw_image, leftPercentage: "67.5%", pronunciationImage: borgiyo_jaw_image_pronunciation, writingImage: borgiyo_jaw_image_writing, pronunciationVideo: borgiyo_jaw_video_pronunciation, writingVideo: borgiyo_jaw_video_writing }
+  { buttonImage: borgiyo_jaw_image, leftPercentage: "59.5%", pronunciationImage: borgiyo_jaw_image_pronunciation, writingImage: borgiyo_jaw_image_writing, pronunciationVideo: borgiyo_jaw_video_pronunciation, writingVideo: borgiyo_jaw_video_writing },
+  { buttonImage: uyow_image, leftPercentage: "67.5%", pronunciationImage: uyow_image_pronunciation, writingImage: uyow_image_writing, pronunciationVideo: uyow_video_pronunciation, writingVideo: uyow_video_writing },
 ];
 
 export default buttonImageAndLeftPercentageMap;

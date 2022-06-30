@@ -20,12 +20,12 @@ class ReadingHomePage extends Component {
       readingButton: wideReadingButtonEnglishImage,
       lettersButton: lettersButtonEnglishImage,
       wordsButton: wordsButtonEnglishImage,
-      numbersButton: numbersButtonEnglishImage
+      numbersButton: numbersButtonEnglishImage,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("readingenglishbgimage");
@@ -40,7 +40,7 @@ class ReadingHomePage extends Component {
         readingButton: wideReadingButtonBengaliImage,
         lettersButton: lettersButtonBengaliImage,
         wordsButton: wordsButtonBengaliImage,
-        numbersButton: numbersButtonBengaliImage
+        numbersButton: numbersButtonBengaliImage,
       });
     } else {
       document.body.classList.remove("readingbengalibgimage");
@@ -50,7 +50,7 @@ class ReadingHomePage extends Component {
         readingButton: wideReadingButtonEnglishImage,
         lettersButton: lettersButtonEnglishImage,
         wordsButton: wordsButtonEnglishImage,
-        numbersButton: numbersButtonEnglishImage
+        numbersButton: numbersButtonEnglishImage,
       });
     }
   };
@@ -78,7 +78,7 @@ class ReadingHomePage extends Component {
                   marginTop: "1%",
                   marginLeft: "10%",
                   width: "40vh",
-                  height: "50vh"
+                  height: "50vh",
                 }}
               ></img>
             </Link>
@@ -91,7 +91,7 @@ class ReadingHomePage extends Component {
                 style={{
                   marginLeft: "34%",
                   width: "40vh",
-                  height: "50vh"
+                  height: "50vh",
                 }}
               ></img>
             </Link>
@@ -99,7 +99,7 @@ class ReadingHomePage extends Component {
         </div>
         <div>
           <span>
-            <Link to="/">
+            <Link to="/readingWordHomePage">
               <img
                 src={this.state.wordsButton}
                 alt="could not be loaded"
@@ -107,7 +107,7 @@ class ReadingHomePage extends Component {
                   marginTop: "-12%",
                   marginLeft: "37%",
                   width: "40vh",
-                  height: "50vh"
+                  height: "50vh",
                 }}
               ></img>
             </Link>
@@ -117,7 +117,7 @@ class ReadingHomePage extends Component {
           style={{
             position: "fixed",
             bottom: "14vh",
-            marginLeft: "1%"
+            marginLeft: "1%",
           }}
         >
           <span>
@@ -128,7 +128,7 @@ class ReadingHomePage extends Component {
                 style={{
                   position: "fixed",
                   width: "12vh",
-                  height: "12vh"
+                  height: "12vh",
                 }}
               ></img>
             </Link>

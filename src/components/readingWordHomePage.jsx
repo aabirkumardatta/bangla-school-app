@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import gridViewButtonImage from "../assets/WritingAssets/WritingLesson/Assets/Misc Button Images/gridViewButtonImage.png";
-import writingHomePageLeftImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/writingHomePageLeftImage.png";
-import writingHomePageBanner from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/writingHomePageBanner.png";
+import readingHomePageLeftImage from "../assets/ReadingAssets/Assets/ReadingHomePageImages/readingHomePageLeftImage.png";
+import readingHomePageBanner from "../assets/ReadingAssets/Assets/ReadingHomePageImages/readingHomePageBanner.png";
 
 import button1HomePageImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/button1HomePageImage.png";
 import button2HomePageImage from "../assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/button2HomePageImage.png";
@@ -21,7 +21,7 @@ import button14HomePageImage from "../assets/WritingAssets/WritingLesson/Assets/
 
 import { Link } from "react-router-dom";
 
-class WritingHomePage extends Component {
+class ReadingWordHomePage extends Component {
   state = {};
 
   componentDidMount() {
@@ -35,7 +35,7 @@ class WritingHomePage extends Component {
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
-          <Link to="/lessonshomepage">
+          <Link to="/readinghomepage">
             <img
               style={{ width: "12vh", height: "12vh" }}
               src={homebuttonImage}
@@ -68,7 +68,7 @@ class WritingHomePage extends Component {
               top: "3%",
               left: "37%",
             }}
-            src={writingHomePageBanner}
+            src={readingHomePageBanner}
             alt="could not be loaded"
           ></img>
         </div>
@@ -82,13 +82,13 @@ class WritingHomePage extends Component {
               top: "25%",
               left: "1%",
             }}
-            src={writingHomePageLeftImage}
+            src={readingHomePageLeftImage}
             alt="could not be loaded"
           ></img>
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/readingGroupOne">
             <img
               className="picture-option-button"
               style={{
@@ -105,7 +105,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupTwo">
+          <Link to="/readingGroupTwo">
             <img
               className="picture-option-button"
               style={{
@@ -122,7 +122,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupThree">
+          <Link to="/readingGroupThree">
             <img
               className="picture-option-button"
               style={{
@@ -139,7 +139,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupFour">
+          <Link to="/readingGroupFour">
             <img
               className="picture-option-button"
               style={{
@@ -156,7 +156,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupFive">
+          <Link to="/readingGroupFive">
             <img
               className="picture-option-button"
               style={{
@@ -173,7 +173,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupSix">
+          <Link to="/readingGroupSix">
             <img
               className="picture-option-button"
               style={{
@@ -190,7 +190,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupSeven">
+          <Link to="/readingGroupSeven">
             <img
               className="picture-option-button"
               style={{
@@ -207,7 +207,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupEight">
+          <Link to="/readingGroupEight">
             <img
               className="picture-option-button"
               style={{
@@ -224,7 +224,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupNine">
+          <Link to="/readingGroupNine">
             <img
               className="picture-option-button"
               style={{
@@ -241,7 +241,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupTen">
+          <Link to="/readingGroupTen">
             <img
               className="picture-option-button"
               style={{
@@ -258,7 +258,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupEleven">
+          <Link to="/readingGroupEleven">
             <img
               className="picture-option-button"
               style={{
@@ -275,7 +275,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupTwelve">
+          <Link to="/readingGroupTwelve">
             <img
               className="picture-option-button"
               style={{
@@ -292,7 +292,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupThirteen">
+          <Link to="/readingGroupThirteen">
             <img
               className="picture-option-button"
               style={{
@@ -309,7 +309,7 @@ class WritingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupFourteen">
+          <Link to="/readingGroupFourteen">
             <img
               className="picture-option-button"
               style={{
@@ -329,4 +329,4 @@ class WritingHomePage extends Component {
   }
 }
 
-export default WritingHomePage;
+export default ReadingWordHomePage;
