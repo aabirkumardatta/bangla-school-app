@@ -230,6 +230,8 @@ import readingWordGroupTwelveVideo from "./assets/ReadingAssets/Assets/ReadingVi
 import readingWordGroupThirteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupThirteenVideo.mp4";
 import readingWordGroupFourteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFourteenVideo.mp4";
 
+import readingLetterLesson4VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson4/readingLetterLesson4JsonFile";
+
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 
 class App extends Component {
@@ -1516,7 +1518,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupFourVideo}
+              videoRenderObjectArray={readingLetterLesson4VideosArray}
             />
           )}
         ></Route>
