@@ -10,12 +10,7 @@ class ReadingVideoRenderComponent extends Component {
     super(props);
     this.state = {
       linkToVideo: this.props.videoRenderObjectArray[0].currentVideo,
-      videoRenderObjectArray: this.props.videoRenderObjectArray,
       curentVideoRenderObject: this.props.videoRenderObjectArray[0],
-      previousButtonVisibility:
-        this.props.videoRenderObjectArray[0].previousButtonVisibility,
-      nextButtonVisibility:
-        this.props.videoRenderObjectArray[0].nextButtonVisibility,
     };
   }
 
@@ -27,6 +22,7 @@ class ReadingVideoRenderComponent extends Component {
   }
 
   render() {
+    console.log("What is this?", this.state.curentVideoRenderObject);
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
@@ -56,26 +52,17 @@ class ReadingVideoRenderComponent extends Component {
               width: "10vh",
               top: "50%",
               left: "28%",
-              visibility: this.state.previousButtonVisibility,
+              visibility:
+                this.state.curentVideoRenderObject.previousButtonVisibility,
             }}
             alt="could not be loaded"
             onClick={() =>
               this.setState({
                 curentVideoRenderObject:
-                  this.state.videoRenderObjectArray[
+                  this.props.videoRenderObjectArray[
                     this.state.curentVideoRenderObject.previousObjectPosition
                   ],
                 linkToVideo: this.state.curentVideoRenderObject.previousVideo,
-                previousButtonVisibility:
-                  this.state.curentVideoRenderObject
-                    .previousButtonVisibility === "hidden"
-                    ? "hidden"
-                    : "notHidden",
-                nextButtonVisibility:
-                  this.state.curentVideoRenderObject.nextButtonVisibility ===
-                  "hidden"
-                    ? "hidden"
-                    : "notHidden",
               })
             }
           ></img>
@@ -89,26 +76,17 @@ class ReadingVideoRenderComponent extends Component {
               width: "10vh",
               top: "50%",
               left: "67%",
-              visibility: this.state.nextButtonVisibility,
+              visibility:
+                this.state.curentVideoRenderObject.nextButtonVisibility,
             }}
             alt="could not be loaded"
             onClick={() =>
               this.setState({
                 curentVideoRenderObject:
-                  this.state.videoRenderObjectArray[
+                  this.props.videoRenderObjectArray[
                     this.state.curentVideoRenderObject.nextObjectPosition
                   ],
                 linkToVideo: this.state.curentVideoRenderObject.nextVideo,
-                previousButtonVisibility:
-                  this.state.curentVideoRenderObject
-                    .previousButtonVisibility === "hidden"
-                    ? "hidden"
-                    : "notHidden",
-                nextButtonVisibility:
-                  this.state.curentVideoRenderObject.nextButtonVisibility ===
-                  "hidden"
-                    ? "hidden"
-                    : "notHidden",
               })
             }
           ></img>

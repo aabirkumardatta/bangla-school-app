@@ -215,12 +215,6 @@ import buttonFourteenImageRenderMap from "./assets/WritingAssets/WritingLesson/J
 import groupFourteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button14/groupFourteenVideo.mp4";
 import ReadingWordHomePage from "./components/readingWordHomePage";
 
-import readingWordGroupOneVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupOneVideo.mp4";
-import readingWordGroupTwoVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupTwoVideo.mp4";
-import readingWordGroupThreeVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupThreeVideo.mp4";
-import readingWordGroupFourVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFourVideo.mp4";
-import readingWordGroupFiveVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFiveVideo.mp4";
-import readingWordGroupSixVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupSixVideo.mp4";
 import readingWordGroupSevenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupSevenVideo.mp4";
 import readingWordGroupEightVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupEightVideo.mp4";
 import readingWordGroupNineVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupNineVideo.mp4";
@@ -230,7 +224,12 @@ import readingWordGroupTwelveVideo from "./assets/ReadingAssets/Assets/ReadingVi
 import readingWordGroupThirteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupThirteenVideo.mp4";
 import readingWordGroupFourteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFourteenVideo.mp4";
 
+import readingLetterLesson1VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson1/readingLetterLesson1JsonFile";
+import readingLetterLesson2VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson2/readingLetterLesson2JsonFile";
+import readingLetterLesson3VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson3/readingLetterLesson3JsonFile";
 import readingLetterLesson4VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson4/readingLetterLesson4JsonFile";
+import readingLetterLesson5VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson5/readingLetterLesson5JsonFile";
+import readingLetterLesson6VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson6/readingLetterLesson6JsonFile";
 
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 
@@ -1491,7 +1490,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupOneVideo}
+              videoRenderObjectArray={readingLetterLesson1VideosArray}
             />
           )}
         ></Route>
@@ -1500,7 +1499,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupTwoVideo}
+              videoRenderObjectArray={readingLetterLesson2VideosArray}
             />
           )}
         ></Route>
@@ -1509,7 +1508,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupThreeVideo}
+              videoRenderObjectArray={readingLetterLesson3VideosArray}
             />
           )}
         ></Route>
@@ -1527,7 +1526,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupFiveVideo}
+              videoRenderObjectArray={readingLetterLesson5VideosArray}
             />
           )}
         ></Route>
@@ -1536,7 +1535,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupSixVideo}
+              videoRenderObjectArray={readingLetterLesson6VideosArray}
             />
           )}
         ></Route>
