@@ -215,21 +215,20 @@ import buttonFourteenImageRenderMap from "./assets/WritingAssets/WritingLesson/J
 import groupFourteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button14/groupFourteenVideo.mp4";
 import ReadingWordHomePage from "./components/readingWordHomePage";
 
-import readingWordGroupSevenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupSevenVideo.mp4";
-import readingWordGroupEightVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupEightVideo.mp4";
-import readingWordGroupNineVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupNineVideo.mp4";
-import readingWordGroupTenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupTenVideo.mp4";
-import readingWordGroupElevenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupElevenVideo.mp4";
-import readingWordGroupTwelveVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupTwelveVideo.mp4";
-import readingWordGroupThirteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupThirteenVideo.mp4";
-import readingWordGroupFourteenVideo from "./assets/ReadingAssets/Assets/ReadingVideos/readingWordGroupFourteenVideo.mp4";
-
 import readingLetterLesson1VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson1/readingLetterLesson1JsonFile";
 import readingLetterLesson2VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson2/readingLetterLesson2JsonFile";
 import readingLetterLesson3VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson3/readingLetterLesson3JsonFile";
 import readingLetterLesson4VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson4/readingLetterLesson4JsonFile";
 import readingLetterLesson5VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson5/readingLetterLesson5JsonFile";
 import readingLetterLesson6VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson6/readingLetterLesson6JsonFile";
+import readingLetterLesson7VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson7/readingLetterLesson7JsonFile";
+import readingLetterLesson8VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson8/readingLetterLesson8JsonFile";
+import readingLetterLesson9VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson9/readingLetterLesson9JsonFile";
+import readingLetterLesson10VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson10/readingLetterLesson10JsonFile";
+import readingLetterLesson11VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson11/readingLetterLesson11JsonFile";
+import readingLetterLesson12VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson12/readingLetterLesson12JsonFile";
+import readingLetterLesson13VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson13/readingLetterLesson13JsonFile";
+import readingLetterLesson14VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson14/readingLetterLesson14JsonFile";
 
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 
@@ -1544,7 +1543,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupSevenVideo}
+              videoRenderObjectArray={readingLetterLesson7VideosArray}
             />
           )}
         ></Route>
@@ -1553,7 +1552,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupEightVideo}
+              videoRenderObjectArray={readingLetterLesson8VideosArray}
             />
           )}
         ></Route>
@@ -1562,7 +1561,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupNineVideo}
+              videoRenderObjectArray={readingLetterLesson9VideosArray}
             />
           )}
         ></Route>
@@ -1571,7 +1570,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupTenVideo}
+              videoRenderObjectArray={readingLetterLesson10VideosArray}
             />
           )}
         ></Route>
@@ -1580,7 +1579,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupElevenVideo}
+              videoRenderObjectArray={readingLetterLesson11VideosArray}
             />
           )}
         ></Route>
@@ -1589,7 +1588,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupTwelveVideo}
+              videoRenderObjectArray={readingLetterLesson12VideosArray}
             />
           )}
         ></Route>
@@ -1598,7 +1597,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupThirteenVideo}
+              videoRenderObjectArray={readingLetterLesson13VideosArray}
             />
           )}
         ></Route>
@@ -1607,7 +1606,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              linkToVideo={readingWordGroupFourteenVideo}
+              videoRenderObjectArray={readingLetterLesson14VideosArray}
             />
           )}
         ></Route>
