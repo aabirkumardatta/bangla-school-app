@@ -297,12 +297,12 @@ class ReadingWordHomePage extends Component {
               className="picture-option-button"
               style={{
                 position: "fixed",
-                width: "22vh",
-                height: "10vh",
+                width: "25vh",
+                height: "12vh",
                 top: "80%",
-                left: "49%",
+                left: "48%",
               }}
-              src={button13HomePageImage}
+              src={button14HomePageImage}
               alt="could not be loaded"
             ></img>
           </Link>
@@ -314,12 +314,12 @@ class ReadingWordHomePage extends Component {
               className="picture-option-button"
               style={{
                 position: "fixed",
-                width: "25vh",
-                height: "12vh",
+                width: "22vh",
+                height: "10vh",
                 top: "80%",
                 left: "62%",
               }}
-              src={button14HomePageImage}
+              src={button13HomePageImage}
               alt="could not be loaded"
             ></img>
           </Link>
