@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import Link from "react-router-dom/Link";
-import VideoPlayer from "./videoPlayer";
+import VideoPlayerLandscape from "./videoPlayerLandscape";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import nextButtonImage from "../assets/nextButtonImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
 
-class ReadingVideoRenderComponent extends Component {
+class OppositesLesson extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -34,12 +34,11 @@ class ReadingVideoRenderComponent extends Component {
             ></img>
           </Link>
         </div>
-        <div>
-          <VideoPlayer
+        <div style={{ overflow: "hidden" }}>
+          <VideoPlayerLandscape
             url={this.state.linkToVideo}
-            marginLeftValue={35}
-            marginTopValue={-1}
-            controlsShowProperty={true}
+            marginLeftValue={25}
+            marginTopValue={4}
           />
         </div>
         <div className="vocab-game-option">
@@ -50,7 +49,7 @@ class ReadingVideoRenderComponent extends Component {
               height: "10vh",
               width: "10vh",
               top: "50%",
-              left: "28%",
+              left: "18%",
               visibility:
                 this.state.curentVideoRenderObject.previousButtonVisibility,
             }}
@@ -74,7 +73,7 @@ class ReadingVideoRenderComponent extends Component {
               height: "10vh",
               width: "10vh",
               top: "50%",
-              left: "67%",
+              left: "77%",
               visibility:
                 this.state.curentVideoRenderObject.nextButtonVisibility,
             }}
@@ -95,4 +94,4 @@ class ReadingVideoRenderComponent extends Component {
   }
 }
 
-export default ReadingVideoRenderComponent;
+export default OppositesLesson;
