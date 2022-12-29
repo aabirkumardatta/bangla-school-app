@@ -234,6 +234,10 @@ import readingLetterLesson14VideosArray from "./assets/ReadingAssets/Assets/Read
 
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 import OppositesLesson from "./components/oppositesLesson";
+import SpeakingHomePage from "./components/speakingHomePage";
+
+import LandscapeVideoWithDownButtonsGeneric from "./components/landscapeVideoWithDownButtonsGeneric";
+import { pageRenderMap, videoRenderMap } from "./assets/SpeakingAssets/test";
 
 class App extends Component {
   render() {
@@ -1635,6 +1639,21 @@ class App extends Component {
               homePageLink="/readingWordHomePage"
               videoRenderObjectArray={readingLetterLesson14VideosArray}
             />
+          )}
+        ></Route>
+        <Route
+          path="/speakingHomePage"
+          exact
+          render={() => <SpeakingHomePage></SpeakingHomePage>}
+        ></Route>
+        <Route
+          path="/speakingGroupOne"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMap}
+              videoRenderMap={videoRenderMap}
+            ></LandscapeVideoWithDownButtonsGeneric>
           )}
         ></Route>
       </div>
