@@ -88,7 +88,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupTwo">
             <img
               className="picture-option-button"
               style={{
@@ -105,7 +105,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupThree">
             <img
               className="picture-option-button"
               style={{
@@ -122,7 +122,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupFour">
             <img
               className="picture-option-button"
               style={{
@@ -139,7 +139,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupFive">
             <img
               className="picture-option-button"
               style={{
@@ -156,7 +156,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupSix">
             <img
               className="picture-option-button"
               style={{
@@ -173,7 +173,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupSeven">
             <img
               className="picture-option-button"
               style={{
@@ -190,7 +190,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupEight">
             <img
               className="picture-option-button"
               style={{
@@ -207,7 +207,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupNine">
             <img
               className="picture-option-button"
               style={{
@@ -224,7 +224,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupTen">
             <img
               className="picture-option-button"
               style={{
@@ -241,7 +241,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupEleven">
             <img
               className="picture-option-button"
               style={{
@@ -258,7 +258,7 @@ class SpeakingHomePage extends Component {
         </div>
 
         <div>
-          <Link to="/writingGroupOne">
+          <Link to="/speakingGroupTwelve">
             <img
               className="picture-option-button"
               style={{

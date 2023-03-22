@@ -4,6 +4,13 @@ import { Link } from "react-router-dom";
 import VideoPlayerLandscape from "./videoPlayerLandscape";
 
 class LandscapeVideoWithDownButtonsGeneric extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      video: this.props.videoRenderMap.introVideo,
+    };
+  }
+
   componentDidMount() {
     Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
@@ -63,6 +70,9 @@ class LandscapeVideoWithDownButtonsGeneric extends Component {
           ></img>
         </div>
         {this.returnVideoComponent()}
+        {this.props.buttonRenderMap.map((button) => {
+          return this.returnView(button);
+        })}
       </div>
     );
   };
@@ -72,12 +82,37 @@ class LandscapeVideoWithDownButtonsGeneric extends Component {
       <div>
         <VideoPlayerLandscape
           homePageLink="/"
-          url={this.props.videoRenderMap.introVideo}
+          url={this.state.video}
           marginLeftValue={
             this.props.videoRenderMap.videoElementMarginLeftValue
           }
           marginTopValue={this.props.videoRenderMap.videoElementMarginTopValue}
         ></VideoPlayerLandscape>
+      </div>
+    );
+  };
+
+  returnView = (button) => {
+    console.log("Inside renderView");
+    return (
+      <div>
+        <img
+          style={{
+            position: `${button.position}`,
+            cursor: `${button.cursor}`,
+            height: `${button.height}`,
+            width: `${button.width}`,
+            marginTop: `${button.marginTopValue}`,
+            marginLeft: `${button.marginLeftValue}`,
+          }}
+          onClick={() => {
+            this.setState({
+              video: button.video,
+            });
+          }}
+          src={button.image}
+          alt="could not be loaded"
+        ></img>
       </div>
     );
   };
