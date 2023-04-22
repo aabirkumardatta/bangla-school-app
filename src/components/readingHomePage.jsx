@@ -84,7 +84,7 @@ class ReadingHomePage extends Component {
             </Link>
           </span>
           <span>
-            <Link to="/">
+            <Link to="/numberHomePage">
               <img
                 src={this.state.numbersButton}
                 alt="could not be loaded"

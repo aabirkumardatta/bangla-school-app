@@ -24,12 +24,12 @@ class LetterHomePage extends Component {
       languageOptionButton: banglaButtonImage,
       quizButton: quizButtonEnglishImage,
       gameButton: gameButtonEnglishImage,
-      levelButton: levelOneButtonEnglishImage
+      levelButton: levelOneButtonEnglishImage,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("letterenglishbgimage");
@@ -43,7 +43,7 @@ class LetterHomePage extends Component {
         languageOptionButton: englishButtonImage,
         quizButton: quizButtonBengaliImage,
         gameButton: gameButtonBengaliImage,
-        levelButton: levelOneButtonBengaliImage
+        levelButton: levelOneButtonBengaliImage,
       });
     } else {
       document.body.classList.remove("letterbengalibgimage");
@@ -52,7 +52,7 @@ class LetterHomePage extends Component {
         languageOptionButton: banglaButtonImage,
         quizButton: quizButtonEnglishImage,
         gameButton: gameButtonEnglishImage,
-        levelButton: levelOneButtonEnglishImage
+        levelButton: levelOneButtonEnglishImage,
       });
     }
   };
@@ -65,7 +65,7 @@ class LetterHomePage extends Component {
             <img
               style={{
                 width: "12vh",
-                height: "12vh"
+                height: "12vh",
               }}
               src={this.state.languageOptionButton}
               onClick={this.handleLanguageOptionButtonClick}
@@ -79,7 +79,8 @@ class LetterHomePage extends Component {
                 position: "fixed",
                 right: "2vh",
                 width: "12vh",
-                height: "12vh"
+                height: "12vh",
+                visibility: "hidden",
               }}
               src={this.state.levelButton}
               alt="could not be loaded"
@@ -90,12 +91,12 @@ class LetterHomePage extends Component {
 
         <div
           style={{
-            marginLeft: "10%"
+            marginLeft: "10%",
           }}
         >
           <div
             style={{
-              marginLeft: "30%"
+              marginLeft: "30%",
             }}
           >
             <span>
@@ -107,7 +108,7 @@ class LetterHomePage extends Component {
             </span>
             <span
               style={{
-                marginLeft: "5%"
+                marginLeft: "5%",
               }}
             >
               <img
@@ -115,7 +116,7 @@ class LetterHomePage extends Component {
                 alt="could not be loaded"
                 style={{
                   width: "42%",
-                  height: "25vh"
+                  height: "25vh",
                 }}
               ></img>
             </span>
@@ -123,7 +124,7 @@ class LetterHomePage extends Component {
 
           <div
             style={{
-              marginLeft: "35%"
+              marginLeft: "35%",
             }}
           >
             <span>
@@ -133,7 +134,7 @@ class LetterHomePage extends Component {
                   alt="could not be loaded"
                   style={{
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -146,7 +147,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "17%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -159,7 +160,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -172,7 +173,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -182,7 +183,7 @@ class LetterHomePage extends Component {
           <div
             style={{
               marginTop: "1%",
-              marginLeft: "35%"
+              marginLeft: "35%",
             }}
           >
             <span>
@@ -192,7 +193,7 @@ class LetterHomePage extends Component {
                   alt="could not be loaded"
                   style={{
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -205,7 +206,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "17%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -218,7 +219,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -231,7 +232,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -241,7 +242,7 @@ class LetterHomePage extends Component {
           <div
             style={{
               marginTop: "1%",
-              marginLeft: "35%"
+              marginLeft: "35%",
             }}
           >
             <span>
@@ -251,7 +252,7 @@ class LetterHomePage extends Component {
                 style={{
                   width: "17vh",
                   height: "10vh",
-                  visibility: "hidden"
+                  visibility: "hidden",
                 }}
               ></img>
             </span>
@@ -263,7 +264,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "17%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -276,7 +277,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -289,7 +290,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -299,7 +300,7 @@ class LetterHomePage extends Component {
           <div
             style={{
               marginTop: "1%",
-              marginLeft: "35%"
+              marginLeft: "35%",
             }}
           >
             <span>
@@ -309,7 +310,7 @@ class LetterHomePage extends Component {
                 style={{
                   width: "17vh",
                   height: "10vh",
-                  visibility: "hidden"
+                  visibility: "hidden",
                 }}
               ></img>
             </span>
@@ -321,7 +322,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "17%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -334,7 +335,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -347,7 +348,7 @@ class LetterHomePage extends Component {
                   style={{
                     marginLeft: "1%",
                     width: "17vh",
-                    height: "10vh"
+                    height: "10vh",
                   }}
                 ></img>
               </Link>
@@ -358,7 +359,7 @@ class LetterHomePage extends Component {
           style={{
             position: "fixed",
             bottom: "14vh",
-            marginLeft: "1%"
+            marginLeft: "1%",
           }}
         >
           <span>
@@ -369,7 +370,7 @@ class LetterHomePage extends Component {
                 style={{
                   position: "fixed",
                   width: "12vh",
-                  height: "12vh"
+                  height: "12vh",
                 }}
               ></img>
             </Link>

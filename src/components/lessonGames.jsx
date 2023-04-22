@@ -14,12 +14,12 @@ class LessonGames extends Component {
     this.state = {
       languageOptionButton: banglaButtonImage,
       lessonButton: lessonsButtonEnglishImage,
-      gamesButton: gamesButtonEnglishImage
+      gamesButton: gamesButtonEnglishImage,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("lessongamesbgimage");
@@ -30,13 +30,13 @@ class LessonGames extends Component {
       this.setState({
         languageOptionButton: englishButtonImage,
         lessonButton: lessonsButtonBengaliImage,
-        gamesButton: gamesButtonBengaliImage
+        gamesButton: gamesButtonBengaliImage,
       });
     } else {
       this.setState({
         languageOptionButton: banglaButtonImage,
         lessonButton: lessonsButtonEnglishImage,
-        gamesButton: gamesButtonEnglishImage
+        gamesButton: gamesButtonEnglishImage,
       });
     }
   };
@@ -48,7 +48,7 @@ class LessonGames extends Component {
           <img
             style={{
               width: "12vh",
-              height: "12vh"
+              height: "12vh",
             }}
             src={this.state.languageOptionButton}
             onClick={this.handleLanguageOptionButtonClick}
@@ -64,20 +64,20 @@ class LessonGames extends Component {
                 alt="could not be loaded"
                 style={{
                   width: "60vh",
-                  height: "20vh"
+                  height: "20vh",
                 }}
               ></img>
             </Link>
           </div>
 
-          <div style={{ marginTop: "1%" }}>
+          <div style={{ marginTop: "1%", visibility: "hidden" }}>
             <Link to="/gameshomepage">
               <img
                 src={this.state.gamesButton}
                 alt="could not be loaded"
                 style={{
                   width: "60vh",
-                  height: "20vh"
+                  height: "20vh",
                 }}
               ></img>
             </Link>
@@ -87,7 +87,7 @@ class LessonGames extends Component {
           style={{
             position: "fixed",
             bottom: "14vh",
-            marginLeft: "1%"
+            marginLeft: "1%",
           }}
         >
           <span>
@@ -98,7 +98,7 @@ class LessonGames extends Component {
                 style={{
                   position: "fixed",
                   width: "12vh",
-                  height: "12vh"
+                  height: "12vh",
                 }}
               ></img>
             </Link>
