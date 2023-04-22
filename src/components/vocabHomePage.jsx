@@ -25,12 +25,12 @@ class VocabHomePage extends Component {
       imageFour: this.props.imageFourEnglish,
       imageFive: this.props.imageFiveEnglish,
       quizButton: quizButtonEnglishImage,
-      moreButton: moreButtonEnglishImage
+      moreButton: moreButtonEnglishImage,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("plaingreenbackgroundbgimage");
@@ -48,7 +48,7 @@ class VocabHomePage extends Component {
         imageFour: this.props.imageFourBengali,
         imageFive: this.props.imageFiveBengali,
         quizButton: quizButtonBengaliImage,
-        moreButton: moreButtonBengaliImage
+        moreButton: moreButtonBengaliImage,
       });
     } else {
       this.setState({
@@ -61,7 +61,7 @@ class VocabHomePage extends Component {
         imageFour: this.props.imageFourEnglish,
         imageFive: this.props.imageFiveEnglish,
         quizButton: quizButtonEnglishImage,
-        moreButton: moreButtonEnglishImage
+        moreButton: moreButtonEnglishImage,
       });
     }
   };
@@ -76,7 +76,7 @@ class VocabHomePage extends Component {
               style={{
                 width: this.props.imageTwoWidth,
                 marginLeft: this.props.imageTwoMarginLeft,
-                marginTop: this.props.imageTwoMarginTop
+                marginTop: this.props.imageTwoMarginTop,
               }}
               alt="could not be loaded"
             ></img>
@@ -88,7 +88,8 @@ class VocabHomePage extends Component {
             style={{
               width: "8%",
               marginLeft: this.props.quizButtonTwoMarginLeft,
-              marginTop: this.props.quizButtonTwoMarginTop
+              marginTop: this.props.quizButtonTwoMarginTop,
+              visibility: "hidden",
             }}
             alt="could not be loaded"
           ></img>
@@ -109,7 +110,7 @@ class VocabHomePage extends Component {
                 height: "10vh",
                 width: "35vh",
                 top: "50%",
-                left: "35%"
+                left: "35%",
               }}
               alt="could not be loaded"
             ></img>
@@ -124,7 +125,7 @@ class VocabHomePage extends Component {
                 height: "10vh",
                 width: "35vh",
                 top: "50%",
-                left: "55%"
+                left: "55%",
               }}
               alt="could not be loaded"
             ></img>
@@ -139,7 +140,7 @@ class VocabHomePage extends Component {
                 height: "10vh",
                 width: "35vh",
                 top: "65%",
-                left: "35%"
+                left: "35%",
               }}
               alt="could not be loaded"
             ></img>
@@ -154,7 +155,7 @@ class VocabHomePage extends Component {
                 height: "10vh",
                 width: "35vh",
                 top: "65%",
-                left: "55%"
+                left: "55%",
               }}
               alt="could not be loaded"
             ></img>
@@ -168,7 +169,8 @@ class VocabHomePage extends Component {
               height: "10vh",
               width: "15vh",
               top: "80%",
-              left: "49%"
+              left: "49%",
+              visibility: "hidden",
             }}
             alt="could not be loaded"
           ></img>
@@ -189,7 +191,7 @@ class VocabHomePage extends Component {
                 height: "10vh",
                 width: "35vh",
                 top: "55%",
-                left: "35%"
+                left: "35%",
               }}
               alt="could not be loaded"
             ></img>
@@ -204,7 +206,7 @@ class VocabHomePage extends Component {
                 height: "10vh",
                 width: "35vh",
                 top: "55%",
-                left: "55%"
+                left: "55%",
               }}
               alt="could not be loaded"
             ></img>
@@ -218,7 +220,8 @@ class VocabHomePage extends Component {
               height: "10vh",
               width: "15vh",
               top: "68%",
-              left: "50%"
+              left: "50%",
+              visibility: "hidden",
             }}
             alt="could not be loaded"
           ></img>
@@ -227,7 +230,7 @@ class VocabHomePage extends Component {
     );
   };
 
-  renderView = renderViewOptionPassed => {
+  renderView = (renderViewOptionPassed) => {
     switch (renderViewOptionPassed) {
       case "renderFiveButtonView":
         return this.renderFiveButtonView();
@@ -247,7 +250,7 @@ class VocabHomePage extends Component {
               style={{
                 position: "fixed",
                 width: "12vh",
-                height: "12vh"
+                height: "12vh",
               }}
               src={this.state.languageOptionButton}
               onClick={this.handleLanguageOptionButtonClick}
@@ -261,7 +264,7 @@ class VocabHomePage extends Component {
                 position: "fixed",
                 right: "2vh",
                 width: "12vh",
-                height: "12vh"
+                height: "12vh",
               }}
               src={this.state.levelButton}
               alt="could not be loaded"
@@ -289,7 +292,8 @@ class VocabHomePage extends Component {
             style={{
               width: "8%",
               marginLeft: this.props.quizButtonOneMarginLeft,
-              marginTop: this.props.quizButtonOneMarginTop
+              marginTop: this.props.quizButtonOneMarginTop,
+              visibility: "hidden",
             }}
             alt="could not be loaded"
           ></img>
@@ -299,7 +303,7 @@ class VocabHomePage extends Component {
           style={{
             position: "fixed",
             marginLeft: "1%",
-            bottom: "14vh"
+            bottom: "14vh",
           }}
         >
           <span>
@@ -311,7 +315,7 @@ class VocabHomePage extends Component {
                   position: "fixed",
                   width: "12vh",
                   height: "12vh",
-                  visibility: this.props.previousButtonVisibility
+                  visibility: this.props.previousButtonVisibility,
                 }}
               ></img>
             </Link>
@@ -326,7 +330,7 @@ class VocabHomePage extends Component {
                   width: "12vh",
                   height: "12vh",
                   right: "2vh",
-                  visibility: this.props.moreButtonVisibility
+                  visibility: this.props.moreButtonVisibility,
                 }}
               ></img>
             </Link>

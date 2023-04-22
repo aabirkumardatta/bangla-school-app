@@ -234,6 +234,81 @@ import readingLetterLesson14VideosArray from "./assets/ReadingAssets/Assets/Read
 
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 import OppositesLesson from "./components/oppositesLesson";
+import SpeakingHomePage from "./components/speakingHomePage";
+
+import LandscapeVideoWithDownButtonsGeneric from "./components/landscapeVideoWithDownButtonsGeneric";
+
+import {
+  pageRenderMapSpeakingGroup1,
+  videoRenderMapSpeakingGroup1,
+  buttonRenderMapSpeakingGroup1,
+} from "./assets/SpeakingAssets/Lesson1/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup2,
+  videoRenderMapSpeakingGroup2,
+  buttonRenderMapSpeakingGroup2,
+} from "./assets/SpeakingAssets/Lesson2/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup3,
+  videoRenderMapSpeakingGroup3,
+  buttonRenderMapSpeakingGroup3,
+} from "./assets/SpeakingAssets/Lesson3/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup4,
+  videoRenderMapSpeakingGroup4,
+  buttonRenderMapSpeakingGroup4,
+} from "./assets/SpeakingAssets/Lesson4/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup5,
+  videoRenderMapSpeakingGroup5,
+  buttonRenderMapSpeakingGroup5,
+} from "./assets/SpeakingAssets/Lesson5/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup6,
+  videoRenderMapSpeakingGroup6,
+  buttonRenderMapSpeakingGroup6,
+} from "./assets/SpeakingAssets/Lesson6/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup7,
+  videoRenderMapSpeakingGroup7,
+  buttonRenderMapSpeakingGroup7,
+} from "./assets/SpeakingAssets/Lesson7/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup8,
+  videoRenderMapSpeakingGroup8,
+  buttonRenderMapSpeakingGroup8,
+} from "./assets/SpeakingAssets/Lesson8/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup9,
+  videoRenderMapSpeakingGroup9,
+  buttonRenderMapSpeakingGroup9,
+} from "./assets/SpeakingAssets/Lesson9/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup10,
+  videoRenderMapSpeakingGroup10,
+  buttonRenderMapSpeakingGroup10,
+} from "./assets/SpeakingAssets/Lesson10/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup11,
+  videoRenderMapSpeakingGroup11,
+  buttonRenderMapSpeakingGroup11,
+} from "./assets/SpeakingAssets/Lesson11/renderMap";
+
+import {
+  pageRenderMapSpeakingGroup12,
+  videoRenderMapSpeakingGroup12,
+  buttonRenderMapSpeakingGroup12,
+} from "./assets/SpeakingAssets/Lesson12/renderMap";
 
 class App extends Component {
   render() {
@@ -1635,6 +1710,143 @@ class App extends Component {
               homePageLink="/readingWordHomePage"
               videoRenderObjectArray={readingLetterLesson14VideosArray}
             />
+          )}
+        ></Route>
+        <Route
+          path="/speakingHomePage"
+          exact
+          render={() => <SpeakingHomePage></SpeakingHomePage>}
+        ></Route>
+        <Route
+          path="/speakingGroupOne"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup1}
+              videoRenderMap={videoRenderMapSpeakingGroup1}
+              buttonRenderMap={buttonRenderMapSpeakingGroup1}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupTwo"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup2}
+              videoRenderMap={videoRenderMapSpeakingGroup2}
+              buttonRenderMap={buttonRenderMapSpeakingGroup2}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupThree"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup3}
+              videoRenderMap={videoRenderMapSpeakingGroup3}
+              buttonRenderMap={buttonRenderMapSpeakingGroup3}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupFour"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup4}
+              videoRenderMap={videoRenderMapSpeakingGroup4}
+              buttonRenderMap={buttonRenderMapSpeakingGroup4}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupFive"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup5}
+              videoRenderMap={videoRenderMapSpeakingGroup5}
+              buttonRenderMap={buttonRenderMapSpeakingGroup5}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupSix"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup6}
+              videoRenderMap={videoRenderMapSpeakingGroup6}
+              buttonRenderMap={buttonRenderMapSpeakingGroup6}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupSeven"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup7}
+              videoRenderMap={videoRenderMapSpeakingGroup7}
+              buttonRenderMap={buttonRenderMapSpeakingGroup7}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupEight"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup8}
+              videoRenderMap={videoRenderMapSpeakingGroup8}
+              buttonRenderMap={buttonRenderMapSpeakingGroup8}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupNine"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup9}
+              videoRenderMap={videoRenderMapSpeakingGroup9}
+              buttonRenderMap={buttonRenderMapSpeakingGroup9}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupTen"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup10}
+              videoRenderMap={videoRenderMapSpeakingGroup10}
+              buttonRenderMap={buttonRenderMapSpeakingGroup10}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupEleven"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup11}
+              videoRenderMap={videoRenderMapSpeakingGroup11}
+              buttonRenderMap={buttonRenderMapSpeakingGroup11}
+            ></LandscapeVideoWithDownButtonsGeneric>
+          )}
+        ></Route>
+        <Route
+          path="/speakingGroupTwelve"
+          exact
+          render={() => (
+            <LandscapeVideoWithDownButtonsGeneric
+              pageRenderMap={pageRenderMapSpeakingGroup12}
+              videoRenderMap={videoRenderMapSpeakingGroup12}
+              buttonRenderMap={buttonRenderMapSpeakingGroup12}
+            ></LandscapeVideoWithDownButtonsGeneric>
           )}
         ></Route>
       </div>

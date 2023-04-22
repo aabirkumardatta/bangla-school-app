@@ -6,8 +6,8 @@ class TestBackend extends Component {
   componentDidMount() {
     const apiUrl = "http://localhost:8081/writinghomepage";
     fetch(apiUrl)
-      .then(response => response.json())
-      .then(data => console.log("This is your data", data.eci));
+      .then((response) => response.json())
+      .then((data) => console.log("This is your data", data));
   }
 
   render() {

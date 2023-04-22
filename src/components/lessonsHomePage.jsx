@@ -112,7 +112,7 @@ class LessonsHomePage extends Component {
 
           <div style={{ marginTop: "-1%", marginLeft: "14%" }}>
             <span>
-              <Link to="/">
+              <Link to="/speakingHomePage">
                 <img
                   src={this.state.grammarButton}
                   alt="could not be loaded"
