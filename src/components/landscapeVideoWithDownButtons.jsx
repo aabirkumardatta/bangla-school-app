@@ -98,7 +98,7 @@ class LandscapeVideoWithDownButtons extends Component {
               marginLeft: "1%",
             }}
           >
-            <Link to="/writingHomePage">
+            <Link to="/writingLetterHomePage">
               <img
                 src={previousButtonImage}
                 alt="could not be loaded"

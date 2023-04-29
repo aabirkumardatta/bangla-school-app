@@ -311,6 +311,8 @@ import {
 } from "./assets/SpeakingAssets/Lesson12/renderMap";
 import NumberHomePage from "./components/numberHomePage";
 import NumberLessonPage from "./components/numberLessonPage";
+import WritingLetterHomePage from "./components/writingLetterHomePage";
+import WritingNumberPage from "./components/writingNumberPage";
 
 class App extends Component {
   render() {
@@ -1388,6 +1390,11 @@ class App extends Component {
           render={() => <WritingHomePage></WritingHomePage>}
         />
         <Route
+          path="/writingLetterHomePage"
+          exact
+          render={() => <WritingLetterHomePage></WritingLetterHomePage>}
+        />
+        <Route
           path="/writingGroupOne"
           exact
           render={() => (
@@ -1395,7 +1402,7 @@ class App extends Component {
               introVideo={groupOneVideo}
               buttonImageRenderMap={buttonOneImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupOne"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1408,7 +1415,7 @@ class App extends Component {
               introVideo={groupTwoVideo}
               buttonImageRenderMap={buttonTwoImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupTwo"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1421,7 +1428,7 @@ class App extends Component {
               introVideo={groupThreeVideo}
               buttonImageRenderMap={buttonThreeImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupThree"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1434,7 +1441,7 @@ class App extends Component {
               introVideo={groupFourVideo}
               buttonImageRenderMap={buttonFourImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupFour"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1447,7 +1454,7 @@ class App extends Component {
               introVideo={groupFiveVideo}
               buttonImageRenderMap={buttonFiveImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupFive"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1460,7 +1467,7 @@ class App extends Component {
               introVideo={groupSixVideo}
               buttonImageRenderMap={buttonSixImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupSix"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1473,7 +1480,7 @@ class App extends Component {
               introVideo={groupSevenVideo}
               buttonImageRenderMap={buttonSevenImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupSeven"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1486,7 +1493,7 @@ class App extends Component {
               introVideo={groupEightVideo}
               buttonImageRenderMap={buttonEightImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupEight"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1499,7 +1506,7 @@ class App extends Component {
               introVideo={groupNineVideo}
               buttonImageRenderMap={buttonNineImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupNine"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1512,7 +1519,7 @@ class App extends Component {
               introVideo={groupTenVideo}
               buttonImageRenderMap={buttonTenImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupTen"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1525,7 +1532,7 @@ class App extends Component {
               introVideo={groupElevenVideo}
               buttonImageRenderMap={buttonElevenImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupEleven"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1538,7 +1545,7 @@ class App extends Component {
               introVideo={groupTwelveVideo}
               buttonImageRenderMap={buttonTwelveImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupTwelve"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1551,7 +1558,7 @@ class App extends Component {
               introVideo={groupThirteenVideo}
               buttonImageRenderMap={buttonThirteenImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupThirteen"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1564,7 +1571,7 @@ class App extends Component {
               introVideo={groupFourteenVideo}
               buttonImageRenderMap={buttonFourteenImageRenderMap}
               pageLeftImage={lettersWithSamePatternImage}
-              homePageLink="/writingHomePage"
+              homePageLink="/writingLetterHomePage"
               backPageLink="/writingGroupFourteen"
             ></LandscapeVideoWithDownButtons>
           )}
@@ -1860,6 +1867,11 @@ class App extends Component {
           path="/numberLessonPage"
           exact
           render={() => <NumberLessonPage />}
+        ></Route>
+        <Route
+          path="/writingNumberPage"
+          exact
+          render={() => <WritingNumberPage />}
         ></Route>
       </div>
     );

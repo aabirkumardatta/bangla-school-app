@@ -4,7 +4,7 @@ class TestBackend extends Component {
   state = {};
 
   componentDidMount() {
-    const apiUrl = "http://localhost:8081/writinghomepage";
+    const apiUrl = "http://localhost:8081/writingLetterHomePage";
     fetch(apiUrl)
       .then((response) => response.json())
       .then((data) => console.log("This is your data", data));

@@ -48,7 +48,7 @@ class LetterWritingAndPronunciationPageLandscape extends Component {
     return (
       <div>
         <div style={{ marginLeft: "-1%" }}>
-          <Link to="/writingHomePage">
+          <Link to="/writingLetterHomePage">
             <img
               style={{ width: "12vh", height: "12vh" }}
               src={homebuttonImage}
@@ -149,7 +149,7 @@ class LetterWritingAndPronunciationPageLandscape extends Component {
         <LandscapeVideoWithDownButtons
           buttonImageRenderMap={this.props.buttonImageRenderMap}
           pageLeftImage={lettersWithSamePatternImage}
-          homePageLink="/writingHomePage"
+          homePageLink="/writingLetterHomePage"
           backPageLink="/testingLandscape"
         ></LandscapeVideoWithDownButtons>
       </div>
