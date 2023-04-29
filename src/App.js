@@ -309,6 +309,8 @@ import {
   videoRenderMapSpeakingGroup12,
   buttonRenderMapSpeakingGroup12,
 } from "./assets/SpeakingAssets/Lesson12/renderMap";
+import NumberHomePage from "./components/numberHomePage";
+import NumberLessonPage from "./components/numberLessonPage";
 
 class App extends Component {
   render() {
@@ -1848,6 +1850,16 @@ class App extends Component {
               buttonRenderMap={buttonRenderMapSpeakingGroup12}
             ></LandscapeVideoWithDownButtonsGeneric>
           )}
+        ></Route>
+        <Route
+          path="/numberHomePage"
+          exact
+          render={() => <NumberHomePage />}
+        ></Route>
+        <Route
+          path="/numberLessonPage"
+          exact
+          render={() => <NumberLessonPage />}
         ></Route>
       </div>
     );
