@@ -1,53 +1,42 @@
 import React, { Component } from "react";
 
-import defaultImage1 from "../assets/NumberAssets/Number1-10/Images/Default/1.png";
-import defaultImage2 from "../assets/NumberAssets/Number1-10/Images/Default/2.png";
-import defaultImage3 from "../assets/NumberAssets/Number1-10/Images/Default/3.png";
-import defaultImage4 from "../assets/NumberAssets/Number1-10/Images/Default/4.png";
-import defaultImage5 from "../assets/NumberAssets/Number1-10/Images/Default/5.png";
-import defaultImage6 from "../assets/NumberAssets/Number1-10/Images/Default/6.png";
-import defaultImage7 from "../assets/NumberAssets/Number1-10/Images/Default/7.png";
-import defaultImage8 from "../assets/NumberAssets/Number1-10/Images/Default/8.png";
-import defaultImage9 from "../assets/NumberAssets/Number1-10/Images/Default/9.png";
-import defaultImage10 from "../assets/NumberAssets/Number1-10/Images/Default/10.png";
+import defaultImage1 from "../assets/NumberAssets/Number11-20/Images/Default/1.png";
+import defaultImage2 from "../assets/NumberAssets/Number11-20/Images/Default/2.png";
+import defaultImage3 from "../assets/NumberAssets/Number11-20/Images/Default/3.png";
+import defaultImage4 from "../assets/NumberAssets/Number11-20/Images/Default/4.png";
+import defaultImage5 from "../assets/NumberAssets/Number11-20/Images/Default/5.png";
+import defaultImage6 from "../assets/NumberAssets/Number11-20/Images/Default/6.png";
+import defaultImage7 from "../assets/NumberAssets/Number11-20/Images/Default/7.png";
+import defaultImage8 from "../assets/NumberAssets/Number11-20/Images/Default/8.png";
+import defaultImage9 from "../assets/NumberAssets/Number11-20/Images/Default/9.png";
+import defaultImage10 from "../assets/NumberAssets/Number11-20/Images/Default/10.png";
 
-import countImage1 from "../assets/NumberAssets/Number1-10/Images/Count/1.png";
-import countImage2 from "../assets/NumberAssets/Number1-10/Images/Count/2.png";
-import countImage3 from "../assets/NumberAssets/Number1-10/Images/Count/3.png";
-import countImage4 from "../assets/NumberAssets/Number1-10/Images/Count/4.png";
-import countImage5 from "../assets/NumberAssets/Number1-10/Images/Count/5.png";
-import countImage6 from "../assets/NumberAssets/Number1-10/Images/Count/6.png";
-import countImage7 from "../assets/NumberAssets/Number1-10/Images/Count/7.png";
-import countImage8 from "../assets/NumberAssets/Number1-10/Images/Count/8.png";
-import countImage9 from "../assets/NumberAssets/Number1-10/Images/Count/9.png";
-import countImage10 from "../assets/NumberAssets/Number1-10/Images/Count/10.png";
+import wordImage1 from "../assets/NumberAssets/Number11-20/Images/Word/1.png";
+import wordImage2 from "../assets/NumberAssets/Number11-20/Images/Word/2.png";
+import wordImage3 from "../assets/NumberAssets/Number11-20/Images/Word/3.png";
+import wordImage4 from "../assets/NumberAssets/Number11-20/Images/Word/4.png";
+import wordImage5 from "../assets/NumberAssets/Number11-20/Images/Word/5.png";
+import wordImage6 from "../assets/NumberAssets/Number11-20/Images/Word/6.png";
+import wordImage7 from "../assets/NumberAssets/Number11-20/Images/Word/7.png";
+import wordImage8 from "../assets/NumberAssets/Number11-20/Images/Word/8.png";
+import wordImage9 from "../assets/NumberAssets/Number11-20/Images/Word/9.png";
+import wordImage10 from "../assets/NumberAssets/Number11-20/Images/Word/10.png";
 
-import wordImage1 from "../assets/NumberAssets/Number1-10/Images/Word/1.png";
-import wordImage2 from "../assets/NumberAssets/Number1-10/Images/Word/2.png";
-import wordImage3 from "../assets/NumberAssets/Number1-10/Images/Word/3.png";
-import wordImage4 from "../assets/NumberAssets/Number1-10/Images/Word/4.png";
-import wordImage5 from "../assets/NumberAssets/Number1-10/Images/Word/5.png";
-import wordImage6 from "../assets/NumberAssets/Number1-10/Images/Word/6.png";
-import wordImage7 from "../assets/NumberAssets/Number1-10/Images/Word/7.png";
-import wordImage8 from "../assets/NumberAssets/Number1-10/Images/Word/8.png";
-import wordImage9 from "../assets/NumberAssets/Number1-10/Images/Word/9.png";
-import wordImage10 from "../assets/NumberAssets/Number1-10/Images/Word/10.png";
+import audio1 from "../assets/NumberAssets/Number11-20/Audio/1.mp3";
+import audio2 from "../assets/NumberAssets/Number11-20/Audio/2.mp3";
+import audio3 from "../assets/NumberAssets/Number11-20/Audio/3.mp3";
+import audio4 from "../assets/NumberAssets/Number11-20/Audio/4.mp3";
+import audio5 from "../assets/NumberAssets/Number11-20/Audio/5.mp3";
+import audio6 from "../assets/NumberAssets/Number11-20/Audio/6.mp3";
+import audio7 from "../assets/NumberAssets/Number11-20/Audio/7.mp3";
+import audio8 from "../assets/NumberAssets/Number11-20/Audio/8.mp3";
+import audio9 from "../assets/NumberAssets/Number11-20/Audio/9.mp3";
+import audio10 from "../assets/NumberAssets/Number11-20/Audio/10.mp3";
 
-import audio1 from "../assets/NumberAssets/Number1-10/Audio/1.mp3";
-import audio2 from "../assets/NumberAssets/Number1-10/Audio/2.mp3";
-import audio3 from "../assets/NumberAssets/Number1-10/Audio/3.mp3";
-import audio4 from "../assets/NumberAssets/Number1-10/Audio/4.mp3";
-import audio5 from "../assets/NumberAssets/Number1-10/Audio/5.mp3";
-import audio6 from "../assets/NumberAssets/Number1-10/Audio/6.mp3";
-import audio7 from "../assets/NumberAssets/Number1-10/Audio/7.mp3";
-import audio8 from "../assets/NumberAssets/Number1-10/Audio/8.mp3";
-import audio9 from "../assets/NumberAssets/Number1-10/Audio/9.mp3";
-import audio10 from "../assets/NumberAssets/Number1-10/Audio/10.mp3";
-
-import countBengaliImage from "../assets/NumberAssets/Number1-10/Images/countBengaliImage.png";
-import countEnglishImage from "../assets/NumberAssets/Number1-10/Images/countEnglishImage.png";
-import wordBengaliImage from "../assets/NumberAssets/Number1-10/Images/wordBengaliImage.png";
-import wordEnglishImage from "../assets/NumberAssets/Number1-10/Images/wordEnglishImage.png";
+import countBengaliImage from "../assets/NumberAssets/Number11-20/Images/countBengaliImage.png";
+import countEnglishImage from "../assets/NumberAssets/Number11-20/Images/countEnglishImage.png";
+import wordBengaliImage from "../assets/NumberAssets/Number11-20/Images/wordBengaliImage.png";
+import wordEnglishImage from "../assets/NumberAssets/Number11-20/Images/wordEnglishImage.png";
 
 import banglaButtonImage from "../assets/NumberAssets/HomePageButtonImages/bengaliButtonImage.png";
 import englishButtonImage from "../assets/NumberAssets/HomePageButtonImages/englishButtonImage.png";
@@ -57,7 +46,7 @@ import homebuttonImage from "../assets/homeButtonImage.png";
 import { Howl } from "howler";
 import { Link } from "react-router-dom";
 
-class NumberLessonPage extends Component {
+class NumberLessonPageElevenToTwenty extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -97,21 +86,6 @@ class NumberLessonPage extends Component {
         wordButtonImage: wordEnglishImage,
       });
     }
-  };
-
-  handleCountButtonClick = () => {
-    this.setState({
-      image1: countImage1,
-      image2: countImage2,
-      image3: countImage3,
-      image4: countImage4,
-      image5: countImage5,
-      image6: countImage6,
-      image7: countImage7,
-      image8: countImage8,
-      image9: countImage9,
-      image10: countImage10,
-    });
   };
 
   handleWordButtonClick = () => {
@@ -355,19 +329,21 @@ class NumberLessonPage extends Component {
         </div>
 
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "83%",
-              left: "35%",
-              cursor: "pointer",
-            }}
-            src={this.state.countButtonImage}
-            alt="could not be loaded"
-            onClick={this.handleCountButtonClick}
-          ></img>
+          <Link to="/numberLessonPageElevenToTwentyCount">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "83%",
+                left: "35%",
+                cursor: "pointer",
+              }}
+              src={this.state.countButtonImage}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+          ;
         </div>
         <div>
           <img
@@ -409,4 +385,4 @@ class NumberLessonPage extends Component {
   }
 }
 
-export default NumberLessonPage;
+export default NumberLessonPageElevenToTwenty;
