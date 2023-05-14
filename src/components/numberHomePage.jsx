@@ -29,9 +29,9 @@ class NumberHomePage extends Component {
     this.state = {
       pageLeftButton: pageLeftEnglishImage,
       languageOptionButton: banglaButtonImage,
-      centerButton1: centerButtonEnglishImage1,
-      centerButton2: centerButtonEnglishImage2,
-      centerButton3: centerButtonEnglishImage1,
+      centerButton1: centerButtonEnglishImage3,
+      centerButton2: centerButtonEnglishImage1,
+      centerButton3: centerButtonEnglishImage2,
       centerButton4: centerButtonEnglishImage4,
       centerButton5: centerButtonEnglishImage5,
     };
@@ -48,9 +48,9 @@ class NumberHomePage extends Component {
       this.setState({
         pageLeftButton: pageLeftBengaliImage,
         languageOptionButton: englishButtonImage,
-        centerButton1: centerButtonBengaliImage1,
-        centerButton2: centerButtonBengaliImage2,
-        centerButton3: centerButtonBengaliImage1,
+        centerButton1: centerButtonBengaliImage3,
+        centerButton2: centerButtonBengaliImage1,
+        centerButton3: centerButtonBengaliImage2,
         centerButton4: centerButtonBengaliImage4,
         centerButton5: centerButtonBengaliImage5,
       });
@@ -58,9 +58,9 @@ class NumberHomePage extends Component {
       this.setState({
         pageLeftButton: pageLeftEnglishImage,
         languageOptionButton: banglaButtonImage,
-        centerButton1: centerButtonEnglishImage1,
-        centerButton2: centerButtonEnglishImage2,
-        centerButton3: centerButtonEnglishImage1,
+        centerButton1: centerButtonEnglishImage3,
+        centerButton2: centerButtonEnglishImage1,
+        centerButton3: centerButtonEnglishImage2,
         centerButton4: centerButtonEnglishImage4,
         centerButton5: centerButtonEnglishImage5,
       });
@@ -125,22 +125,23 @@ class NumberHomePage extends Component {
           ></img>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "10vh",
-              width: "18vh",
-              top: "35%",
-              left: "45%",
-              visibility: "hidden",
-              cursor: "pointer",
-            }}
-            src={this.state.centerButton2}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/numberLessonPage">
+            <img
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "18vh",
+                top: "35%",
+                left: "45%",
+                cursor: "pointer",
+              }}
+              src={this.state.centerButton2}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <Link to="/numberLessonPage">
+          <Link to="/numberLessonPageElevenToTwenty">
             <img
               style={{
                 position: "fixed",

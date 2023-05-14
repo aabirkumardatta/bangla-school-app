@@ -313,6 +313,7 @@ import NumberHomePage from "./components/numberHomePage";
 import NumberLessonPage from "./components/numberLessonPage";
 import WritingLetterHomePage from "./components/writingLetterHomePage";
 import WritingNumberPage from "./components/writingNumberPage";
+import NumberLessonPageElevenToTwenty from "./components/numberLessonPage11-20";
 
 class App extends Component {
   render() {
@@ -1867,6 +1868,11 @@ class App extends Component {
           path="/numberLessonPage"
           exact
           render={() => <NumberLessonPage />}
+        ></Route>
+        <Route
+          path="/numberLessonPageElevenToTwenty"
+          exact
+          render={() => <NumberLessonPageElevenToTwenty />}
         ></Route>
         <Route
           path="/writingNumberPage"
