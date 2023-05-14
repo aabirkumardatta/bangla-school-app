@@ -71,11 +71,6 @@ class NumberLessonPageElevenToTwenty extends Component {
     });
     document.body.classList.add("plaingreenbackgroundbgimage");
   }
-  //   playAudio = (audioSource) => {
-  //     this.setState.audio = new Howl({ src: [audioSource] });
-  //     this.state.audio.volume(10.0);
-  //     this.state.audio.play();
-  //   };
 
   handleLanguageOptionButtonClick = () => {
     if (this.state.languageOptionButton === banglaButtonImage) {
@@ -92,8 +87,6 @@ class NumberLessonPageElevenToTwenty extends Component {
       });
     }
   };
-
-  handleCountButtonClick = () => {};
 
   handleWordButtonClick = () => {
     this.setState({
@@ -336,20 +329,21 @@ class NumberLessonPageElevenToTwenty extends Component {
         </div>
 
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "83%",
-              left: "35%",
-              cursor: "pointer",
-              visibility: "hidden",
-            }}
-            src={this.state.countButtonImage}
-            alt="could not be loaded"
-            onClick={this.handleCountButtonClick}
-          ></img>
+          <Link to="/numberLessonPageElevenToTwentyCount">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "83%",
+                left: "35%",
+                cursor: "pointer",
+              }}
+              src={this.state.countButtonImage}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+          ;
         </div>
         <div>
           <img
@@ -358,7 +352,7 @@ class NumberLessonPageElevenToTwenty extends Component {
               height: "12vh",
               width: "25vh",
               top: "83%",
-              left: "45%",
+              left: "55%",
               cursor: "pointer",
             }}
             src={this.state.wordButtonImage}

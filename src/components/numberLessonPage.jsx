@@ -82,11 +82,6 @@ class NumberLessonPage extends Component {
     });
     document.body.classList.add("plaingreenbackgroundbgimage");
   }
-  //   playAudio = (audioSource) => {
-  //     this.setState.audio = new Howl({ src: [audioSource] });
-  //     this.state.audio.volume(10.0);
-  //     this.state.audio.play();
-  //   };
 
   handleLanguageOptionButtonClick = () => {
     if (this.state.languageOptionButton === banglaButtonImage) {

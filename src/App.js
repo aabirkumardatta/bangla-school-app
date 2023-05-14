@@ -315,6 +315,8 @@ import WritingLetterHomePage from "./components/writingLetterHomePage";
 import WritingNumberPage from "./components/writingNumberPage";
 import NumberLessonPageElevenToTwenty from "./components/numberLessonPage11-20";
 
+import numberElevenToTwentyCountVideo from "./assets/NumberAssets/Number11-20/Videos/Count/numberElevenToTwentyCountVideo.mp4";
+
 class App extends Component {
   render() {
     return (
@@ -1879,6 +1881,16 @@ class App extends Component {
           exact
           render={() => <WritingNumberPage />}
         ></Route>
+        <Route
+          path="/numberLessonPageElevenToTwentyCount"
+          exact
+          render={() => (
+            <LandscapeVideoComponent
+              videoSource={numberElevenToTwentyCountVideo}
+              homePageLink="/numberLessonPageElevenToTwenty"
+            ></LandscapeVideoComponent>
+          )}
+        />
       </div>
     );
   }
