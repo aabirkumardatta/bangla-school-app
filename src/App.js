@@ -169,6 +169,8 @@ import colorAndShapeStoryVideo from "./assets/VocabAssets/VocabLesson/Colors And
 
 import vocabOppositesLessonVideosArray from "./assets/VocabAssets/VocabLesson/Opposites Lesson/vocabOppositeLesson";
 
+import vocabTimeLessonVideosArray from "./assets/VocabAssets/VocabLesson/Time Lesson/vocabTimeLesson";
+
 import LetterWritingAndPronunciationPagePortrait from "./components/letterWritingAndPronunciationPagePortrait";
 
 import lettersWithSamePatternImage from "./assets/WritingAssets/WritingLesson/Assets/WritingLettersLandingPageImages/lettersWithSamePatternImage.png";
@@ -215,7 +217,7 @@ import groupThirteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Butt
 
 import buttonFourteenImageRenderMap from "./assets/WritingAssets/WritingLesson/JS Files/button14";
 import groupFourteenVideo from "./assets/WritingAssets/WritingLesson/Assets/Button14/groupFourteenVideo.mp4";
-import ReadingWordHomePage from "./components/readingWordHomePage";
+import SimpleWordsPage from "./components/simpleWordsPage";
 
 import readingLetterLesson1VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson1/readingLetterLesson1JsonFile";
 import readingLetterLesson2VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson2/readingLetterLesson2JsonFile";
@@ -316,6 +318,7 @@ import WritingNumberPage from "./components/writingNumberPage";
 import NumberLessonPageElevenToTwenty from "./components/numberLessonPage11-20";
 
 import numberElevenToTwentyCountVideo from "./assets/NumberAssets/Number11-20/Videos/Count/numberElevenToTwentyCountVideo.mp4";
+import ReadingWordHomePage from "./components/readingWordHomePage";
 
 class App extends Component {
   render() {
@@ -801,7 +804,7 @@ class App extends Component {
               imageOneEnglish={timeButtonEnglishImage}
               imageOneBengali={timeButtonBengaliImage}
               imageOneWidth="35%"
-              imageOneLink="/vocabhomepagetimeopposite"
+              imageOneLink="/timeLesson"
               quizButtonOneMarginTop="1%"
               quizButtonOneMarginLeft="46%"
               imageOneQuizLink=""
@@ -1379,6 +1382,16 @@ class App extends Component {
           )}
         ></Route>
         <Route
+          path="/timeLesson"
+          exact
+          render={() => (
+            <OppositesLesson
+              homePageLink="/vocabhomepagetimeopposite"
+              videoRenderObjectArray={vocabTimeLessonVideosArray}
+            />
+          )}
+        ></Route>
+        <Route
           path="/letterWritingAndPronunciationPage"
           exact
           render={() => (
@@ -1580,16 +1593,16 @@ class App extends Component {
           )}
         />
         <Route
-          path="/readingWordHomePage"
+          path="/simpleWordsPage"
           exact
-          render={() => <ReadingWordHomePage></ReadingWordHomePage>}
+          render={() => <SimpleWordsPage></SimpleWordsPage>}
         />
         <Route
           path="/readingGroupOne"
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson1VideosArray}
             />
           )}
@@ -1599,7 +1612,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson2VideosArray}
             />
           )}
@@ -1609,7 +1622,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson3VideosArray}
             />
           )}
@@ -1619,7 +1632,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson4VideosArray}
             />
           )}
@@ -1629,7 +1642,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson5VideosArray}
             />
           )}
@@ -1639,7 +1652,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson6VideosArray}
             />
           )}
@@ -1649,7 +1662,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson7VideosArray}
             />
           )}
@@ -1659,7 +1672,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson8VideosArray}
             />
           )}
@@ -1669,7 +1682,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson9VideosArray}
             />
           )}
@@ -1679,7 +1692,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson10VideosArray}
             />
           )}
@@ -1689,7 +1702,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson11VideosArray}
             />
           )}
@@ -1699,7 +1712,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson12VideosArray}
             />
           )}
@@ -1709,7 +1722,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson13VideosArray}
             />
           )}
@@ -1719,7 +1732,7 @@ class App extends Component {
           exact
           render={() => (
             <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
+              homePageLink="/simpleWordsPage"
               videoRenderObjectArray={readingLetterLesson14VideosArray}
             />
           )}
@@ -1891,6 +1904,11 @@ class App extends Component {
             ></LandscapeVideoComponent>
           )}
         />
+        <Route
+          path="/readingWordHomePage"
+          exact
+          render={() => <ReadingWordHomePage />}
+        ></Route>
       </div>
     );
   }
