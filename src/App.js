@@ -234,6 +234,11 @@ import readingLetterLesson12VideosArray from "./assets/ReadingAssets/Assets/Read
 import readingLetterLesson13VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson13/readingLetterLesson13JsonFile";
 import readingLetterLesson14VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson14/readingLetterLesson14JsonFile";
 
+import readingGroupLesson1VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson1/readingGroupLesson1JsonFile";
+import readingGroupLesson2VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson2/readingGroupLesson2JsonFile";
+import readingGroupLesson3VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson3/readingGroupLesson3JsonFile";
+import readingGroupLesson4VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson4/readingGroupLesson4JsonFile";
+
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 import OppositesLesson from "./components/oppositesLesson";
 import SpeakingHomePage from "./components/speakingHomePage";
@@ -1908,6 +1913,46 @@ class App extends Component {
           path="/readingWordHomePage"
           exact
           render={() => <ReadingWordHomePage />}
+        ></Route>
+        <Route
+          path="/readingWordGroupOne"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              homePageLink="/readingWordHomePage"
+              videoRenderObjectArray={readingGroupLesson1VideosArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupTwo"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              homePageLink="/readingWordHomePage"
+              videoRenderObjectArray={readingGroupLesson2VideosArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupThree"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              homePageLink="/readingWordHomePage"
+              videoRenderObjectArray={readingGroupLesson3VideosArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFour"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              homePageLink="/readingWordHomePage"
+              videoRenderObjectArray={readingGroupLesson4VideosArray}
+            />
+          )}
         ></Route>
       </div>
     );

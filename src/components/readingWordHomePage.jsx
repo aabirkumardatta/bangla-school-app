@@ -197,56 +197,64 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "32%",
-              left: "40%",
-            }}
-            src={Aakaar_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupOne">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "32%",
+                left: "40%",
+              }}
+              src={Aakaar_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "44%",
-              left: "40%",
-            }}
-            src={Eekaar_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupTwo">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "44%",
+                left: "40%",
+              }}
+              src={Eekaar_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "56%",
-              left: "40%",
-            }}
-            src={Uukaar_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupThree">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "56%",
+                left: "40%",
+              }}
+              src={Uukaar_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "68%",
-              left: "40%",
-            }}
-            src={Aekaar_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupFour">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "68%",
+                left: "40%",
+              }}
+              src={Aekaar_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
           <img
