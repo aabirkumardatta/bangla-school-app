@@ -238,6 +238,7 @@ import readingGroupLesson1VideosArray from "./assets/ReadingAssets/Assets/Readin
 import readingGroupLesson2VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson2/readingGroupLesson2JsonFile";
 import readingGroupLesson3VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson3/readingGroupLesson3JsonFile";
 import readingGroupLesson4VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson4/readingGroupLesson4JsonFile";
+import readingGroupLesson5VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson5/readingGroupLesson5JsonFile";
 
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 import OppositesLesson from "./components/oppositesLesson";
@@ -1951,6 +1952,16 @@ class App extends Component {
             <ReadingVideoRenderComponent
               homePageLink="/readingWordHomePage"
               videoRenderObjectArray={readingGroupLesson4VideosArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFive"
+          exact
+          render={() => (
+            <ReadingVideoRenderComponent
+              homePageLink="/readingWordHomePage"
+              videoRenderObjectArray={readingGroupLesson5VideosArray}
             />
           )}
         ></Route>

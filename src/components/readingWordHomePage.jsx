@@ -257,17 +257,19 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "80%",
-              left: "40%",
-            }}
-            src={Aoukaar_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupFive">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "80%",
+                left: "40%",
+              }}
+              src={Aoukaar_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
           <img
