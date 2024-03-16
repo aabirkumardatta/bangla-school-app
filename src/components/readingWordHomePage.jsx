@@ -197,7 +197,7 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <Link to="/readingWordGroupOne">
+          <Link to="/readingWordGroupOnePageOne">
             <img
               style={{
                 position: "fixed",
@@ -212,7 +212,7 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <Link to="/readingWordGroupTwo">
+          <Link to="/readingWordGroupTwoPageOne">
             <img
               style={{
                 position: "fixed",
@@ -227,7 +227,7 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <Link to="/readingWordGroupThree">
+          <Link to="/readingWordGroupThreePageOne">
             <img
               style={{
                 position: "fixed",
@@ -242,7 +242,7 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <Link to="/readingWordGroupFour">
+          <Link to="/readingWordGroupFourPageOne">
             <img
               style={{
                 position: "fixed",
@@ -257,7 +257,7 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <Link to="/readingWordGroupFive">
+          <Link to="/readingWordGroupFivePageOne">
             <img
               style={{
                 position: "fixed",
@@ -272,30 +272,34 @@ class ReadingWordHomePage extends Component {
           </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "38%",
-              left: "55%",
-            }}
-            src={Jhakaar_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupSixPageOne">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "38%",
+                left: "55%",
+              }}
+              src={Jhakaar_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "12vh",
-              width: "25vh",
-              top: "50%",
-              left: "55%",
-            }}
-            src={Ref_Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingWordGroupSevenPageOne">
+            <img
+              style={{
+                position: "fixed",
+                height: "12vh",
+                width: "25vh",
+                top: "50%",
+                left: "55%",
+              }}
+              src={Ref_Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
       </div>
     );

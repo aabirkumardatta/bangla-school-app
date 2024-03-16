@@ -234,11 +234,119 @@ import readingLetterLesson12VideosArray from "./assets/ReadingAssets/Assets/Read
 import readingLetterLesson13VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson13/readingLetterLesson13JsonFile";
 import readingLetterLesson14VideosArray from "./assets/ReadingAssets/Assets/ReadingVideos/Lesson14/readingLetterLesson14JsonFile";
 
-import readingGroupLesson1VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson1/readingGroupLesson1JsonFile";
-import readingGroupLesson2VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson2/readingGroupLesson2JsonFile";
-import readingGroupLesson3VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson3/readingGroupLesson3JsonFile";
-import readingGroupLesson4VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson4/readingGroupLesson4JsonFile";
-import readingGroupLesson5VideosArray from "./assets/ReadingAssets/Assets/ReadingGroupVideos/Lesson5/readingGroupLesson5JsonFile";
+import {
+  pageInformationMapGroupOnePageOne,
+  topImageInformationMapGroupOnePageOne,
+  readingGroupOnePageOneLessonVideosArray,
+  readingGroupOnePageOneQuizArray,
+  pageInformationMapGroupOnePageTwo,
+  topImageInformationMapGroupOnePageTwo,
+  readingGroupOnePageTwoLessonVideosArray,
+  readingGroupOnePageTwoQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson1JsonFile";
+import paragraph1ImageReadingGroupLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson1/paragraph1.png";
+import paragraph2ImageReadingGroupLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson1/paragraph2.png";
+import paragraph3ImageReadingGroupLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson1/paragraph3.png";
+import paragraph1VideoReadingGroupLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson1/paragraph1.mp4";
+import paragraph2VideoReadingGroupLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson1/paragraph2.mp4";
+import paragraph3VideoReadingGroupLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson1/paragraph3.mp4";
+import passageTopImageLesson1 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson1/topImage.png";
+
+import {
+  pageInformationMapGroupTwoPageOne,
+  topImageInformationMapGroupTwoPageOne,
+  readingGroupTwoPageOneLessonVideosArray,
+  readingGroupTwoPageOneQuizArray,
+  pageInformationMapGroupTwoPageTwo,
+  topImageInformationMapGroupTwoPageTwo,
+  readingGroupTwoPageTwoLessonVideosArray,
+  readingGroupTwoPageTwoQuizArray,
+  pageInformationMapGroupTwoPageThree,
+  topImageInformationMapGroupTwoPageThree,
+  readingGroupTwoPageThreeLessonVideosArray,
+  readingGroupTwoPageThreeQuizArray,
+  pageInformationMapGroupTwoPageFour,
+  topImageInformationMapGroupTwoPageFour,
+  readingGroupTwoPageFourLessonVideosArray,
+  readingGroupTwoPageFourQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson2JsonFile";
+import paragraph1ImageReadingGroupLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson2/paragraph1.png";
+import paragraph2ImageReadingGroupLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson2/paragraph2.png";
+import paragraph3ImageReadingGroupLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson2/paragraph3.png";
+import paragraph1VideoReadingGroupLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson2/paragraph1.mp4";
+import paragraph2VideoReadingGroupLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson2/paragraph2.mp4";
+import paragraph3VideoReadingGroupLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson2/paragraph3.mp4";
+import passageTopImageLesson2 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson2/passageTopImage.png";
+
+import {
+  pageInformationMapGroupThreePageOne,
+  topImageInformationMapGroupThreePageOne,
+  readingGroupThreePageOneLessonVideosArray,
+  readingGroupThreePageOneQuizArray,
+  pageInformationMapGroupThreePageTwo,
+  topImageInformationMapGroupThreePageTwo,
+  readingGroupThreePageTwoLessonVideosArray,
+  readingGroupThreePageTwoQuizArray,
+  pageInformationMapGroupThreePageThree,
+  topImageInformationMapGroupThreePageThree,
+  readingGroupThreePageThreeLessonVideosArray,
+  readingGroupThreePageThreeQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson3JsonFile";
+import paragraph1ImageReadingGroupLesson3 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson3/paragraph1.png";
+import paragraph2ImageReadingGroupLesson3 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson3/paragraph2.png";
+import paragraph1VideoReadingGroupLesson3 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson3/paragraph1.mp4";
+import paragraph2VideoReadingGroupLesson3 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson3/paragraph2.mp4";
+import passageTopImageLesson3 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson3/passageTopImage.png";
+
+import {
+  pageInformationMapGroupFourPageOne,
+  topImageInformationMapGroupFourPageOne,
+  readingGroupFourPageOneLessonVideosArray,
+  readingGroupFourPageOneQuizArray,
+  pageInformationMapGroupFourPageTwo,
+  topImageInformationMapGroupFourPageTwo,
+  readingGroupFourPageTwoLessonVideosArray,
+  readingGroupFourPageTwoQuizArray,
+  pageInformationMapGroupFourPageThree,
+  topImageInformationMapGroupFourPageThree,
+  readingGroupFourPageThreeLessonVideosArray,
+  readingGroupFourPageThreeQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson4JsonFile";
+import paragraph1ImageReadingGroupLesson4 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson4/paragraph1.png";
+import paragraph2ImageReadingGroupLesson4 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson4/paragraph2.png";
+import paragraph1VideoReadingGroupLesson4 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson4/paragraph1.mp4";
+import paragraph2VideoReadingGroupLesson4 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson4/paragraph2.mp4";
+import passageTopImageLesson4 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson4/passageTopImage.png";
+
+import {
+  pageInformationMapGroupFivePageOne,
+  topImageInformationMapGroupFivePageOne,
+  readingGroupFivePageOneLessonVideosArray,
+  readingGroupFivePageOneQuizArray,
+  pageInformationMapGroupFivePageTwo,
+  topImageInformationMapGroupFivePageTwo,
+  readingGroupFivePageTwoLessonVideosArray,
+  readingGroupFivePageTwoQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson5JsonFile";
+import paragraph1ImageReadingGroupLesson5 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson5/paragraph1.png";
+import paragraph2ImageReadingGroupLesson5 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson5/paragraph2.png";
+import paragraph1VideoReadingGroupLesson5 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson5/paragraph1.mp4";
+import paragraph2VideoReadingGroupLesson5 from "./assets/ReadingAssets/Assets/ReadingGroup/Videos/Lesson5/paragraph2.mp4";
+import passageTopImageLesson5 from "./assets/ReadingAssets/Assets/ReadingGroup/ImageAssets/Lesson5/passageTopImage.png";
+
+import {
+  pageInformationMapGroupSixPageOne,
+  topImageInformationMapGroupSixPageOne,
+  readingGroupSixPageOneLessonVideosArray,
+  readingGroupSixPageOneQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson6JsonFile";
+
+import {
+  pageInformationMapGroupSevenPageOne,
+  topImageInformationMapGroupSevenPageOne,
+  readingGroupSevenPageOneLessonVideosArray,
+  readingGroupSevenPageOneQuizArray,
+} from "./assets/ReadingAssets/Assets/ReadingGroup/readingGroupLesson7JsonFile";
 
 import ReadingVideoRenderComponent from "./components/readingVideoRenderComponent";
 import OppositesLesson from "./components/oppositesLesson";
@@ -325,6 +433,7 @@ import NumberLessonPageElevenToTwenty from "./components/numberLessonPage11-20";
 
 import numberElevenToTwentyCountVideo from "./assets/NumberAssets/Number11-20/Videos/Count/numberElevenToTwentyCountVideo.mp4";
 import ReadingWordHomePage from "./components/readingWordHomePage";
+import ReadingWordGroupVideoRenderComponent from "./components/readingWordGroupVideoRenderComponent";
 
 class App extends Component {
   render() {
@@ -1299,7 +1408,9 @@ class App extends Component {
           exact
           render={() => (
             <PortraitVideoWithCollageButtons
-              homePageLink="/vocabhomepagenatureanimals"
+              homePageVisibility="hidden"
+              homePageLink=""
+              backPageLink="/vocabhomepagenatureanimals"
               imageOne={animalLessonButtonImageOne}
               imageTwo={animalLessonButtonImageTwo}
               imageThree={animalLessonButtonImageThree}
@@ -1309,6 +1420,7 @@ class App extends Component {
               imageThreeVideo={animalLessonVideoThree}
               imageFourVideo={animalLessonVideoFour}
               renderViewOptionPassed="renderFourButtonView"
+              topImageVisibility="hidden"
             ></PortraitVideoWithCollageButtons>
           )}
         />
@@ -1317,7 +1429,9 @@ class App extends Component {
           exact
           render={() => (
             <PortraitVideoWithCollageButtons
-              homePageLink="/vocabhomepagenatureanimals"
+              homePageVisibility="hidden"
+              homePageLink=""
+              backPageLink="/vocabhomepagenatureanimals"
               imageOne={birdLessonButtonImageOne}
               imageTwo={birdLessonButtonImageTwo}
               imageThree={birdLessonButtonImageThree}
@@ -1327,6 +1441,7 @@ class App extends Component {
               imageThreeVideo={birdLessonVideoThree}
               imageFourVideo={birdLessonVideoFour}
               renderViewOptionPassed="renderFourButtonView"
+              topImageVisibility="hidden"
             ></PortraitVideoWithCollageButtons>
           )}
         />
@@ -1335,12 +1450,15 @@ class App extends Component {
           exact
           render={() => (
             <PortraitVideoWithCollageButtons
-              homePageLink="/vocabhomepagenatureanimals"
+              homePageVisibility="hidden"
+              homePageLink=""
+              backPageLink="/vocabhomepagenatureanimals"
               imageOne={insectLessonButtonImageOne}
               imageTwo={insectLessonButtonImageTwo}
               imageOneVideo={insectLessonVideoOne}
               imageTwoVideo={insectLessonVideoTwo}
               renderViewOptionPassed="renderTwoButtonView"
+              topImageVisibility="hidden"
             ></PortraitVideoWithCollageButtons>
           )}
         />
@@ -1349,9 +1467,12 @@ class App extends Component {
           exact
           render={() => (
             <PortraitVideoWithCollageButtons
-              homePageLink="/vocabhomepagenatureanimals"
+              homePageVisibility="hidden"
+              homePageLink=""
+              backPageLink="/vocabhomepagenatureanimals"
               renderViewOptionPassed="renderNoButtonView"
               linkToVideo={flowerVideo}
+              topImageVisibility="hidden"
             ></PortraitVideoWithCollageButtons>
           )}
         />
@@ -1360,9 +1481,12 @@ class App extends Component {
           exact
           render={() => (
             <PortraitVideoWithCollageButtons
-              homePageLink="/vocabhomepagefoodfruits"
+              homePageVisibility="hidden"
+              homePageLink=""
+              backPageLink="/vocabhomepagefoodfruits"
               renderViewOptionPassed="renderNoButtonView"
               linkToVideo={fruitVideo}
+              topImageVisibility="hidden"
             ></PortraitVideoWithCollageButtons>
           )}
         />
@@ -1371,9 +1495,12 @@ class App extends Component {
           exact
           render={() => (
             <PortraitVideoWithCollageButtons
-              homePageLink="/vocabhomepagefoodfruits"
+              homePageVisibility="hidden"
+              homePageLink=""
+              backPageLink="/vocabhomepagefoodfruits"
               renderViewOptionPassed="renderNoButtonView"
               linkToVideo={vegetableVideo}
+              topImageVisibility="hidden"
             ></PortraitVideoWithCollageButtons>
           )}
         />
@@ -1916,52 +2043,292 @@ class App extends Component {
           render={() => <ReadingWordHomePage />}
         ></Route>
         <Route
-          path="/readingWordGroupOne"
+          path="/readingWordGroupOnePageOne"
           exact
           render={() => (
-            <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
-              videoRenderObjectArray={readingGroupLesson1VideosArray}
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupOnePageOne}
+              topImageInformationMap={topImageInformationMapGroupOnePageOne}
+              videoRenderObjectArray={readingGroupOnePageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupOnePageOneQuizArray}
             />
           )}
         ></Route>
         <Route
-          path="/readingWordGroupTwo"
+          path="/readingWordGroupOnePageTwo"
           exact
           render={() => (
-            <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
-              videoRenderObjectArray={readingGroupLesson2VideosArray}
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupOnePageTwo}
+              topImageInformationMap={topImageInformationMapGroupOnePageTwo}
+              videoRenderObjectArray={readingGroupOnePageTwoLessonVideosArray}
+              quizRenderObjectArray={readingGroupOnePageTwoQuizArray}
             />
           )}
         ></Route>
         <Route
-          path="/readingWordGroupThree"
+          path="/readingWordGroupOnePassage"
           exact
           render={() => (
-            <ReadingVideoRenderComponent
+            <PortraitVideoWithCollageButtons
+              homePageVisibility="show"
               homePageLink="/readingWordHomePage"
-              videoRenderObjectArray={readingGroupLesson3VideosArray}
+              backPageLink="/readingWordGroupOnePageTwo"
+              imageOne={paragraph1ImageReadingGroupLesson1}
+              imageTwo={paragraph2ImageReadingGroupLesson1}
+              imageThree={paragraph3ImageReadingGroupLesson1}
+              imageOneVideo={paragraph1VideoReadingGroupLesson1}
+              imageTwoVideo={paragraph2VideoReadingGroupLesson1}
+              imageThreeVideo={paragraph3VideoReadingGroupLesson1}
+              renderViewOptionPassed="renderThreeButtonView"
+              topImage={passageTopImageLesson1}
+              topImageVisibility="show"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/readingWordGroupTwoPageOne"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupTwoPageOne}
+              topImageInformationMap={topImageInformationMapGroupTwoPageOne}
+              videoRenderObjectArray={readingGroupTwoPageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupTwoPageOneQuizArray}
             />
           )}
         ></Route>
         <Route
-          path="/readingWordGroupFour"
+          path="/readingWordGroupTwoPageTwo"
           exact
           render={() => (
-            <ReadingVideoRenderComponent
-              homePageLink="/readingWordHomePage"
-              videoRenderObjectArray={readingGroupLesson4VideosArray}
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupTwoPageTwo}
+              topImageInformationMap={topImageInformationMapGroupTwoPageTwo}
+              videoRenderObjectArray={readingGroupTwoPageTwoLessonVideosArray}
+              quizRenderObjectArray={readingGroupTwoPageTwoQuizArray}
             />
           )}
         ></Route>
         <Route
-          path="/readingWordGroupFive"
+          path="/readingWordGroupTwoPageThree"
           exact
           render={() => (
-            <ReadingVideoRenderComponent
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupTwoPageThree}
+              topImageInformationMap={topImageInformationMapGroupTwoPageThree}
+              videoRenderObjectArray={readingGroupTwoPageThreeLessonVideosArray}
+              quizRenderObjectArray={readingGroupTwoPageThreeQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupTwoPageFour"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupTwoPageFour}
+              topImageInformationMap={topImageInformationMapGroupTwoPageFour}
+              videoRenderObjectArray={readingGroupTwoPageFourLessonVideosArray}
+              quizRenderObjectArray={readingGroupTwoPageFourQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupTwoPassage"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageVisibility="show"
               homePageLink="/readingWordHomePage"
-              videoRenderObjectArray={readingGroupLesson5VideosArray}
+              backPageLink="/readingWordGroupTwoPageFour"
+              imageOne={paragraph1ImageReadingGroupLesson2}
+              imageTwo={paragraph2ImageReadingGroupLesson2}
+              imageThree={paragraph3ImageReadingGroupLesson2}
+              imageOneVideo={paragraph1VideoReadingGroupLesson2}
+              imageTwoVideo={paragraph2VideoReadingGroupLesson2}
+              imageThreeVideo={paragraph3VideoReadingGroupLesson2}
+              renderViewOptionPassed="renderThreeButtonView"
+              topImage={passageTopImageLesson2}
+              topImageVisibility="show"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/readingWordGroupThreePageOne"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupThreePageOne}
+              topImageInformationMap={topImageInformationMapGroupThreePageOne}
+              videoRenderObjectArray={readingGroupThreePageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupThreePageOneQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupThreePageTwo"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupThreePageTwo}
+              topImageInformationMap={topImageInformationMapGroupThreePageTwo}
+              videoRenderObjectArray={readingGroupThreePageTwoLessonVideosArray}
+              quizRenderObjectArray={readingGroupThreePageTwoQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupThreePageThree"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupThreePageThree}
+              topImageInformationMap={topImageInformationMapGroupThreePageThree}
+              videoRenderObjectArray={
+                readingGroupThreePageThreeLessonVideosArray
+              }
+              quizRenderObjectArray={readingGroupThreePageThreeQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupThreePassage"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageVisibility="show"
+              homePageLink="/readingWordHomePage"
+              backPageLink="/readingWordGroupThreePageThree"
+              imageOne={paragraph1ImageReadingGroupLesson3}
+              imageTwo={paragraph2ImageReadingGroupLesson3}
+              imageOneVideo={paragraph1VideoReadingGroupLesson3}
+              imageTwoVideo={paragraph2VideoReadingGroupLesson3}
+              renderViewOptionPassed="renderTwoButtonView"
+              topImage={passageTopImageLesson3}
+              topImageVisibility="show"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/readingWordGroupFourPageOne"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupFourPageOne}
+              topImageInformationMap={topImageInformationMapGroupFourPageOne}
+              videoRenderObjectArray={readingGroupFourPageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupFourPageOneQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFourPageTwo"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupFourPageTwo}
+              topImageInformationMap={topImageInformationMapGroupFourPageTwo}
+              videoRenderObjectArray={readingGroupFourPageTwoLessonVideosArray}
+              quizRenderObjectArray={readingGroupFourPageTwoQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFourPageThree"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupFourPageThree}
+              topImageInformationMap={topImageInformationMapGroupFourPageThree}
+              videoRenderObjectArray={
+                readingGroupFourPageThreeLessonVideosArray
+              }
+              quizRenderObjectArray={readingGroupFourPageThreeQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFourPassage"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageVisibility="show"
+              homePageLink="/readingWordHomePage"
+              backPageLink="/readingWordGroupFourPageThree"
+              imageOne={paragraph1ImageReadingGroupLesson4}
+              imageTwo={paragraph2ImageReadingGroupLesson4}
+              imageOneVideo={paragraph1VideoReadingGroupLesson4}
+              imageTwoVideo={paragraph2VideoReadingGroupLesson4}
+              renderViewOptionPassed="renderTwoButtonView"
+              topImage={passageTopImageLesson4}
+              topImageVisibility="show"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/readingWordGroupFivePageOne"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupFivePageOne}
+              topImageInformationMap={topImageInformationMapGroupFivePageOne}
+              videoRenderObjectArray={readingGroupFivePageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupFivePageOneQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFivePageTwo"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupFivePageTwo}
+              topImageInformationMap={topImageInformationMapGroupFivePageTwo}
+              videoRenderObjectArray={readingGroupFivePageTwoLessonVideosArray}
+              quizRenderObjectArray={readingGroupFivePageTwoQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupFivePassage"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageVisibility="show"
+              homePageLink="/readingWordHomePage"
+              backPageLink="/readingWordGroupFivePageTwo"
+              imageOne={paragraph1ImageReadingGroupLesson5}
+              imageTwo={paragraph2ImageReadingGroupLesson5}
+              imageOneVideo={paragraph1VideoReadingGroupLesson5}
+              imageTwoVideo={paragraph2VideoReadingGroupLesson5}
+              renderViewOptionPassed="renderTwoButtonView"
+              topImage={passageTopImageLesson5}
+              topImageVisibility="show"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
+        <Route
+          path="/readingWordGroupSixPageOne"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupSixPageOne}
+              topImageInformationMap={topImageInformationMapGroupSixPageOne}
+              videoRenderObjectArray={readingGroupSixPageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupSixPageOneQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingWordGroupSevenPageOne"
+          exact
+          render={() => (
+            <ReadingWordGroupVideoRenderComponent
+              pageInformationMap={pageInformationMapGroupSevenPageOne}
+              topImageInformationMap={topImageInformationMapGroupSevenPageOne}
+              videoRenderObjectArray={readingGroupSevenPageOneLessonVideosArray}
+              quizRenderObjectArray={readingGroupSevenPageOneQuizArray}
             />
           )}
         ></Route>
