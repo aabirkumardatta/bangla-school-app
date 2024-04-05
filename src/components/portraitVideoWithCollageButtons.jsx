@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import VideoPlayer from "./videoPlayer";
-import intro_video_green_picture from "../assets/intro_video_green_picture.mp4";
+import intro_video_green_picture from "../assets/intro_video_picture_buttons_green.mp4";
 import homebuttonImage from "../assets/homeButtonImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
 import { Link } from "react-router-dom";

@@ -14,7 +14,7 @@ import videoBoro2 from "./Videos/Lesson3/video-boro-2.mp4";
 import videoBoro3 from "./Videos/Lesson3/video-boro-3.mp4";
 import videoBoro4 from "./Videos/Lesson3/video-boro-4.mp4";
 
-import introVideo from "../../../intro_video_green.mp4";
+import introVideo from "../../../intro_video_lesson_buttons_green.mp4";
 import topImage from "./ImageAssets/Lesson3/topImage.png";
 import topImageBoro from "./ImageAssets/Lesson3/topImageBoro.png";
 import nextButtonImage from "../../../nextButtonImage.png";
@@ -31,8 +31,6 @@ import buttonImageLesson8 from "./ImageAssets/lesson8.png";
 import buttonImageLesson9 from "./ImageAssets/lesson9.png";
 import buttonImageLessonSentence from "./ImageAssets/sentence.png";
 
-import buttonImageQuiz1 from "./ImageAssets/quiz1.png";
-import buttonImageQuiz2 from "./ImageAssets/quiz2.png";
 import buttonImageQuiz3 from "./ImageAssets/quiz3.png";
 import buttonImageQuiz4 from "./ImageAssets/quiz4.png";
 import buttonImageQuiz5 from "./ImageAssets/quiz5.png";
@@ -125,24 +123,6 @@ var readingGroupThreePageOneLessonVideosArray = [
 ];
 
 var readingGroupThreePageOneQuizArray = [
-  {
-    buttonImage: buttonImageQuiz1,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "17%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz2,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "30%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
   {
     buttonImage: buttonImageQuiz3,
     position: "fixed",
@@ -338,24 +318,6 @@ var readingGroupThreePageThreeLessonVideosArray = [
 ];
 
 var readingGroupThreePageThreeQuizArray = [
-  {
-    buttonImage: buttonImageQuiz1,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "17%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz2,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "30%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
   {
     buttonImage: buttonImageQuiz3,
     position: "fixed",

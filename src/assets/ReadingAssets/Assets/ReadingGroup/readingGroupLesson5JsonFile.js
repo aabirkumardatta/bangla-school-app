@@ -11,7 +11,7 @@ import videoBoro2 from "./Videos/Lesson5/video-boro-2.mp4";
 import videoBoro3 from "./Videos/Lesson5/video-boro-3.mp4";
 import videoBoro4 from "./Videos/Lesson5/video-boro-4.mp4";
 
-import introVideo from "../../../intro_video_green.mp4";
+import introVideo from "../../../intro_video_lesson_buttons_green.mp4";
 import topImage from "./ImageAssets/Lesson5/topImage.png";
 import topImageBoro from "./ImageAssets/Lesson5/topImageBoro.png";
 import nextButtonImage from "../../../nextButtonImage.png";
@@ -25,8 +25,6 @@ import buttonImageLesson5 from "./ImageAssets/lesson5.png";
 import buttonImageLesson6 from "./ImageAssets/lesson6.png";
 import buttonImageLessonSentence from "./ImageAssets/sentence.png";
 
-import buttonImageQuiz1 from "./ImageAssets/quiz1.png";
-import buttonImageQuiz2 from "./ImageAssets/quiz2.png";
 import buttonImageQuiz3 from "./ImageAssets/quiz3.png";
 import buttonImageQuiz4 from "./ImageAssets/quiz4.png";
 import buttonImageQuiz5 from "./ImageAssets/quiz5.png";
@@ -116,24 +114,7 @@ var readingGroupFivePageOneLessonVideosArray = [
 ];
 
 var readingGroupFivePageOneQuizArray = [
-  {
-    buttonImage: buttonImageQuiz1,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "17%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz2,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "30%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
+
   {
     buttonImage: buttonImageQuiz3,
     position: "fixed",
@@ -247,24 +228,7 @@ var readingGroupFivePageTwoLessonVideosArray = [
 ];
 
 var readingGroupFivePageTwoQuizArray = [
-  {
-    buttonImage: buttonImageQuiz1,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "17%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz2,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "30%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
+
   {
     buttonImage: buttonImageQuiz3,
     position: "fixed",

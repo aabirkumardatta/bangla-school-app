@@ -11,7 +11,7 @@ import video10 from "./Videos/Lesson1/video10.mp4";
 import video11 from "./Videos/Lesson1/video11.mp4";
 import sentence from "./Videos/Lesson1/sentence.mp4";
 
-import introVideo from "../../../intro_video_green.mp4";
+import introVideo from "../../../intro_video_lesson_buttons_green.mp4";
 import topImage from "./ImageAssets/Lesson1/topImage.png";
 import nextButtonImage from "../../../nextButtonImage.png";
 
@@ -28,8 +28,6 @@ import buttonImageLesson10 from "./ImageAssets/lesson10.png";
 import buttonImageLesson11 from "./ImageAssets/lesson11.png";
 import buttonImageLessonSentence from "./ImageAssets/sentence.png";
 
-import buttonImageQuiz1 from "./ImageAssets/quiz1.png";
-import buttonImageQuiz2 from "./ImageAssets/quiz2.png";
 import buttonImageQuiz3 from "./ImageAssets/quiz3.png";
 import buttonImageQuiz4 from "./ImageAssets/quiz4.png";
 import buttonImageQuiz5 from "./ImageAssets/quiz5.png";
@@ -124,24 +122,6 @@ var readingGroupOnePageOneLessonVideosArray = [
 ];
 
 var readingGroupOnePageOneQuizArray = [
-  {
-    buttonImage: buttonImageQuiz1,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "17%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz2,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "30%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
   {
     buttonImage: buttonImageQuiz3,
     position: "fixed",

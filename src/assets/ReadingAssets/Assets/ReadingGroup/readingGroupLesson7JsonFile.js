@@ -2,15 +2,13 @@ import video1 from "./Videos/Lesson7/video1.mp4";
 import video2 from "./Videos/Lesson7/video2.mp4";
 import video3 from "./Videos/Lesson7/video3.mp4";
 
-import introVideo from "../../../intro_video_green.mp4";
+import introVideo from "../../../intro_video_lesson_buttons_green.mp4";
 import topImage from "./ImageAssets/Lesson7/topImage.png";
 
 import buttonImageLesson1 from "./ImageAssets/lesson1.png";
 import buttonImageLesson2 from "./ImageAssets/lesson2.png";
 import buttonImageLesson3 from "./ImageAssets/lesson3.png";
 
-import buttonImageQuiz1 from "./ImageAssets/quiz1.png";
-import buttonImageQuiz2 from "./ImageAssets/quiz2.png";
 import buttonImageQuiz3 from "./ImageAssets/quiz3.png";
 
 const pageInformationMapGroupSevenPageOne = {
@@ -66,24 +64,6 @@ var readingGroupSevenPageOneLessonVideosArray = [
 ];
 
 var readingGroupSevenPageOneQuizArray = [
-  {
-    buttonImage: buttonImageQuiz1,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "17%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz2,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "30%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
   {
     buttonImage: buttonImageQuiz3,
     position: "fixed",
