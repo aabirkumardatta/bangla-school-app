@@ -6,6 +6,8 @@ import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
 import gamesButtonEnglishImage from "../assets/gamesButtonEnglishImage.png";
 import gamesButtonBengaliImage from "../assets/gamesButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
+import yesButtonImage from "../assets/yes.png";
+import noButtonImage from "../assets/no.png";
 import { Link } from "react-router-dom";
 
 class LessonGames extends Component {
@@ -58,16 +60,15 @@ class LessonGames extends Component {
         </div>
         <div style={{ marginLeft: "35%" }}>
           <div style={{ marginTop: "1%" }}>
-            <Link to="/lessonshomepage">
-              <img
-                src={this.state.lessonButton}
-                alt="could not be loaded"
-                style={{
-                  width: "60vh",
-                  height: "20vh",
-                }}
-              ></img>
-            </Link>
+            <img
+              src={this.state.lessonButton}
+              alt="could not be loaded"
+              style={{
+                width: "60vh",
+                height: "20vh",
+                cursor: "context-menu",
+              }}
+            ></img>
           </div>
 
           <div style={{ marginTop: "1%", visibility: "hidden" }}>
@@ -83,6 +84,53 @@ class LessonGames extends Component {
             </Link>
           </div>
         </div>
+        <div
+          style={{
+            position: "fixed",
+            top: "35%",
+            left: "33%",
+            fontFamily: "Algerian",
+            fontSize: "28px",
+            color: "white",
+          }}
+        >
+          Have you completed the lessons?
+        </div>
+
+        <div>
+          <Link to="/simpleWordsPage">
+            <img
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "10vh",
+                top: "42%",
+                left: "40%",
+                cursor: "pointer",
+              }}
+              src={yesButtonImage}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+
+        <div>
+          <Link to="/lessonshomepage">
+            <img
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "10vh",
+                top: "42%",
+                left: "50%",
+                cursor: "pointer",
+              }}
+              src={noButtonImage}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+
         <div
           style={{
             position: "fixed",
