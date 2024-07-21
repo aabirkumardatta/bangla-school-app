@@ -434,6 +434,13 @@ import NumberLessonPageElevenToTwenty from "./components/numberLessonPage11-20";
 import numberElevenToTwentyCountVideo from "./assets/NumberAssets/Number11-20/Videos/Count/numberElevenToTwentyCountVideo.mp4";
 import ReadingWordHomePage from "./components/readingWordHomePage";
 import ReadingWordGroupVideoRenderComponent from "./components/readingWordGroupVideoRenderComponent";
+import ReadingAndComprehensionHomePage from "./components/readingAndComprehensionHomePage";
+import ReadingAndComprehensionChapterOneHomePage from "./components/readingAndComprehensionChapter1HomePage";
+
+import readingAndComprehensionChapter1Part1VideoButton1Image from "./assets/ReadingAndComprehensionAssets/Chapter1/VideoButtonImages/readingAndComprehensionChapter1Part1VideoButton1Image.png";
+import readingAndComprehensionChapter1Part1VideoButton2Image from "./assets/ReadingAndComprehensionAssets/Chapter1/VideoButtonImages/readingAndComprehensionChapter1Part1VideoButton2Image.png";
+import readingAndComprehensionChapter1Part1VideoButton3Image from "./assets/ReadingAndComprehensionAssets/Chapter1/VideoButtonImages/readingAndComprehensionChapter1Part1VideoButton3Image.png";
+import readingAndComprehensionChapter1Part1VideoButton4Image from "./assets/ReadingAndComprehensionAssets/Chapter1/VideoButtonImages/readingAndComprehensionChapter1Part1VideoButton4Image.png";
 
 class App extends Component {
   render() {
@@ -2332,6 +2339,38 @@ class App extends Component {
             />
           )}
         ></Route>
+        <Route
+          path="/readingAndComprehensionHomePage"
+          exact
+          render={() => <ReadingAndComprehensionHomePage />}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOneHomePage"
+          exact
+          render={() => <ReadingAndComprehensionChapterOneHomePage />}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOnePartOne"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtons
+              homePageVisibility="hidden"
+              homePageLink="null"
+              backPageLink="/readingAndComprehensionChapterOneHomePage"
+              imageOne={readingAndComprehensionChapter1Part1VideoButton1Image}
+              imageTwo={readingAndComprehensionChapter1Part1VideoButton2Image}
+              imageThree={readingAndComprehensionChapter1Part1VideoButton3Image}
+              imageFour={readingAndComprehensionChapter1Part1VideoButton4Image}
+              imageOneVideo={paragraph1VideoReadingGroupLesson5}
+              imageTwoVideo={paragraph2VideoReadingGroupLesson5}
+              imageThreeVideo={paragraph2VideoReadingGroupLesson5}
+              imageFourVideo={paragraph2VideoReadingGroupLesson5}
+              renderViewOptionPassed="renderFourButtonView"
+              topImage="null"
+              topImageVisibility="hidden"
+            ></PortraitVideoWithCollageButtons>
+          )}
+        />
       </div>
     );
   }

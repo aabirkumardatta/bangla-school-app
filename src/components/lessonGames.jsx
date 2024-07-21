@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import iCanReadImage from "../assets/ReadingAndComprehensionAssets/ReadingAndComprehensionHomePage/Images/iCanReadImage.png";
 import banglaButtonImage from "../assets/banglaButtonImage.png";
 import englishButtonImage from "../assets/englishButtonImage.png";
 import lessonsButtonEnglishImage from "../assets/lessonsButtonEnglishImage.png";
@@ -6,7 +7,6 @@ import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
 import gamesButtonEnglishImage from "../assets/gamesButtonEnglishImage.png";
 import gamesButtonBengaliImage from "../assets/gamesButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
-import yesButtonImage from "../assets/yes.png";
 import noButtonImage from "../assets/no.png";
 import { Link } from "react-router-dom";
 
@@ -98,17 +98,17 @@ class LessonGames extends Component {
         </div>
 
         <div>
-          <Link to="/simpleWordsPage">
+          <Link to="/readingAndComprehensionHomePage">
             <img
               style={{
                 position: "fixed",
                 height: "10vh",
-                width: "10vh",
+                width: "25vh",
                 top: "42%",
                 left: "40%",
                 cursor: "pointer",
               }}
-              src={yesButtonImage}
+              src={iCanReadImage}
               alt="could not be loaded"
             ></img>
           </Link>
@@ -122,7 +122,7 @@ class LessonGames extends Component {
                 height: "10vh",
                 width: "10vh",
                 top: "42%",
-                left: "50%",
+                left: "52%",
                 cursor: "pointer",
               }}
               src={noButtonImage}
