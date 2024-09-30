@@ -1,0 +1,135 @@
+{
+  "homePageComponent": {
+    "visibility": "visible",
+    "link": "/readingAndComprehensionChapterOneHomePage"
+  },
+  "topPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },
+  "topRightPageComponent": {
+    "visibility": "visible",
+	"src": "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image3.png",
+    "link": null
+  },  
+  "backPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },
+  "videoButtonImages": [
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/VideoButtonImages/readingAndComprehensionChapter1Part3VideoButton1Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 0,
+	  "nextVideoObjectPosition": 1
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/VideoButtonImages/readingAndComprehensionChapter1Part3VideoButton2Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 2,
+	  "nextVideoObjectPosition": 3
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/VideoButtonImages/readingAndComprehensionChapter1Part3VideoButton3Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 4,
+	  "nextVideoObjectPosition": 5
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/VideoButtonImages/readingAndComprehensionChapter1Part3VideoButton4Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 7,
+	  "nextVideoObjectPosition": 8
+    }
+  ],
+  "videos": [
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video1.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 0,
+	  "nextVideoObjectPosition": 1
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video2.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 0,
+	  "currentVideoObjectPosition": 1,
+	  "nextVideoObjectPosition": null
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video3.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 2,
+	  "nextVideoObjectPosition": 3
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video4.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 2,
+	  "currentVideoObjectPosition": 3,
+	  "nextVideoObjectPosition": null
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video5.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 4,
+	  "nextVideoObjectPosition": 5
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video6.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": 4,
+	  "currentVideoObjectPosition": 5,
+	  "nextVideoObjectPosition": 6
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video7.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 5,
+	  "currentVideoObjectPosition": 6,
+	  "nextVideoObjectPosition": null
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video8.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 7,
+	  "nextVideoObjectPosition": 8
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video9.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": 7,
+	  "currentVideoObjectPosition": 8,
+	  "nextVideoObjectPosition": 9
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part3/Videos/video10.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 8,
+	  "currentVideoObjectPosition": 9,
+	  "nextVideoObjectPosition": null
+    }
+  ]
+}

@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import iCanReadImage from "../assets/ReadingAndComprehensionAssets/ReadingAndComprehensionHomePage/Images/iCanReadImage.png";
 import banglaButtonImage from "../assets/banglaButtonImage.png";
 import englishButtonImage from "../assets/englishButtonImage.png";
 import lessonsButtonEnglishImage from "../assets/lessonsButtonEnglishImage.png";
@@ -7,7 +6,10 @@ import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
 import gamesButtonEnglishImage from "../assets/gamesButtonEnglishImage.png";
 import gamesButtonBengaliImage from "../assets/gamesButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
+import yesButtonImage from "../assets/yes.png";
 import noButtonImage from "../assets/no.png";
+import boyGirlBookReadingImage from "../assets/boyGirlBookReadingImage.png";
+import boyGirlLessonBlockPyramidImage from "../assets/boyGirlLessonBlockPyramidImage.png";
 import { Link } from "react-router-dom";
 
 class LessonGames extends Component {
@@ -24,7 +26,7 @@ class LessonGames extends Component {
     Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
-    document.body.classList.add("lessongamesbgimage");
+    document.body.classList.add("plaingreenbackgroundbgimage");
   }
 
   handleLanguageOptionButtonClick = () => {
@@ -46,7 +48,7 @@ class LessonGames extends Component {
   render() {
     return (
       <div>
-        <div style={{ marginLeft: "-1%" }}>
+        <div style={{ marginLeft: "-1%", visibility: "hidden" }}>
           <img
             style={{
               width: "12vh",
@@ -59,7 +61,7 @@ class LessonGames extends Component {
           ></img>
         </div>
         <div style={{ marginLeft: "35%" }}>
-          <div style={{ marginTop: "1%" }}>
+          <div style={{ marginTop: "10%" }}>
             <img
               src={this.state.lessonButton}
               alt="could not be loaded"
@@ -68,6 +70,20 @@ class LessonGames extends Component {
                 height: "20vh",
                 cursor: "context-menu",
               }}
+            ></img>
+          </div>
+
+          <div>
+            <img
+              style={{
+                position: "fixed",
+                height: "40vh",
+                width: "50vh",
+                top: "5%",
+                left: "2%",
+              }}
+              src={boyGirlBookReadingImage}
+              alt="could not be loaded"
             ></img>
           </div>
 
@@ -87,7 +103,7 @@ class LessonGames extends Component {
         <div
           style={{
             position: "fixed",
-            top: "35%",
+            top: "48%",
             left: "33%",
             fontFamily: "Algerian",
             fontSize: "28px",
@@ -103,12 +119,12 @@ class LessonGames extends Component {
               style={{
                 position: "fixed",
                 height: "10vh",
-                width: "25vh",
-                top: "42%",
-                left: "40%",
+                width: "10vh",
+                top: "55%",
+                left: "42%",
                 cursor: "pointer",
               }}
-              src={iCanReadImage}
+              src={yesButtonImage}
               alt="could not be loaded"
             ></img>
           </Link>
@@ -121,14 +137,28 @@ class LessonGames extends Component {
                 position: "fixed",
                 height: "10vh",
                 width: "10vh",
-                top: "42%",
-                left: "52%",
+                top: "55%",
+                left: "50%",
                 cursor: "pointer",
               }}
               src={noButtonImage}
               alt="could not be loaded"
             ></img>
           </Link>
+        </div>
+
+        <div>
+          <img
+            style={{
+              position: "fixed",
+              height: "45vh",
+              width: "40vh",
+              bottom: "2%",
+              right: "2%",
+            }}
+            src={boyGirlLessonBlockPyramidImage}
+            alt="could not be loaded"
+          ></img>
         </div>
 
         <div
