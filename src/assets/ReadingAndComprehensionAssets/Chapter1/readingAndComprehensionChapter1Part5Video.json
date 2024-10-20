@@ -1,0 +1,167 @@
+{
+  "homePageComponent": {
+    "visibility": "visible",
+    "link": "/readingAndComprehensionChapterOneHomePage"
+  },
+  "topPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },
+  "topRightPageComponent": {
+    "visibility": "visible",
+	"src": "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image5.png",
+    "link": null
+  },
+  "backPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },
+  "videoButtonImages": [
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/VideoButtonImages/readingAndComprehensionChapter1Part5VideoButton1Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 0,
+	  "nextVideoObjectPosition": 1
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/VideoButtonImages/readingAndComprehensionChapter1Part5VideoButton2Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 2,
+	  "nextVideoObjectPosition": 3
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/VideoButtonImages/readingAndComprehensionChapter1Part5VideoButton3Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 4,
+	  "nextVideoObjectPosition": 5
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/VideoButtonImages/readingAndComprehensionChapter1Part5VideoButton4Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 7,
+	  "nextVideoObjectPosition": 8
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/VideoButtonImages/readingAndComprehensionChapter1Part5VideoButton5Image.png",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 10,
+	  "nextVideoObjectPosition": 11
+    }	
+  ],
+  "videos": [
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video1.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 0,
+	  "nextVideoObjectPosition": 1
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video2.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 0,
+	  "currentVideoObjectPosition": 1,
+	  "nextVideoObjectPosition": null
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video3.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 2,
+	  "nextVideoObjectPosition": 3
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video4.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 2,
+	  "currentVideoObjectPosition": 3,
+	  "nextVideoObjectPosition": null
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video5.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 4,
+	  "nextVideoObjectPosition": 5
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video6.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": 4,
+	  "currentVideoObjectPosition": 5,
+	  "nextVideoObjectPosition": 6
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video7.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 5,
+	  "currentVideoObjectPosition": 6,
+	  "nextVideoObjectPosition": null
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video8.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 7,
+	  "nextVideoObjectPosition": 8
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video9.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": 7,
+	  "currentVideoObjectPosition": 8,
+	  "nextVideoObjectPosition": 9
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video10.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 8,
+	  "currentVideoObjectPosition": 9,
+	  "nextVideoObjectPosition": null
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video11.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 10,
+	  "nextVideoObjectPosition": 11
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video12.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": 10,
+	  "currentVideoObjectPosition": 11,
+	  "nextVideoObjectPosition": 12
+    },	
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter1Part5/Videos/video13.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 11,
+	  "currentVideoObjectPosition": 12,
+	  "nextVideoObjectPosition": null
+    }	
+  ]
+}

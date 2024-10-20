@@ -434,6 +434,15 @@ import NumberLessonPageElevenToTwenty from "./components/numberLessonPage11-20";
 import numberElevenToTwentyCountVideo from "./assets/NumberAssets/Number11-20/Videos/Count/numberElevenToTwentyCountVideo.mp4";
 import ReadingWordHomePage from "./components/readingWordHomePage";
 import ReadingWordGroupVideoRenderComponent from "./components/readingWordGroupVideoRenderComponent";
+import ReadingAndComprehensionHomePage from "./components/readingAndComprehensionHomePage";
+import ReadingAndComprehensionChapterOneHomePage from "./components/readingAndComprehensionChapter1HomePage";
+
+import PortraitVideoWithCollageButtonsMultipleVideos from "./components/portraitVideoWithCollageButtonsMutipleVideos";
+import readingAndComprehensionChapter1Part1VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part1Video.json";
+import readingAndComprehensionChapter1Part2VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part2Video.json";
+import readingAndComprehensionChapter1Part3VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part3Video.json";
+import readingAndComprehensionChapter1Part4VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part4Video.json";
+import readingAndComprehensionChapter1Part5VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part5Video.json";
 
 class App extends Component {
   render() {
@@ -2329,6 +2338,66 @@ class App extends Component {
               topImageInformationMap={topImageInformationMapGroupSevenPageOne}
               videoRenderObjectArray={readingGroupSevenPageOneLessonVideosArray}
               quizRenderObjectArray={readingGroupSevenPageOneQuizArray}
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionHomePage"
+          exact
+          render={() => <ReadingAndComprehensionHomePage />}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOneHomePage"
+          exact
+          render={() => <ReadingAndComprehensionChapterOneHomePage />}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOnePartOne"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter1Part1VideoJson}
+              renderViewOptionPassed="renderFourButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOnePartTwo"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter1Part2VideoJson}
+              renderViewOptionPassed="renderFourButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOnePartThree"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter1Part3VideoJson}
+              renderViewOptionPassed="renderFourButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOnePartFour"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter1Part4VideoJson}
+              renderViewOptionPassed="renderFiveButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterOnePartFive"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter1Part5VideoJson}
+              renderViewOptionPassed="renderFiveButtonView"
             />
           )}
         ></Route>

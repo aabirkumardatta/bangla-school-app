@@ -346,7 +346,7 @@ html {
 }
 
 .languageOptionButton:hover {
-  cursor: pointer;
+  cursor: pointer !important;
 }
 
 .vocab-game-option {

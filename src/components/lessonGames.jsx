@@ -6,6 +6,10 @@ import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
 import gamesButtonEnglishImage from "../assets/gamesButtonEnglishImage.png";
 import gamesButtonBengaliImage from "../assets/gamesButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
+import yesButtonImage from "../assets/yes.png";
+import noButtonImage from "../assets/no.png";
+import boyGirlBookReadingImage from "../assets/boyGirlBookReadingImage.png";
+import boyGirlLessonBlockPyramidImage from "../assets/boyGirlLessonBlockPyramidImage.png";
 import { Link } from "react-router-dom";
 
 class LessonGames extends Component {
@@ -22,7 +26,7 @@ class LessonGames extends Component {
     Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
-    document.body.classList.add("lessongamesbgimage");
+    document.body.classList.add("plaingreenbackgroundbgimage");
   }
 
   handleLanguageOptionButtonClick = () => {
@@ -44,7 +48,7 @@ class LessonGames extends Component {
   render() {
     return (
       <div>
-        <div style={{ marginLeft: "-1%" }}>
+        <div style={{ marginLeft: "-1%", visibility: "hidden" }}>
           <img
             style={{
               width: "12vh",
@@ -57,17 +61,30 @@ class LessonGames extends Component {
           ></img>
         </div>
         <div style={{ marginLeft: "35%" }}>
-          <div style={{ marginTop: "1%" }}>
-            <Link to="/lessonshomepage">
-              <img
-                src={this.state.lessonButton}
-                alt="could not be loaded"
-                style={{
-                  width: "60vh",
-                  height: "20vh",
-                }}
-              ></img>
-            </Link>
+          <div style={{ marginTop: "10%" }}>
+            <img
+              src={this.state.lessonButton}
+              alt="could not be loaded"
+              style={{
+                width: "60vh",
+                height: "20vh",
+                cursor: "context-menu",
+              }}
+            ></img>
+          </div>
+
+          <div>
+            <img
+              style={{
+                position: "fixed",
+                height: "40vh",
+                width: "50vh",
+                top: "5%",
+                left: "2%",
+              }}
+              src={boyGirlBookReadingImage}
+              alt="could not be loaded"
+            ></img>
           </div>
 
           <div style={{ marginTop: "1%", visibility: "hidden" }}>
@@ -83,6 +100,67 @@ class LessonGames extends Component {
             </Link>
           </div>
         </div>
+        <div
+          style={{
+            position: "fixed",
+            top: "48%",
+            left: "33%",
+            fontFamily: "Algerian",
+            fontSize: "28px",
+            color: "white",
+          }}
+        >
+          Have you completed the lessons?
+        </div>
+
+        <div>
+          <Link to="/readingAndComprehensionHomePage">
+            <img
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "10vh",
+                top: "55%",
+                left: "42%",
+                cursor: "pointer",
+              }}
+              src={yesButtonImage}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+
+        <div>
+          <Link to="/lessonshomepage">
+            <img
+              style={{
+                position: "fixed",
+                height: "10vh",
+                width: "10vh",
+                top: "55%",
+                left: "50%",
+                cursor: "pointer",
+              }}
+              src={noButtonImage}
+              alt="could not be loaded"
+            ></img>
+          </Link>
+        </div>
+
+        <div>
+          <img
+            style={{
+              position: "fixed",
+              height: "45vh",
+              width: "40vh",
+              bottom: "2%",
+              right: "2%",
+            }}
+            src={boyGirlLessonBlockPyramidImage}
+            alt="could not be loaded"
+          ></img>
+        </div>
+
         <div
           style={{
             position: "fixed",
