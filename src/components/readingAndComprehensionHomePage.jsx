@@ -80,17 +80,19 @@ class ReadingAndComprehensionHomePage extends Component {
         </div>
 
         <div>
-          <img
-            style={{
-              position: "fixed",
-              height: "15vh",
-              width: "25vh",
-              top: "35%",
-              left: "50%",
-            }}
-            src={chapter2Image}
-            alt="could not be loaded"
-          ></img>
+          <Link to="/readingAndComprehensionChapterTwoHomePage">
+            <img
+              style={{
+                position: "fixed",
+                height: "15vh",
+                width: "25vh",
+                top: "35%",
+                left: "50%",
+              }}
+              src={chapter2Image}
+              alt="could not be loaded"
+            ></img>
+          </Link>
         </div>
 
         <div>

@@ -81,7 +81,7 @@ class ReadingAndComprehensionChapterOneHomePage extends Component {
                 cursor: "pointer",
               }}
               src={
-                "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image1.png"
+                "/assets/ReadingAndComprehensionHomePage/Chapter1Homepage/Images/image1.png"
               }
               alt="could not be loaded"
             ></img>
@@ -100,7 +100,7 @@ class ReadingAndComprehensionChapterOneHomePage extends Component {
                 cursor: "pointer",
               }}
               src={
-                "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image2.png"
+                "/assets/ReadingAndComprehensionHomePage/Chapter1Homepage/Images/image2.png"
               }
               alt="could not be loaded"
             ></img>
@@ -119,7 +119,7 @@ class ReadingAndComprehensionChapterOneHomePage extends Component {
                 cursor: "pointer",
               }}
               src={
-                "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image3.png"
+                "/assets/ReadingAndComprehensionHomePage/Chapter1Homepage/Images/image3.png"
               }
               alt="could not be loaded"
             ></img>
@@ -137,7 +137,7 @@ class ReadingAndComprehensionChapterOneHomePage extends Component {
                   cursor: "pointer",
                 }}
                 src={
-                  "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image4.png"
+                  "/assets/ReadingAndComprehensionHomePage/Chapter1Homepage/Images/image4.png"
                 }
                 alt="could not be loaded"
               ></img>
@@ -156,7 +156,7 @@ class ReadingAndComprehensionChapterOneHomePage extends Component {
                   cursor: "pointer",
                 }}
                 src={
-                  "/assets/ReadingAndComprehensionHomePage/Caspter1Homepage/Images/image5.png"
+                  "/assets/ReadingAndComprehensionHomePage/Chapter1Homepage/Images/image5.png"
                 }
                 alt="could not be loaded"
               ></img>
