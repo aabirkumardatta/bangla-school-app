@@ -1,0 +1,45 @@
+{
+  "homePageComponent": {
+    "visibility": "visible",
+    "link": "/readingAndComprehensionChapterTwoHomePage"
+  },
+  "topPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },  
+  "topRightPageComponent": {
+    "visibility": "visible",
+	"src": "/assets/ReadingAndComprehensionHomePage/Chapter2Homepage/Images/image4.png",
+    "link": null
+  },  
+  "backPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },
+  "videos": [
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter2Part4/Videos/video1.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 0,
+	  "nextVideoObjectPosition": 1
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter2Part4/Videos/video2.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "visible",
+	  "previousVideoObjectPosition": 0,
+	  "currentVideoObjectPosition": 1,
+	  "nextVideoObjectPosition": 2
+    },
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter2Part4/Videos/video3.mp4",
+	  "previousVideoButtonVisibility": "visible",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": 1,
+	  "currentVideoObjectPosition": 2,
+	  "nextVideoObjectPosition": null
+    }	
+  ]
+}

@@ -10,13 +10,20 @@ import { Link } from "react-router-dom";
 class PortraitVideoWithCollageButtonsMultipleVideos extends Component {
   constructor(props) {
     super(props);
+    const isRenderNoButtonView =
+      this.props.renderViewOptionPassed === "renderNoButtonView";
+    console.log("renderViewOptionPassed", isRenderNoButtonView);
     this.state = {
-      linkToVideo: intro_video_green_picture,
+      linkToVideo: isRenderNoButtonView
+        ? this.props.dataJson.videos[0].link
+        : intro_video_green_picture,
       previousVideoButtonVisibility: "hidden",
-      nextVideoButtonVisibility: "hidden",
+      nextVideoButtonVisibility: isRenderNoButtonView
+        ? this.props.dataJson.videos[0].nextVideoButtonVisibility
+        : "hidden",
       previousVideoObjectPosition: null,
       currentVideoObjectPosition: 0,
-      nextVideoObjectPosition: null,
+      nextVideoObjectPosition: isRenderNoButtonView ? 1 : null,
     };
   }
 
@@ -577,9 +584,9 @@ class PortraitVideoWithCollageButtonsMultipleVideos extends Component {
       <div>
         <div>
           <VideoPlayer
-            url={this.props.linkToVideo}
+            url={this.state.linkToVideo}
             marginLeftValue={36}
-            marginTopValue={-1}
+            marginTopValue={-3}
             controlsShowProperty={true}
           />
         </div>

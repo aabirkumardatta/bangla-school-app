@@ -444,6 +444,14 @@ import readingAndComprehensionChapter1Part3VideoJson from "./assets/ReadingAndCo
 import readingAndComprehensionChapter1Part4VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part4Video.json";
 import readingAndComprehensionChapter1Part5VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter1/readingAndComprehensionChapter1Part5Video.json";
 
+import ReadingAndComprehensionChapterTwoHomePage from "./components/readingAndComprehensionChapter2HomePage";
+import readingAndComprehensionChapter2Part1VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part1Video.json";
+import readingAndComprehensionChapter2Part2VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part2Video.json";
+import readingAndComprehensionChapter2Part3VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part3Video.json";
+import readingAndComprehensionChapter2Part4VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part4Video.json";
+import readingAndComprehensionChapter2Part5VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part5Video.json";
+import readingAndComprehensionChapter2Part6VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part6Video.json";
+
 class App extends Component {
   render() {
     return (
@@ -2398,6 +2406,71 @@ class App extends Component {
             <PortraitVideoWithCollageButtonsMultipleVideos
               dataJson={readingAndComprehensionChapter1Part5VideoJson}
               renderViewOptionPassed="renderFiveButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoHomePage"
+          exact
+          render={() => <ReadingAndComprehensionChapterTwoHomePage />}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoPartOne"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter2Part1VideoJson}
+              renderViewOptionPassed="renderNoButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoPartTwo"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter2Part2VideoJson}
+              renderViewOptionPassed="renderNoButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoPartThree"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter2Part3VideoJson}
+              renderViewOptionPassed="renderNoButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoPartFour"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter2Part4VideoJson}
+              renderViewOptionPassed="renderNoButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoPartFive"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter2Part5VideoJson}
+              renderViewOptionPassed="renderNoButtonView"
+            />
+          )}
+        ></Route>
+        <Route
+          path="/readingAndComprehensionChapterTwoPartSix"
+          exact
+          render={() => (
+            <PortraitVideoWithCollageButtonsMultipleVideos
+              dataJson={readingAndComprehensionChapter2Part6VideoJson}
+              renderViewOptionPassed="renderNoButtonView"
             />
           )}
         ></Route>

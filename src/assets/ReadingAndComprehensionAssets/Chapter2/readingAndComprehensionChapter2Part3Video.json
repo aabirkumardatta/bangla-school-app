@@ -1,0 +1,29 @@
+{
+  "homePageComponent": {
+    "visibility": "visible",
+    "link": "/readingAndComprehensionChapterTwoHomePage"
+  },
+  "topPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },  
+  "topRightPageComponent": {
+    "visibility": "visible",
+	"src": "/assets/ReadingAndComprehensionHomePage/Chapter2Homepage/Images/image3.png",
+    "link": null
+  },  
+  "backPageComponent": {
+    "visibility": "hidden",
+    "link": "/"
+  },
+  "videos": [
+    {
+      "link": "/assets/ReadingAndComprehensionHomePage/Chapter2Part3/Videos/video1.mp4",
+	  "previousVideoButtonVisibility": "hidden",
+	  "nextVideoButtonVisibility": "hidden",
+	  "previousVideoObjectPosition": null,
+	  "currentVideoObjectPosition": 0,
+	  "nextVideoObjectPosition": null
+    }	
+  ]
+}
