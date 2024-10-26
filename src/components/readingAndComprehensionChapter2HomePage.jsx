@@ -59,7 +59,7 @@ class ReadingAndComprehensionChapterTwoHomePage extends Component {
             <img
               style={{
                 position: "fixed",
-                left: "31%",
+                left: "28%",
                 transform: "translate(-50%, -50%)",
                 width: "auto",
                 height: "30vh",
@@ -73,7 +73,7 @@ class ReadingAndComprehensionChapterTwoHomePage extends Component {
             <img
               style={{
                 position: "fixed",
-                left: "43.5%",
+                left: "42.5%",
                 transform: "translate(-50%, -50%)",
                 width: "auto",
                 height: "30vh",
@@ -86,7 +86,7 @@ class ReadingAndComprehensionChapterTwoHomePage extends Component {
             <img
               style={{
                 position: "fixed",
-                left: "56%",
+                left: "57%",
                 transform: "translate(-50%, -50%)",
                 width: "auto",
                 height: "30vh",
@@ -99,7 +99,7 @@ class ReadingAndComprehensionChapterTwoHomePage extends Component {
             <img
               style={{
                 position: "fixed",
-                left: "68.5%",
+                left: "71.5%",
                 transform: "translate(-50%, -50%)",
                 width: "auto",
                 height: "30vh",
@@ -115,7 +115,7 @@ class ReadingAndComprehensionChapterTwoHomePage extends Component {
             <img
               style={{
                 position: "fixed",
-                left: "43.5%",
+                left: "42.5%",
                 transform: "translate(-50%, -50%)",
                 width: "auto",
                 height: "30vh",
@@ -128,7 +128,7 @@ class ReadingAndComprehensionChapterTwoHomePage extends Component {
             <img
               style={{
                 position: "fixed",
-                left: "56%",
+                left: "57%",
                 transform: "translate(-50%, -50%)",
                 width: "auto",
                 height: "30vh",
