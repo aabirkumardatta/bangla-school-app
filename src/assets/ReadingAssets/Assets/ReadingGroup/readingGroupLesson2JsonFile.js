@@ -9,7 +9,6 @@ import video8 from "./Videos/Lesson2/video8.mp4";
 import video9 from "./Videos/Lesson2/video9.mp4";
 import video10 from "./Videos/Lesson2/video10.mp4";
 import video11 from "./Videos/Lesson2/video11.mp4";
-import video12 from "./Videos/Lesson2/video12.mp4";
 import sentence from "./Videos/Lesson2/sentence.mp4";
 
 import videoBoro1 from "./Videos/Lesson2/video-boro-1.mp4";
@@ -36,7 +35,6 @@ import buttonImageLesson8 from "./ImageAssets/lesson8.png";
 import buttonImageLesson9 from "./ImageAssets/lesson9.png";
 import buttonImageLesson10 from "./ImageAssets/lesson10.png";
 import buttonImageLesson11 from "./ImageAssets/lesson11.png";
-import buttonImageLesson12 from "./ImageAssets/lesson12.png";
 import buttonImageLessonSentence from "./ImageAssets/sentence.png";
 
 import buttonImageQuiz3 from "./ImageAssets/quiz3.png";
@@ -48,7 +46,6 @@ import buttonImageQuiz8 from "./ImageAssets/quiz8.png";
 import buttonImageQuiz9 from "./ImageAssets/quiz9.png";
 import buttonImageQuiz10 from "./ImageAssets/quiz10.png";
 import buttonImageQuiz11 from "./ImageAssets/quiz11.png";
-import buttonImageQuiz12 from "./ImageAssets/quiz12.png";
 import buttonImageQuizMega from "./ImageAssets/megaquiz.png";
 
 const pageInformationMapGroupTwoPageOne = {
@@ -241,17 +238,7 @@ var readingGroupTwoPageTwoLessonVideosArray = [
     top: "69%",
     left: "22%",
     cursor: "pointer",
-  },
-  {
-    video: video12,
-    buttonImage: buttonImageLesson12,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "82%",
-    left: "22%",
-    cursor: "pointer",
-  },  
+  }, 
 ];
 
 var readingGroupTwoPageTwoQuizArray = [
@@ -297,15 +284,6 @@ var readingGroupTwoPageTwoQuizArray = [
     height: "10vh",
     width: "25vh",
     top: "69%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
-    buttonImage: buttonImageQuiz12,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "82%",
     left: "67%",
     cursor: "no_pointer",
   },  
