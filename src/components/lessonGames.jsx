@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import banglaButtonImage from "../assets/banglaButtonImage.png";
 import englishButtonImage from "../assets/englishButtonImage.png";
-import lessonsButtonEnglishImage from "../assets/lessonsButtonEnglishImage.png";
-import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
+import lessonsButtonEnglishImage from "../assets/LessonsHomePageAssets/lessonsButtonEnglishImage.png";
+import lessonsButtonBengaliImage from "../assets/LessonsHomePageAssets/lessonsButtonBengaliImage.png";
 import gamesButtonEnglishImage from "../assets/gamesButtonEnglishImage.png";
 import gamesButtonBengaliImage from "../assets/gamesButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
