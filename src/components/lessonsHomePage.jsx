@@ -1,18 +1,18 @@
 import React, { Component } from "react";
 import banglaButtonImage from "../assets/banglaButtonImage.png";
 import englishButtonImage from "../assets/englishButtonImage.png";
-import lessonsButtonEnglishImage from "../assets/lessonsButtonEnglishImage.png";
-import lessonsButtonBengaliImage from "../assets/lessonsButtonBengaliImage.png";
-import readingButtonEnglishImage from "../assets/readingButtonEnglishImage.png";
-import readingButtonBengaliImage from "../assets/readingButtonBengaliImage.png";
-import grammarButtonEnglishImage from "../assets/grammarButtonEnglishImage.png";
-import grammarButtonBengaliImage from "../assets/grammarButtonBengaliImage.png";
-import pronunciationButtonEnglishImage from "../assets/pronunciationButtonEnglishImage.png";
-import pronunciationButtonBengaliImage from "../assets/pronunciationButtonBengaliImage.png";
-import vocabularyButtonEnglishImage from "../assets/vocabularyButtonEnglishImage.png";
-import vocabularyButtonBengaliImage from "../assets/vocabularyButtonBengaliImage.png";
-import writingButtonEnglishImage from "../assets/writingButtonEnglishImage.png";
-import writingButtonBengaliImage from "../assets/writingButtonBengaliImage.png";
+import lessonsButtonEnglishImage from "../assets/LessonsHomePageAssets/lessonsButtonEnglishImage.png";
+import lessonsButtonBengaliImage from "../assets/LessonsHomePageAssets/lessonsButtonBengaliImage.png";
+import readingButtonEnglishImage from "../assets/LessonsHomePageAssets/readingButtonEnglishImage.png";
+import readingButtonBengaliImage from "../assets/LessonsHomePageAssets/readingButtonBengaliImage.png";
+import pronunciationButtonEnglishImage from "../assets/LessonsHomePageAssets/pronunciationButtonEnglishImage.png";
+import pronunciationButtonBengaliImage from "../assets/LessonsHomePageAssets/pronunciationButtonBengaliImage.png";
+import speakingButtonEnglishImage from "../assets/LessonsHomePageAssets/speakingButtonEnglishImage.png";
+import speakingButtonBengaliImage from "../assets/LessonsHomePageAssets/speakingButtonBengaliImage.png";
+import vocabularyButtonEnglishImage from "../assets/LessonsHomePageAssets/vocabularyButtonEnglishImage.png";
+import vocabularyButtonBengaliImage from "../assets/LessonsHomePageAssets/vocabularyButtonBengaliImage.png";
+import writingButtonEnglishImage from "../assets/LessonsHomePageAssets/writingButtonEnglishImage.png";
+import writingButtonBengaliImage from "../assets/LessonsHomePageAssets/writingButtonBengaliImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
 import { Link } from "react-router-dom";
 
@@ -23,7 +23,7 @@ class LessonsHomePage extends Component {
       languageOptionButton: banglaButtonImage,
       lessonButton: lessonsButtonEnglishImage,
       readingButton: readingButtonEnglishImage,
-      grammarButton: grammarButtonEnglishImage,
+      speakingButton: speakingButtonEnglishImage,
       pronunciationButton: pronunciationButtonEnglishImage,
       vocabularyButton: vocabularyButtonEnglishImage,
       writingButton: writingButtonEnglishImage,
@@ -45,7 +45,7 @@ class LessonsHomePage extends Component {
         languageOptionButton: englishButtonImage,
         lessonButton: lessonsButtonBengaliImage,
         readingButton: readingButtonBengaliImage,
-        grammarButton: grammarButtonBengaliImage,
+        speakingButton: speakingButtonBengaliImage,
         pronunciationButton: pronunciationButtonBengaliImage,
         vocabularyButton: vocabularyButtonBengaliImage,
         writingButton: writingButtonBengaliImage,
@@ -57,7 +57,7 @@ class LessonsHomePage extends Component {
         languageOptionButton: banglaButtonImage,
         lessonButton: lessonsButtonEnglishImage,
         readingButton: readingButtonEnglishImage,
-        grammarButton: grammarButtonEnglishImage,
+        speakingButton: speakingButtonEnglishImage,
         pronunciationButton: pronunciationButtonEnglishImage,
         vocabularyButton: vocabularyButtonEnglishImage,
         writingButton: writingButtonEnglishImage,
@@ -82,72 +82,81 @@ class LessonsHomePage extends Component {
         </div>
 
         <div>
-          <div style={{ marginTop: "6%", marginLeft: "30%" }}>
-            <span>
-              <Link to="/readinghomepage">
-                <img
-                  src={this.state.readingButton}
-                  alt="could not be loaded"
-                  style={{
-                    width: "35vh",
-                    height: "20vh",
-                  }}
-                ></img>
-              </Link>
-            </span>
-            <span>
-              <Link to="/writingHomePage">
-                <img
-                  src={this.state.writingButton}
-                  alt="could not be loaded"
-                  style={{
-                    marginLeft: "13%",
-                    width: "35vh",
-                    height: "25vh",
-                  }}
-                ></img>
-              </Link>
-            </span>
+          <div>
+            <Link to="/readinghomepage">
+              <img
+                src={this.state.readingButton}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "35vh",
+                  height: "20vh",
+                  top: "30%",
+                  left: "30%",
+                }}
+              ></img>
+            </Link>
           </div>
 
-          <div style={{ marginTop: "-1%", marginLeft: "14%" }}>
-            <span>
-              <Link to="/speakingHomePage">
-                <img
-                  src={this.state.grammarButton}
-                  alt="could not be loaded"
-                  style={{
-                    width: "45vh",
-                    height: "45vh",
-                  }}
-                ></img>
-              </Link>
-            </span>
-            <span>
-              <Link to="/vocabhomepage">
-                {/* <Link to="/daysOfTheWeek"> */}
-                <img
-                  src={this.state.vocabularyButton}
-                  alt="could not be loaded"
-                  style={{
-                    marginLeft: "25%",
-                    width: "45vh",
-                    height: "45vh",
-                  }}
-                ></img>
-              </Link>
-            </span>
+          <div>
+            <Link to="/writingHomePage">
+              <img
+                src={this.state.writingButton}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "35vh",
+                  height: "25vh",
+                  top: "24%",
+                  right: "30%",
+                }}
+              ></img>
+            </Link>
           </div>
 
-          <div style={{ marginTop: "-15%" }}>
+          <div>
+            <Link to="/vocabhomepage">
+              <img
+                src={this.state.vocabularyButton}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
+                  width: "40vh",
+                  height: "30vh",
+                  top: "48%",
+                  right: "18%",
+                }}
+              ></img>
+            </Link>
+          </div>
+
+          <div>
             <Link to="/pronunciationhomepage">
               <img
                 src={this.state.pronunciationButton}
                 alt="could not be loaded"
                 style={{
-                  marginLeft: "38%",
+                  position: "fixed",
+                  width: "35vh",
+                  height: "25vh",
+                  bottom: "10%",
+                  right: "43%",
+                }}
+              ></img>
+            </Link>
+          </div>
+
+          <div>
+            <Link to="/speakingHomePage">
+              <img
+                src={this.state.speakingButton}
+                alt="could not be loaded"
+                style={{
+                  position: "fixed",
                   width: "40vh",
-                  height: "30vh",
+                  height: "25vh",
+                  top: "50%",
+                  left: "18%",
                 }}
               ></img>
             </Link>

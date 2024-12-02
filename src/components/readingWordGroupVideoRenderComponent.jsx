@@ -74,11 +74,9 @@ class ReadingWordGroupVideoRenderComponent extends Component {
         {this.props.videoRenderObjectArray.map((videoObject) => {
           return this.returnButtonOnClickView(videoObject, true);
         })}
-        ;
         {this.props.quizRenderObjectArray.map((quizObject) => {
           return this.returnButtonOnClickView(quizObject, false);
         })}
-        ;
         <div>
           <VideoPlayer
             url={this.state.linkToVideo}

@@ -8,8 +8,8 @@ import lettersButtonEnglishImage from "../assets/lettersButtonEnglishImage.png";
 import wordsButtonEnglishImage from "../assets/wordsButtonEnglishImage.png";
 import numbersButtonEnglishImage from "../assets/numbersButtonEnglishImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
-import writingButtonEnglishImage from "../assets/writingButtonEnglishImage.png";
-import writingButtonBengaliImage from "../assets/writingButtonBengaliImage.png";
+import writingButtonEnglishImage from "../assets/LessonsHomePageAssets/writingButtonEnglishImage.png";
+import writingButtonBengaliImage from "../assets/LessonsHomePageAssets/writingButtonBengaliImage.png";
 import { Link } from "react-router-dom";
 
 class WritingHomePage extends Component {
