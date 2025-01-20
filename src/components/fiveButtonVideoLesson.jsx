@@ -5,17 +5,18 @@ import homebuttonImage from "../assets/homeButtonImage.png";
 import nextButtonImage from "../assets/nextButtonImage.png";
 import previousButtonImage from "../assets/previousButtonImage.png";
 import gameButtonEnglishImage from "../assets/ReadingHomePageButtons/gameButtonEnglishImage.png";
+import chandrabindu from "../assets/chandrabindu.png";
 
 class FiveButtonVideoLesson extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      linkToVideo: this.props.introVideoLink
+      linkToVideo: this.props.introVideoLink,
     };
   }
 
   componentDidMount() {
-    Array.from(document.body.classList).forEach(eachClass => {
+    Array.from(document.body.classList).forEach((eachClass) => {
       document.body.classList.remove(eachClass);
     });
     document.body.classList.add("byanjonbornolessonbgimage");
@@ -27,7 +28,7 @@ class FiveButtonVideoLesson extends Component {
         style={{
           position: "fixed",
           bottom: "14vh",
-          right: "14vh"
+          right: "14vh",
         }}
       >
         <Link to={this.props.letterSet[6].link}>
@@ -38,7 +39,7 @@ class FiveButtonVideoLesson extends Component {
               position: "fixed",
               width: "12vh",
               height: "12vh",
-              visibility: this.props.gameButtonVisibility
+              visibility: this.props.gameButtonVisibility,
             }}
           ></img>
         </Link>
@@ -52,7 +53,7 @@ class FiveButtonVideoLesson extends Component {
         style={{
           position: "fixed",
           bottom: "14vh",
-          marginLeft: "1%"
+          marginLeft: "1%",
         }}
       >
         <Link to={this.props.letterSet[6].link}>
@@ -63,7 +64,7 @@ class FiveButtonVideoLesson extends Component {
               position: "fixed",
               width: "12vh",
               height: "12vh",
-              visibility: this.props.gameButtonVisibility
+              visibility: this.props.gameButtonVisibility,
             }}
           ></img>
         </Link>
@@ -92,7 +93,7 @@ class FiveButtonVideoLesson extends Component {
                   height: "10vh",
                   position: "fixed",
                   right: "2vh",
-                  visibility: this.props.gameButtonVisibility
+                  visibility: this.props.gameButtonVisibility,
                 }}
                 src={gameButtonEnglishImage}
                 alt="could not be loaded"
@@ -114,7 +115,7 @@ class FiveButtonVideoLesson extends Component {
               <button
                 className="btn-video-tiles"
                 style={{
-                  padding: "4px"
+                  padding: "4px",
                 }}
                 onClick={() =>
                   this.setState({ linkToVideo: this.props.letterSet[0].video })
@@ -172,8 +173,18 @@ class FiveButtonVideoLesson extends Component {
                   this.setState({ linkToVideo: this.props.letterSet[4].video });
                 }}
               >
-                <span style={{ fontFamily: "kalpurush" }}>
-                  {this.props.letterSet[4].letter}
+                <span>
+                  <img
+                    src={chandrabindu}
+                    style={{
+                      position: "relative",
+                      height: "5vh",
+                      width: "5vh",
+                      top: "3%",
+                      left: "2%",
+                    }}
+                    alt="could not be loaded"
+                  ></img>
                 </span>
               </button>
             </div>

@@ -452,6 +452,8 @@ import readingAndComprehensionChapter2Part4VideoJson from "./assets/ReadingAndCo
 import readingAndComprehensionChapter2Part5VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part5Video.json";
 import readingAndComprehensionChapter2Part6VideoJson from "./assets/ReadingAndComprehensionAssets/Chapter2/readingAndComprehensionChapter2Part6Video.json";
 
+import readingWordGroupOneQuiz4 from "./quizQuestions/readingQuiz/readingWordGroupOneQuiz4";
+
 class App extends Component {
   render() {
     return (
@@ -2474,6 +2476,19 @@ class App extends Component {
             />
           )}
         ></Route>
+        <Route
+          path="/readingWordGroupOneQuiz4"
+          exact
+          render={() => (
+            <Main
+              quizQuestions={readingWordGroupOneQuiz4}
+              isAudioQuiz={true}
+              heading="Reading Word Group Quiz"
+              renderOptionsType="button"
+              homeButtonLink="/readingWordGroupOnePageOne"
+            />
+          )}
+        />
       </div>
     );
   }

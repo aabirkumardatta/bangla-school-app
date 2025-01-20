@@ -28,7 +28,6 @@ import buttonImageLesson10 from "./ImageAssets/lesson10.png";
 import buttonImageLesson11 from "./ImageAssets/lesson11.png";
 import buttonImageLessonSentence from "./ImageAssets/sentence.png";
 
-import buttonImageQuiz3 from "./ImageAssets/quiz3.png";
 import buttonImageQuiz4 from "./ImageAssets/quiz4.png";
 import buttonImageQuiz5 from "./ImageAssets/quiz5.png";
 import buttonImageQuiz6 from "./ImageAssets/quiz6.png";
@@ -123,22 +122,15 @@ var readingGroupOnePageOneLessonVideosArray = [
 
 var readingGroupOnePageOneQuizArray = [
   {
-    buttonImage: buttonImageQuiz3,
-    position: "fixed",
-    height: "10vh",
-    width: "25vh",
-    top: "43%",
-    left: "67%",
-    cursor: "no_pointer",
-  },
-  {
+	isLink: true,
+	link: "readingWordGroupOneQuiz4",
     buttonImage: buttonImageQuiz4,
     position: "fixed",
     height: "10vh",
     width: "25vh",
     top: "56%",
     left: "67%",
-    cursor: "no_pointer",
+    cursor: "pointer",
   },
   {
     buttonImage: buttonImageQuiz5,

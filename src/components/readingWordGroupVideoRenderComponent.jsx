@@ -22,6 +22,40 @@ class ReadingWordGroupVideoRenderComponent extends Component {
   returnButtonOnClickView = (renderObject, isLesson) => {
     return (
       <div key={renderObject.buttonImage}>
+        {renderObject.isLink === true
+          ? this.renderButtonWithLinkView(renderObject, isLesson)
+          : this.renderButtonNoLinkView(renderObject, isLesson)}
+      </div>
+    );
+  };
+
+  renderButtonNoLinkView = (renderObject, isLesson) => {
+    return (
+      <img
+        style={{
+          position: `${renderObject.position}`,
+          height: `${renderObject.height}`,
+          width: `${renderObject.width}`,
+          top: `${renderObject.top}`,
+          left: `${renderObject.left}`,
+          cursor: `${renderObject.cursor}`,
+        }}
+        onClick={() => {
+          if (isLesson) {
+            this.setState({
+              linkToVideo: renderObject.video,
+            });
+          }
+        }}
+        src={renderObject.buttonImage}
+        alt="could not be loaded"
+      ></img>
+    );
+  };
+
+  renderButtonWithLinkView = (renderObject, isLesson) => {
+    return (
+      <Link to={renderObject.link}>
         <img
           style={{
             position: `${renderObject.position}`,
@@ -41,7 +75,7 @@ class ReadingWordGroupVideoRenderComponent extends Component {
           src={renderObject.buttonImage}
           alt="could not be loaded"
         ></img>
-      </div>
+      </Link>
     );
   };
 
